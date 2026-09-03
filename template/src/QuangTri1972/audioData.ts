@@ -11,7 +11,6 @@ export const audioManifest = {
       "id": "scene1_hook",
       "text": "Tám mươi mốt ngày đêm. Một tòa thành cổ ba trăm năm tuổi bị bom đạn san phẳng, nhưng lá cờ vẫn tung bay trên nóc thành. Đây là câu chuyện về trận Thành cổ Quảng Trị, mùa hè đỏ lửa năm 1972.",
       "audioPath": "audio/QuangTri1972/scene1_hook.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene1_hook.mp3",
       "sizeBytes": 73440,
       "estimatedDurationSec": 12.24,
       "durationInFrames": 378
@@ -20,7 +19,6 @@ export const audioManifest = {
       "id": "scene2_context",
       "text": "Xuân hè năm 1972, quân ta mở chiến dịch tiến công chiến lược trên toàn miền Nam, nhằm buộc Mỹ trở lại đàm phán. Quảng Trị, cửa ngõ phía Bắc, trở thành nơi hội tụ của cuộc quyết đấu lớn nhất giữa ta và địch.",
       "audioPath": "audio/QuangTri1972/scene2_context.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene2_context.mp3",
       "sizeBytes": 70560,
       "estimatedDurationSec": 11.76,
       "durationInFrames": 363
@@ -29,7 +27,6 @@ export const audioManifest = {
       "id": "scene3_liberation",
       "text": "Ngày mùng một tháng Năm năm 1972, thành phố Quảng Trị được giải phóng, trở thành tỉnh đầu tiên của miền Nam được giải phóng. Nhưng chính vì lẽ đó, kẻ thù không cam chịu, chúng dồn toàn lực hỏa lực để đòi lại bằng được.",
       "audioPath": "audio/QuangTri1972/scene3_liberation.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene3_liberation.mp3",
       "sizeBytes": 72576,
       "estimatedDurationSec": 12.1,
       "durationInFrames": 373
@@ -38,7 +35,6 @@ export const audioManifest = {
       "id": "scene4_lamson72",
       "text": "Cuộc hành quân Lam Sơn bảy mươi hai mở màn giữa tháng Sáu. Không quân Mỹ và Việt Nam Cộng hòa ném bom suốt ngày đêm, đạn pháo hải quân từ biển Đông dồn về thành cổ. Người ta ví nơi đây là địa ngục trần thế.",
       "audioPath": "audio/QuangTri1972/scene4_lamson72.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene4_lamson72.mp3",
       "sizeBytes": 69408,
       "estimatedDurationSec": 11.57,
       "durationInFrames": 358
@@ -47,7 +43,6 @@ export const audioManifest = {
       "id": "scene5_siege",
       "text": "Từ ngày hai mươi tám tháng Sáu, địch ồ ạt đánh chiếm thành cổ. Bộ đội của ta với quyết tâm sống bám thành, chết kiên quyết, bắt đầu cuộc phòng ngự tám mươi mốt ngày đêm đi vào lịch sử dân tộc.",
       "audioPath": "audio/QuangTri1972/scene5_siege.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene5_siege.mp3",
       "sizeBytes": 62064,
       "estimatedDurationSec": 10.34,
       "durationInFrames": 321
@@ -56,7 +51,6 @@ export const audioManifest = {
       "id": "scene6_hellfire",
       "text": "Mỗi ngày, hàng nghìn quả đạn pháo rơi xuống khu thành cổ chưa đầy hai cây số vuông. Tường thành kiên cố ba thế kỷ bị san phẳng, chỉ còn nền đất đỏ trơ và những hố bom sâu hoắm chồng chất nhau.",
       "audioPath": "audio/QuangTri1972/scene6_hellfire.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene6_hellfire.mp3",
       "sizeBytes": 62640,
       "estimatedDurationSec": 10.44,
       "durationInFrames": 324
@@ -65,7 +59,6 @@ export const audioManifest = {
       "id": "scene7_young",
       "text": "Giữ thành là những chiến sĩ còn rất trẻ. Đa phần chỉ mười tám, hai mươi tuổi, nhiều người vừa rời ghế nhà trường, tự nguyện viết đơn xin ra mặt trận, nhận về mình nhiệm vụ nặng nhất đời người.",
       "audioPath": "audio/QuangTri1972/scene7_young.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene7_young.mp3",
       "sizeBytes": 63936,
       "estimatedDurationSec": 10.66,
       "durationInFrames": 330
@@ -74,7 +67,6 @@ export const audioManifest = {
       "id": "scene8_thachhan",
       "text": "Phía trước thành cổ là sông Thạch Hãn. Trong lũ đạn pháo, từng người một, các chiến sĩ băng qua dòng sông để vào thành. Nhiều người đã nằm lại mãi mãi bên dòng sông hiền hòa ấy, mãi mãi ở tuổi hai mươi.",
       "audioPath": "audio/QuangTri1972/scene8_thachhan.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene8_thachhan.mp3",
       "sizeBytes": 71136,
       "estimatedDurationSec": 11.86,
       "durationInFrames": 366
@@ -83,7 +75,6 @@ export const audioManifest = {
       "id": "scene9_counterattack",
       "text": "Sau hai tháng rưỡi giữ vững, đến giữa tháng Chín, quân ta mở màn phản công. Các đơn vị đồng loạt tiến công, đỉnh điểm là cuộc xung phong đêm mười bốn, quét sạch từng vị trí địch bao vây quanh thành.",
       "audioPath": "audio/QuangTri1972/scene9_counterattack.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene9_counterattack.mp3",
       "sizeBytes": 64080,
       "estimatedDurationSec": 10.68,
       "durationInFrames": 331
@@ -92,7 +83,6 @@ export const audioManifest = {
       "id": "scene10_flag",
       "text": "Chiều mười sáu tháng Chín năm 1972, lá cờ quyết chiến quyết thắng lại tung bay trên nóc thành cổ. Tám mươi mốt ngày đêm thép khép lại trong vinh quang, làm rạng rỡ lịch sử dân tộc.",
       "audioPath": "audio/QuangTri1972/scene10_flag.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene10_flag.mp3",
       "sizeBytes": 61920,
       "estimatedDurationSec": 10.32,
       "durationInFrames": 320
@@ -101,7 +91,6 @@ export const audioManifest = {
       "id": "scene11_meaning",
       "text": "Chiến thắng thành cổ đã làm sụp đổ hoàn toàn âm mưu tám chiếm Quảng Trị của địch, giữ vững thành quả của chiến dịch, đồng thời góp phần quan trọng buộc Mỹ phải quay lại bàn hội nghị Paris một cách nghiêm túc.",
       "audioPath": "audio/QuangTri1972/scene11_meaning.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene11_meaning.mp3",
       "sizeBytes": 55584,
       "estimatedDurationSec": 9.26,
       "durationInFrames": 288
@@ -110,7 +99,6 @@ export const audioManifest = {
       "id": "scene12_sacrifice",
       "text": "Nhưng chiến thắng ấy được đánh đổi bằng máu của hàng nghìn người con ưu tú. Họ đã ngã xuống khi tuổi đời còn xanh nhất. Mãi mãi, họ ở lại bên thành cổ và sông Thạch Hãn thân thương.",
       "audioPath": "audio/QuangTri1972/scene12_sacrifice.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene12_sacrifice.mp3",
       "sizeBytes": 63072,
       "estimatedDurationSec": 10.51,
       "durationInFrames": 326
@@ -119,7 +107,6 @@ export const audioManifest = {
       "id": "scene13_legacy",
       "text": "Hôm nay, Thành cổ Quảng Trị đã trở thành di tích quốc gia đặc biệt, một địa chỉ đỏ của cả nước. Hằng năm, hàng triệu người từ khắp mọi miền đất nước về đây thắp nén tâm hương, tri ân các anh.",
       "audioPath": "audio/QuangTri1972/scene13_legacy.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene13_legacy.mp3",
       "sizeBytes": 62064,
       "estimatedDurationSec": 10.34,
       "durationInFrames": 321
@@ -128,7 +115,6 @@ export const audioManifest = {
       "id": "scene14_outro",
       "text": "Nếu bạn thấy biết ơn thế hệ cha anh đã ngã xuống vì độc lập tự do của đất nước, hãy thả tim, chia sẻ video này và follow kênh Lịch Sử Việt Nam. Cảm ơn bạn đã theo dõi.",
       "audioPath": "audio/QuangTri1972/scene14_outro.mp3",
-      "filePath": "/Volumes/SSD_1TB/Video Remotion/template/public/audio/QuangTri1972/scene14_outro.mp3",
       "sizeBytes": 57600,
       "estimatedDurationSec": 9.6,
       "durationInFrames": 298

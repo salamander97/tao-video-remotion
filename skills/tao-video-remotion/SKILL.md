@@ -1,18 +1,20 @@
 ---
 name: tao-video-remotion
 description: >-
-  Tạo video ngắn 50-60s (TikTok/Shorts/Reels, 9:16, 1080x1920 @30fps) giải thích chủ đề công nghệ bằng Remotion + giọng đọc AI edge-tts. Dùng khi người dùng yêu cầu "tạo video", "tao video remotion". Creates professional 50-60s vertical explainer videos (9:16 format, 1080x1920 @ 30fps) for any given topic using Remotion, styled with modern aesthetics and narrated by natural voiceover using edge-tts-universal. Follows remotion-dev/skills best practices for smooth springs, typography, sequence timing, and visual engagement.
+  Tạo video dọc bằng Remotion cho nhiều lĩnh vực và nhiều độ dài, từ video ngắn 50–60 giây đến deep-dive 3–5 phút, có giọng đọc AI, phụ đề và visual phù hợp chủ đề. Dùng khi người dùng yêu cầu tạo, dựng hoặc render video Remotion từ một chủ đề đã có.
 ---
 
-# Remotion Topic Explainer Video Skill (50-60s)
+# Tạo video bằng Remotion
 
 > 🔗 **Skill liên kết**: nếu người dùng CHƯA có chủ đề hoặc muốn tìm chủ đề/niche hay nhất cho kênh (lịch sử, sức khỏe, tài chính...), dùng skill **`tao-chu-de-video`** trước — skill đó nghiên cứu, chấm điểm viral, bàn giao topic-package (facts có nguồn + memory kênh) rồi mới quay lại skill này để dựng video.
 
-## ⚙️ MÔI TRƯỜNG LÀM VIỆC (BẮT BUỘC — ZCode)
+## ⚙️ Môi trường làm việc
 
-- Project template đã cài sẵn tại: `/Users/apple/Projects/tao-video-suite/template` (đã `npm install`, đã có `.env`). KHÔNG clone lại, làm việc trực tiếp trong thư mục này.
-- Mọi lệnh (`npm run tts`, `tsx`, `npx remotion ...`) đều chạy với cwd = `/Users/apple/Projects/tao-video-suite/template`.
-- File MP4 cuối cùng PHẢI render ra: `/Volumes/SSD_1TB/Video Remotion/<TênChủĐề>.mp4` (ví dụ: `npx remotion render <TopicName> "/Volumes/SSD_1TB/Video Remotion/<TopicName>.mp4"`).
+- Đọc cấu hình tại `<thư-mục-home>/.tao-video-suite/config.json`. Không ghi đường dẫn tuyệt đối của một máy cụ thể vào skill hoặc mã nguồn.
+- Dùng `templateDir` làm thư mục làm việc cho mọi lệnh (`npm run tts`, `npx tsx`, `npx remotion ...`). Xác nhận thư mục này có `package.json` trước khi chạy.
+- Render MP4 vào `outputDir`, với tên file an toàn như `<TopicName>.mp4`. Luôn đặt đường dẫn trong dấu nháy khi chạy lệnh.
+- Nếu chưa có cấu hình hoặc đường dẫn không còn tồn tại, yêu cầu người dùng chạy `node scripts/setup.mjs` từ repository. Chỉ hỏi trực tiếp đường dẫn template/output khi không thể chạy setup.
+- Nếu `node_modules` hoặc `.env` chưa có, báo rõ và chạy bước cài đặt tương ứng trong `templateDir`; không giả định máy đã được setup.
 - Quy trình: nhận chủ đề → **phân tích & hỏi người dùng chọn độ dài kịch bản + branding** (xem 2 mục ❓/📐 bên dưới) → tự soạn kịch bản → tự sinh TTS → tự viết component → tự render → báo đường dẫn file video. Chỉ hỏi lại người dùng nếu chủ đề chưa rõ hoặc ở 2 bước hỏi bắt buộc.
 
 ## ❓ BẮT BUỘC HỎI TRƯỚC KHI RENDER (Branding)
@@ -21,12 +23,12 @@ TRƯỚC KHI chạy lệnh `npx remotion render`, PHẢI hỏi người dùng 1 
 
 > "Video này có hiển thị tên kênh / logo thương hiệu ở trên không? Nếu có thì tên là gì?"
 
-- Nếu người dùng **trả lời có + tên** (ví dụ "CƯỜNG IT"): render kèm props:
+- Nếu người dùng **trả lời có + tên** (ví dụ "TRUNG HIẾU"): render kèm props:
   ```bash
-  npx remotion render <TopicName> "/Volumes/SSD_1TB/Video Remotion/<TopicName>.mp4" --props='{"channelName":"<TÊN KÊNH>"}'
+  npx remotion render <TopicName> "<outputDir>/<TopicName>.mp4" --props='{"channelName":"<TÊN KÊNH>"}'
   ```
 - Nếu người dùng **trả lời không / bỏ trống**: render KHÔNG kèm `--props` — brand header tự ẩn hoàn toàn (rỗng = ẩn, đã xử lý sẵn trong `BrandHeader` component và schema `channelName` mặc định `""`).
-- KHÔNG bao giờ tự ý gắn tên kênh mặc định ("CƯỜNG IT" hay bất kỳ tên nào) nếu người dùng không yêu cầu.
+- KHÔNG bao giờ tự ý gắn tên kênh mặc định nếu người dùng không yêu cầu.
 
 ## 📐 BẮT BUỘC: PHÂN TÍCH CHỦ ĐỀ & CHỌN ĐỘ DÀI TRƯỚC KHI LÀM (Bước 0)
 
@@ -57,7 +59,7 @@ Mỗi phương án phải kèm **outline tóm tắt các cảnh** (tên cảnh +
 - Với video >3 phút: cảnh báo người dùng thời gian render sẽ lâu (tuyến tính theo độ dài) và nên render khi không dùng máy.
 
 
-This skill guides you in creating high-quality, 50–60 second short-form explainer videos (TikTok / YouTube Shorts / Reels format: 1080x1920 @ 30fps) from any given topic.
+This skill guides you in creating high-quality vertical explainer videos (TikTok / YouTube Shorts / Reels format: 1080x1920 @ 30fps) of different lengths and across different subject areas.
 
 It combines:
 1. **Visual Best Practices** from `remotion-dev/skills` (frame-accurate springs, clamping interpolations, sequence composition, typography hierarchy).
@@ -206,7 +208,7 @@ const d2 = audioManifest.scenes[1].durationInFrames + 3;
 2. **Glassmorphism Cards**:
    - `backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-2xl`
 3. **Thương hiệu Kênh Phía Trên (Brand Header)**:
-   - Luôn hiển thị component thương hiệu `⚡ [CHANNEL_NAME]` ở phía trên ở giữa (`top: 150px`, `left: 50%` translate-x) đọc từ biến môi trường `CHANNEL_NAME` (mặc định: "CƯỜNG IT") để tránh bị thanh tìm kiếm và tab Đang theo dõi / Dành cho bạn của nền tảng (TikTok, Shorts, Reels) che khuất.
+   - Chỉ hiển thị component thương hiệu `⚡ [CHANNEL_NAME]` khi người dùng yêu cầu. Đặt ở phía trên chính giữa (`top: 150px`, `left: 50%` translate-x) để tránh vùng giao diện của TikTok, Shorts và Reels. Giá trị mặc định phải là chuỗi rỗng.
 4. **Typography Tối ưu cho Mobile (1080x1920)**:
    - Tiêu đề chính: 72px - 96px, in đậm font-black, gradient sắc nét.
    - Nội dung thẻ / trích dẫn: 40px - 50px font-extrabold.
@@ -250,7 +252,7 @@ Mỗi stage ghi file ra đĩa để sửa 1 câu chỉ chạy lại 1 stage: `sc
 
 ---
 
-## 4. Quy trình Tạo Video Từng Bước cho Antigravity
+## 4. Quy trình tạo video từng bước cho AI agent
 
 Khi nhận được yêu cầu: *"Tạo video giải thích về [Chủ đề X]"*:
 

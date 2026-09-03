@@ -1,88 +1,162 @@
-# 🎬 Tao Video Suite — Bộ skill tạo video ngắn tiếng Việt bằng AI
+# Tao Video Suite
 
-Bộ 2 skill + template Remotion để tự động sản xuất video giải thích dọc (TikTok/Shorts/Reels, 1080×1920 @30fps) từ ý tưởng → chủ đề → nghiên cứu → kịch bản → giọng đọc AI → render MP4.
+Bộ hai AI skill và một template Remotion để đi từ ý tưởng đến video dọc hoàn chỉnh: chọn chủ đề, nghiên cứu có nguồn, viết kịch bản, sinh giọng đọc, dựng visual và render MP4.
 
-## Kiến trúc
+Skill sản xuất hỗ trợ nhiều lĩnh vực và ba nhóm thời lượng: video ngắn 50–60 giây, video 90–120 giây và deep-dive 3–5 phút.
 
-```
-┌─────────────────────────┐        ┌──────────────────────────┐
-│  tao-chu-de-video       │  bàn   │  tao-video-remotion      │
-│  (NÃO — tìm chủ đề)     │ ─────► │  (TAY — sản xuất video)  │
-│  • hội thoại chọn niche │ giao   │  • Edge TTS tiếng Việt   │
-│  • WebSearch có nguồn   │        │  • 10 visual preset      │
-│  • chấm điểm viral      │        │  • montage ảnh tư liệu   │
-│  • memory theo kênh     │ ◄───── │  • render Remotion MP4   │
-└─────────────────────────┘  ghi   └──────────────────────────┘
-        channels/<kênh>/     memory
-```
+**Tác giả:** [Trung Hiếu](https://github.com/salamander97)
 
-- **`skills/tao-chu-de-video/`** — trợ lý chọn chủ đề & nội dung viral cho MỌI lĩnh vực (lịch sử, sức khỏe, tài chính, công nghệ, thể thao, ẩm thực...). Có memory theo kênh (`channels/`) để tạo series liền mạch, không lặp tập.
-- **`skills/tao-video-remotion/`** — bộ máy sản xuất: TTS (edge-tts), 10 visual preset (`cosmic-neon`, `archive-documentary`, `clinical-clarity`...), montage ảnh tư liệu tự tìm từ Wikimedia Commons, render MP4.
-- **`template/`** — project Remotion đầy đủ (đã có 4 video mẫu: Docker, Reverse Engineering, Thành cổ Quảng Trị 1972, Mã độc giả AI).
+## Bắt đầu nhanh
 
-## Cài đặt
-
-### Yêu cầu
-- Node.js ≥ 20, npm
-- (macOS) ffmpeg — `brew install ffmpeg` (dùng để nén video, không bắt buộc)
-
-### Cài nhanh (mọi agent hỗ trợ thư mục `~/.agents/skills`)
+Yêu cầu: Node.js 20 trở lên và npm.
 
 ```bash
-git clone https://github.com/<user>/tao-video-suite.git
-cd tao-video-suite
-./install.sh            # copy 2 skills vào ~/.agents/skills + trỏ template về bản trong repo
-cd template && npm install && cp .env.example .env
+git clone https://github.com/salamander97/tao-video-remotion.git
+cd tao-video-remotion
+node scripts/setup.mjs
+cd template
+npm install
 ```
 
-### Cài cho từng nền tảng
+Trình setup sẽ:
 
-| Nền tảng | Cách cài | Ghi chú |
-|---|---|---|
-| **ZCode** | `./install.sh` (mặc định vào `~/.agents/skills`) | Đã kiểm chứng đầy đủ |
-| **Claude Code** | `./install.sh claude` (thêm vào `~/.claude/skills`) | Format SKILL.md native |
-| **Codex CLI** | Không cần copy — mở repo và làm theo `AGENTS.md` ở root | Codex đọc AGENTS.md + có shell |
-| **Antigravity** | Mở repo trong Antigravity, agent đọc `AGENTS.md` | Có shell nên chạy đủ pipeline |
-| **ChatGPT app** | Chỉ dùng phần tư vấn: tạo Project mới, nộp `skills/tao-chu-de-video/SKILL.md` + `references/` vào Knowledge, dán `prompts/chatgpt-project.md` vào Instructions | App không chạy lệnh → không render được; dùng để tìm chủ đề/soạn package |
+1. Hỏi nền tảng cần cài skill.
+2. Tự nhận diện `template/`, nhưng cho phép chọn một template khác.
+3. Hỏi thư mục lưu video MP4.
+4. Tạo `.env` từ `.env.example` nếu chưa có.
+5. Lưu cấu hình riêng của máy tại `<home>/.tao-video-suite/config.json`.
 
-### Đổi đường dẫn template (nếu không dùng bản trong repo)
+Không có đường dẫn macOS hoặc Windows nào được ghi cứng vào skill. Nếu chuyển repository hay đổi ổ đĩa, chỉ cần chạy setup lại.
+
+Trên macOS/Linux có thể dùng lệnh rút gọn tương đương:
 
 ```bash
-./install.sh --set-template "/Volumes/SSD_1TB/Video Remotion/template"
+./install.sh
 ```
 
-## Sử dụng
+## Cài cho từng nền tảng
 
+Nhập nhiều nền tảng, phân cách bằng dấu phẩy:
+
+```bash
+node scripts/setup.mjs --targets agents,claude,gemini,codex
 ```
-Bạn: "tìm chủ đề làm video"            → tao-chu-de-video chạy vòng hỏi & gợi ý 5-7 nội dung
-Bạn: "tạo video về <chủ đề>"           → tao-video-remotion hỏi độ dài + branding rồi tự làm trọn gói
+
+| Giá trị  | Thư mục cài         | Phù hợp                                   |
+| -------- | ------------------- | ----------------------------------------- |
+| `agents` | `~/.agents/skills`  | Antigravity và agent dùng chuẩn `.agents` |
+| `claude` | `~/.claude/skills`  | Claude Code                               |
+| `gemini` | `~/.gemini/skills`  | Gemini CLI có hỗ trợ skill cục bộ         |
+| `codex`  | `~/.codex/skills`   | Codex CLI/Desktop                         |
+| `zcode`  | `~/.zcode/skills`   | ZCode                                     |
+| `all`    | Tất cả thư mục trên | Máy dùng nhiều agent                      |
+
+Ví dụ không cần hỏi tương tác:
+
+```bash
+node scripts/setup.mjs \
+  --targets claude,codex \
+  --template-dir ./template \
+  --output-dir ./output \
+  --non-interactive
 ```
 
-Quy ước quan trọng (đã ghi trong skill):
-- Luôn hỏi branding trước render (không tên = video sạch, không hiện gì)
-- Video lịch sử: ≥ 2 tư liệu/cảnh, giọng đọc +10~15%, kiểm tra ảnh bằng AI vision
-- Y tế/tài chính/lịch sử: mọi số liệu phải có nguồn uy tín, không bịa
-- Xong mỗi video: ghi vào `channels/<kênh>/episodes.json`
+Windows chạy cùng một script bằng PowerShell hoặc Command Prompt:
 
-## Cấu trúc repo
-
+```powershell
+node scripts/setup.mjs --targets claude,gemini --output-dir "D:\Videos\Tao Video"
 ```
+
+`install.sh` chỉ là lệnh tiện lợi cho macOS/Linux; Windows không cần Git Bash hay WSL.
+
+## Hai skill chính
+
+- `skills/tao-chu-de-video/`: tìm niche/chủ đề cho nhiều lĩnh vực, đánh giá khả năng viral, nghiên cứu facts có nguồn và lưu memory theo kênh.
+- `skills/tao-video-remotion/`: nhận chủ đề đã chọn, tư vấn độ dài và branding, tạo TTS, code Remotion, kiểm tra rồi render MP4.
+
+Ví dụ yêu cầu:
+
+```text
+Tìm chủ đề làm video lịch sử Việt Nam.
+Tạo video 90 giây về cách nhận biết cuộc gọi lừa đảo.
+Tạo video deep-dive về cơ chế hoạt động của HTTPS.
+```
+
+Hai bản skill cũ trong `template/.agents` và `template/.claude` đã được loại bỏ. `skills/` ở root là nguồn chuẩn duy nhất; setup sẽ sao chép từ đây sang đúng thư mục của từng nền tảng.
+
+## ChatGPT, Gemini và Claude
+
+- Codex, Claude Code, Gemini CLI và Antigravity có thể chạy pipeline local khi được cấp quyền đọc file và chạy lệnh.
+- ChatGPT, Gemini web và Claude web có thể dùng phần tư vấn/kịch bản, nhưng không tự render trên máy nếu không có môi trường thực thi local.
+- Với ChatGPT Project, đưa `skills/tao-chu-de-video/SKILL.md` cùng thư mục `references/` vào Knowledge và dùng `prompts/chatgpt-project.md` làm Instructions.
+
+## Cấu hình
+
+Cấu hình máy được lưu ngoài repository:
+
+```json
+{
+  "schemaVersion": 1,
+  "repoRoot": "/path/to/tao-video-suite",
+  "templateDir": "/path/to/tao-video-suite/template",
+  "outputDir": "/path/to/tao-video-suite/output",
+  "targets": ["agents"]
+}
+```
+
+Không commit file cấu hình này. Để đổi đường dẫn, chạy lại `node scripts/setup.mjs`; không sửa đường dẫn trong `SKILL.md`.
+
+Cấu hình giọng đọc nằm trong `template/.env`. Mặc định `CHANNEL_NAME` để trống; skill phải hỏi trước khi thêm branding vào video.
+
+## Quy trình sử dụng
+
+```text
+Ý tưởng
+  → tao-chu-de-video
+  → topic package có facts và nguồn
+  → tao-video-remotion
+  → script + visual plan + audio + composition
+  → MP4 trong outputDir
+```
+
+Các nguyên tắc quan trọng:
+
+- Không tự gắn tên kênh nếu người dùng chưa yêu cầu.
+- Không bịa facts hoặc số liệu, đặc biệt với lịch sử, y tế và tài chính.
+- Video lịch sử cần đủ mật độ tư liệu và phải kiểm tra đúng chủ đề/thời kỳ.
+- Kết thúc mỗi video thì cập nhật memory của kênh trong `skills/tao-chu-de-video/channels/`.
+
+## Cấu trúc repository
+
+```text
 tao-video-suite/
-├── AGENTS.md                 # hướng dẫn cho Codex/Antigravity
-├── install.sh                # cài skills + trỏ template
-├── prompts/chatgpt-project.md # instruction cho ChatGPT Projects (phần tư vấn)
+├── AGENTS.md
+├── install.sh
+├── scripts/
+│   └── setup.mjs
+├── prompts/
+│   └── chatgpt-project.md
 ├── skills/
-│   ├── tao-chu-de-video/     # SKILL.md + references/ + channels/ (memory)
-│   └── tao-video-remotion/   # SKILL.md + references/
-└── template/                 # Remotion project (npm install rồi dùng)
-    ├── scripts/              # generate-tts, fetch-images (Commons API)...
-    └── src/                  # 4 topic mẫu + styles/presets.ts (10 preset)
+│   ├── tao-chu-de-video/
+│   └── tao-video-remotion/
+└── template/
+    ├── scripts/
+    ├── src/
+    └── README.md
 ```
 
-## Ghi công & license
+## Kiểm tra template
 
-- Skills: của tác giả repo này (MIT).
-- Template Remotion gốc: dựa trên `remotion-cuongit-template`.
-- Ảnh tư liệu trong video: Wikimedia Commons theo license CC/PD — component hiển thị credit ngay trên khung; script `fetch-images.ts` chỉ tải ảnh có license rõ ràng.
-- Giọng đọc: Microsoft Edge TTS qua `edge-tts-universal`.
-- Remotion: lưu ý license của Remotion (miễn phí cho cá nhân/công ty nhỏ, đăng ký key tại remotion.pro để bỏ watermark).
+```bash
+cd template
+npm run lint
+npx remotion compositions
+```
+
+## License và ghi công
+
+- Tạo và duy trì bởi [Trung Hiếu](https://github.com/salamander97).
+- Repository phát hành theo giấy phép MIT.
+- Giọng đọc sử dụng `edge-tts-universal`.
+- Ảnh tư liệu cần tuân thủ giấy phép và ghi nguồn tương ứng.
+- Kiểm tra điều khoản Remotion phù hợp với mục đích sử dụng của bạn.

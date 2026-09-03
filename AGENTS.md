@@ -10,10 +10,11 @@ Repo này chứa 2 skill tạo video + 1 template Remotion. Agent (Codex/Antigra
 
 ## Môi trường
 
-- Template: `<repo>/template` (nếu người dùng đã cài ở chỗ khác, hỏi đường dẫn hoặc xem `install.sh --set-template`).
+- Đọc cấu hình máy tại `<home>/.tao-video-suite/config.json`. Nếu chưa có hoặc đường dẫn không hợp lệ, chạy `node scripts/setup.mjs` ở root repository.
+- Template mặc định: `<repo>/template`; có thể đổi trong lần setup đầu tiên mà không sửa `SKILL.md`.
 - Lệnh luôn chạy với cwd = thư mục template: `npx tsx scripts/...`, `npx remotion render ...`, `npm run lint`.
-- File MP4 xuất ra thư mục CHA của template theo quy ước skill (xem SKILL.md mục môi trường).
-- Copy .env từ .env.example nếu chưa có (cấu hình giọng TTS + tên kênh mặc định).
+- File MP4 xuất vào `outputDir` trong cấu hình máy.
+- Setup tự tạo `.env` từ `.env.example` nếu chưa có; không ghi đè cấu hình hiện tại.
 
 ## Quy tắc bất di bất dịch
 
