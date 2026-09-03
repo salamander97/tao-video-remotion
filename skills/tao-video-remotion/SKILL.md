@@ -10,8 +10,8 @@ description: >-
 
 ## ⚙️ MÔI TRƯỜNG LÀM VIỆC (BẮT BUỘC — ZCode)
 
-- Project template đã cài sẵn tại: `/Volumes/SSD_1TB/Video Remotion/template` (đã `npm install`, đã có `.env`). KHÔNG clone lại, làm việc trực tiếp trong thư mục này.
-- Mọi lệnh (`npm run tts`, `tsx`, `npx remotion ...`) đều chạy với cwd = `/Volumes/SSD_1TB/Video Remotion/template`.
+- Project template đã cài sẵn tại: `/Users/apple/Projects/tao-video-suite/template` (đã `npm install`, đã có `.env`). KHÔNG clone lại, làm việc trực tiếp trong thư mục này.
+- Mọi lệnh (`npm run tts`, `tsx`, `npx remotion ...`) đều chạy với cwd = `/Users/apple/Projects/tao-video-suite/template`.
 - File MP4 cuối cùng PHẢI render ra: `/Volumes/SSD_1TB/Video Remotion/<TênChủĐề>.mp4` (ví dụ: `npx remotion render <TopicName> "/Volumes/SSD_1TB/Video Remotion/<TopicName>.mp4"`).
 - Quy trình: nhận chủ đề → **phân tích & hỏi người dùng chọn độ dài kịch bản + branding** (xem 2 mục ❓/📐 bên dưới) → tự soạn kịch bản → tự sinh TTS → tự viết component → tự render → báo đường dẫn file video. Chỉ hỏi lại người dùng nếu chủ đề chưa rõ hoặc ở 2 bước hỏi bắt buộc.
 
