@@ -1,0 +1,27 @@
+// Auto-generated from public/images/QuangTri1972/images.json
+export interface ImageRecord { id: string; file: string; title: string; credit: string; license: string; }
+export const imageManifest: Record<string, ImageRecord> = {
+  "scene3_liberation": {"id":"scene3_liberation","file":"images/QuangTri1972/scene3_liberation.jpg","title":"29. - Quang Tri Citadel and City Fall 1967","credit":"Sciacchitano","license":"CC BY-SA 3.0"},
+  "scene5_siege": {"id":"scene5_siege","file":"images/QuangTri1972/scene5_siege.jpg","title":"ARVN soldier's ID and Republic of Viet Nam flag obtained by Liberation Army at Quang Tri 1972","credit":"Tran Minh Tuan","license":"CC BY 3.0"},
+  "scene8_thachhan": {"id":"scene8_thachhan","file":"images/QuangTri1972/scene8_thachhan.jpg","title":"Sông Thạch Hãn, Tết năm 2018 (12)","credit":"Phương Huy","license":"CC BY-SA 4.0"},
+  "scene11_meaning": {"id":"scene11_meaning","file":"images/QuangTri1972/scene11_meaning.jpg","title":"Vietnam peace agreement signing","credit":"Robert LeRoy Knudsen","license":"Public domain"},
+  "scene12_sacrifice": {"id":"scene12_sacrifice","file":"images/QuangTri1972/scene12_sacrifice.jpg","title":"Truong Son National Cemetery - panoramio","credit":"Gonzo Gooner","license":"CC BY 3.0"},
+  "scene1_hook": {"id":"scene1_hook","file":"images/QuangTri1972/scene1_hook.jpg","title":"Thanh co Quang Tri 40 nam su kien 81 ngay dem 1972","credit":"Cdvchelsea","license":"CC BY-SA 3.0"},
+  "scene2_context": {"id":"scene2_context","file":"images/QuangTri1972/scene2_context.png","title":"South Vietnam 1972-06 CIA","credit":"CIA, colorized by User:BorysMapping","license":"Public domain"},
+  "scene4_lamson72": {"id":"scene4_lamson72","file":"images/QuangTri1972/scene4_lamson72.jpg","title":"Douglas A-1H Skyraider of the 1st SOS takes off from Nakhon Phanom RTAFB, in 1972 (221110-F-IO108-039)","credit":"U.S. Air Force","license":"Public domain"},
+  "scene6_hellfire": {"id":"scene6_hellfire","file":"images/QuangTri1972/scene6_hellfire.jpg","title":"People's Army of Vietnam trail through an open bombed out area","credit":"SP4 Dennis J. Kurpius","license":"Public domain"},
+  "scene7_young": {"id":"scene7_young","file":"images/QuangTri1972/scene7_young.jpg","title":"Soldiers of Vietnam People's Army","credit":"DoD photo by Helene C. Stikkel. (Released)","license":"Public domain"},
+  "scene9_counterattack": {"id":"scene9_counterattack","file":"images/QuangTri1972/scene9_counterattack.jpg","title":"NARA photo 111-CCV-133-CC81770","credit":"NARA photo 111-CCV-133-CC81770 by SP5 Michael F. Laley","license":"Public domain"},
+  "scene13_legacy": {"id":"scene13_legacy","file":"images/QuangTri1972/scene13_legacy.jpg","title":"Thành cổ Quảng Trị (quang cảnh khu tưởng niệm), Tết năm 2018 (59)","credit":"Phương Huy","license":"CC BY-SA 4.0"},
+  "scene14_outro": {"id":"scene14_outro","file":"images/QuangTri1972/scene14_outro.jpg","title":"Thanh co Quang Tri 2012","credit":"Cdvchelsea","license":"CC BY-SA 3.0"},
+  "scene4_b": {"id":"scene4_b","file":"images/QuangTri1972/scene4_b.jpg","title":"B-52Ds before takeoff Andersen AFB Dec 1972","credit":"USAF","license":"Public domain"},
+  "scene9_b": {"id":"scene9_b","file":"images/QuangTri1972/scene9_b.jpg","title":"A DKB rocket launcher of the Vietnam People's Army","credit":"Bình Giang","license":"Public domain"},
+  "scene13_b": {"id":"scene13_b","file":"images/QuangTri1972/scene13_b.jpg","title":"Thành cổ Quảng Trị 4","credit":"Bùi Thụy Đào Nguyên","license":"CC BY-SA 3.0"},
+  "scene3_b": {"id":"scene3_b","file":"images/QuangTri1972/scene3_b.jpg","title":"North Vietnamese Army Officer Graduation Certificate February 22, 1962 to Phan-Van Hue 01","credit":"The government of the Democratic Republic of Viet-Nam (North Vietnam).","license":"Public domain"},
+  "scene6_b": {"id":"scene6_b","file":"images/QuangTri1972/scene6_b.jpg","title":"Bomb craters in Cambodia","credit":"Kimlong Meng","license":"CC BY-SA 4.0"},
+  "scene3_b_web": {"id":"scene3_b_web","file":"images/QuangTri1972/scene3_b_web.jpg","title":"Chiến sĩ ta với cờ trên xe tăng chiếm được (tư liệu)","credit":"Báo Nhân Dân","license":"Web (tham khảo)"},
+  "scene7_b_web": {"id":"scene7_b_web","file":"images/QuangTri1972/scene7_b_web.jpg","title":"Đại tướng Võ Nguyên Giáp cùng chiến sĩ bên pháo binh (tư liệu)","credit":"Báo Quân đội nhân dân","license":"Web (tham khảo)"},
+  "scene9_c_web": {"id":"scene9_c_web","file":"images/QuangTri1972/scene9_c_web.jpg","title":"Pháo thủ cao xạp của quân ta (tư liệu)","credit":"Quân Khu 7 Online","license":"Web (tham khảo)"},
+  "scene12_b_web": {"id":"scene12_b_web","file":"images/QuangTri1972/scene12_b_web.jpg","title":"Nghĩa trang Liệt sĩ Trường Sơn nhìn từ trên cao","credit":"Topquangbinh","license":"Web (tham khảo)"},
+  "scene11_b": {"id":"scene11_b","file":"images/QuangTri1972/scene11_b.jpg","title":"Le duc Tho and Henry Kissinger White House photo","credit":"Unknown authorUnknown author","license":"Public domain"},
+} as const;

@@ -1,0 +1,26 @@
+{
+  "slug": "lich-su-viet-nam",
+  "name": "Lịch Sử Việt Nam",
+  "domain": "history",
+  "visualStyle": "archive-documentary",
+  "tone": "trang trọng, kể chuyện cảm xúc, dồn dập",
+  "voice": {
+    "provider": "edge-tts",
+    "name": "vi-VN-NamMinhNeural",
+    "rate": "+15%"
+  },
+  "brand": {
+    "showHeader": true,
+    "channelName": "Lịch Sử Việt Nam",
+    "style": "hổ phách + sao vàng đỏ"
+  },
+  "activeSeries": [
+    {
+      "name": "Chiến trường 1972–1975",
+      "arc": ["Thành cổ Quảng Trị 1972 (done)", "Đường Trường Sơn", "Chiến dịch Hồ Chí Minh 1975", "Điện Biên Phủ 1954 (prequel)"],
+      "nextUp": "Đường Trường Sơn — mạch máu ra mặt trận"
+    }
+  ],
+  "niche": "Chiến trường Việt Nam 1954–1975 — ảnh tư liệu thật, kể chuyện con người",
+  "createdAt": "2026-09-03"
+}

@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+._*
+
+# Node
+node_modules/
+
+# Remotion outputs
+template/out/
+*.mp4
+
+# Private config
+template/.env
+
+# Generated media (chạy lại bằng scripts/generate-*.ts và fetch-images.ts)
+template/public/audio/*
+!template/public/audio/.gitkeep
+template/public/images/*
+!template/public/images/.gitkeep
+
+# Cache
+*.bak

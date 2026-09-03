@@ -1,0 +1,34 @@
+{
+  "slug": "that-hay-thoi",
+  "name": "Thật Hay Thôi?",
+  "domain": "health",
+  "visualStyle": "clinical-clarity",
+  "tone": "thân thiện, chắc tay, phản bác myth bằng bằng chứng chuẩn (CDC/NIH/NHS), twist cuối bất ngờ",
+  "voice": {
+    "provider": "edge-tts",
+    "name": "vi-VN-HoaiMyNeural",
+    "rate": "+15%"
+  },
+  "brand": {
+    "showHeader": true,
+    "channelName": "Thật Hay Thôi?",
+    "style": "teal clinical + card trích dẫn nguồn + stamp MYTH/FACT"
+  },
+  "activeSeries": [
+    {
+      "name": "Thật Hay Thôi? — Myth vs Fact sức khỏe",
+      "arc": [
+        "Nước đá & viêm họng — Mẹ đúng 50% (ep-001, done)",
+        "Cơm nguội qua đêm — thói quen hâm cơm (ep-002, scripted)",
+        "Đau dạ dày vì ăn chua? Thủ phạm thật ở trên mâm cơm (H. pylori) — 36/40",
+        "Điện thoại gây ung thư não? — IARC 2B bị hiểu sai",
+        "Chạy bộ mòn khớp gối? — meta lật ngược",
+        "Ngủ 5 tiếng — giấc ngủ của người thành đạt?",
+        "TPCN 'trị bách bệnh'?"
+      ],
+      "nextUp": "Cơm nguội qua đêm — thói quen hâm cơm của người Việt"
+    }
+  ],
+  "niche": "Myth vs Fact y tế — tin đồn sức khỏe người Việt hay tin nhất, phản bác bằng nguồn chuẩn CDC/NIH/NHS/Cochrane, mỗi tập 1 myth",
+  "createdAt": "2026-09-03"
+}

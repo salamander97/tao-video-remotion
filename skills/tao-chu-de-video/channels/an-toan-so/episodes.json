@@ -1,0 +1,48 @@
+{
+  "channel": "an-toan-so",
+  "episodes": [
+    {
+      "episodeId": "ep-001",
+      "topic": "Vì sao hacker lười sáng tạo — chỉ đổi tên mã độc thành AI",
+      "titles": [
+        "Hacker lười sáng tạo: đổi tên mã độc thành \"AI\" — 92.000 người dính",
+        "Vì sao mã độc 10 năm tuổi vẫn ăn tiền trong thời AI?",
+        "ChatGPT giả: chiêu cũ, áo mới — đừng là nạn nhân tiếp theo"
+      ],
+      "hook5s": "Mã độc 10 năm tuổi, chỉ đổi tên thành ChatGPT — 92.000 người tự nguyện cài.",
+      "contentClass": "B-tin nóng (fact từ Kaspersky) + A-hướng dẫn",
+      "keyFacts": [
+        {
+          "fact": "92.000+ vụ tấn công giả danh dịch vụ AI năm 2026 (Kaspersky, 1/1–5/2026)",
+          "source": "https://www.abs-cbn.com/news/technology/2026/5/28/fake-ai-apps-fuel-surge-in-malware-attacks-kaspersky-1536"
+        },
+        {
+          "fact": "15.000+ mẫu mã độc giả danh phần mềm 'agentic AI' từ đầu năm",
+          "source": "https://www.dawn.com/news/2005761"
+        },
+        {
+          "fact": "Phát tán qua store lạ, web phishing, quảng cáo mạng xã hội",
+          "source": "https://www.business-standard.com/technology/artificial-intelligence/fake-chatgpt-claude-gemini-apps-malware-attacks-126082400661_1.html"
+        },
+        {
+          "fact": "App iOS giả ChatGPT/Gemini đánh cắp tài khoản Facebook",
+          "source": "https://www.paubox.com/blog/fraudulent-chatgpt-and-gemini-ios-apps-used-in-phishing-campaign"
+        }
+      ],
+      "chosenLength": "50-60s",
+      "visualStyle": "cosmic-neon",
+      "outline": [
+        "Hook counter 92.000",
+        "Làn sóng AI + 15.000 mẫu giả",
+        "Cơ chế phát tán + case iOS",
+        "Chiêu mồi beta miễn phí",
+        "3 dấu hiệu nhận biết",
+        "Outro CTA + nguồn Kaspersky"
+      ],
+      "status": "done",
+      "renderedAt": "2026-09-03",
+      "mp4": "/Volumes/SSD_1TB/Video Remotion/AiMalwareShort.mp4"
+    }
+  ],
+  "lastUpdated": "2026-09-03"
+}

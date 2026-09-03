@@ -1,0 +1,23 @@
+{
+  "channel": "lich-su-viet-nam",
+  "episodes": [
+    {
+      "episodeId": "ep-001",
+      "topic": "Trận Thành cổ Quảng Trị 1972 — 81 ngày đêm",
+      "titles": ["81 NGÀY ĐÊM THÉP", "Thành cổ Quảng Trị 1972", "Mùa hè đỏ lửa"],
+      "hook5s": "Tám mươi mốt ngày đêm. Một tòa thành cổ ba trăm năm tuổi bị san phẳng, nhưng lá cờ vẫn tung bay.",
+      "keyFacts": [
+        {"fact": "81 ngày đêm giữ thành (28/6–16/9/1972)", "source": "tư liệu lịch sử chính thống"},
+        {"fact": "Quảng Trị giải phóng 1/5/1972 — tỉnh đầu tiên miền Nam được giải phóng", "source": "lịch sử chính thống"},
+        {"fact": "Hàng nghìn quả đạn pháo rơi xuống khu thành cổ < 2km² mỗi ngày", "source": "hồi ức/tư liệu"}
+      ],
+      "length": "3phut",
+      "materials": "23 ảnh tư liệu (Commons + Báo QĐND/Nhân Dân/Quân Khu 7/Topquangbinh) + bản đồ SVG + cờ SVG + dấu son + counter",
+      "mp4": "/Volumes/SSD_1TB/Video Remotion/QuangTri1972.mp4",
+      "renderedAt": "2026-09-03",
+      "status": "done",
+      "viewerNotes": "User yêu cầu: nhiều tư liệu hơn + nhịp nhanh (đã áp +15% giọng đọc, montage 2-3 ảnh/cảnh)"
+    }
+  ],
+  "lastUpdated": "2026-09-03"
+}

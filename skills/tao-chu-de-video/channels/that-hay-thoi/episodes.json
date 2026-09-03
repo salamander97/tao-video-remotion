@@ -1,0 +1,135 @@
+{
+  "channel": "that-hay-thoi",
+  "episodes": [
+    {
+      "episodeId": "ep-001",
+      "topic": "Uống nước đá bị viêm họng? — Mẹ đúng... 50%",
+      "titles": [
+        "Uống Nước Đá Bị Viêm Họng? Mẹ Đúng... 50%",
+        "Bác Sĩ Khuyên Gặm Đá Khi Đau Họng?!",
+        "Sự Thật Về Nước Đá & Viêm Họng Không Ai Nói"
+      ],
+      "hook5s": "Từ nhỏ mẹ đã dặn: uống nước đá bị viêm họng. Mẹ nói đúng... một nửa.",
+      "keyFacts": [
+        {
+          "fact": "85–95% viêm họng ở người trưởng thành do virus; vi khuẩn strep chỉ ~1/10 người lớn, 3/10 trẻ em",
+          "source": "CDC Sore Throat Basics (cdc.gov/sore-throat) + NIH/PMC acute sore throat review",
+          "crossCheck": "CDC + NIH, khớp"
+        },
+        {
+          "fact": "Viêm họng lây qua giọt bắn & tiếp xúc — bản thân nước đá không chứa virus, không tự gây viêm họng",
+          "source": "CDC",
+          "crossCheck": "CDC + NHS, khớp"
+        },
+        {
+          "fact": "Nghiên cứu Cardiff 2005: 13/90 người ngâm chân nước 10°C trong 20 phút xuất hiện triệu chứng cảm trong 4–5 ngày, so với 5/90 nhóm đối chứng. Cơ chế: lạnh chân → mạch máu mũi co lại → miễn dịch niêm mạc giảm → virus vốn ẩn sẵn bùng phát",
+          "source": "Johnson & Eccles, Family Practice (Oxford Academic), PMID 16286463, năm 2005",
+          "crossCheck": "Oxford Academic + PubMed + CNN coverage, khớp. Lưu ý: lạnh toàn thân/chân, không phải uống nước đá; kết cục là triệu chứng cảm lạnh"
+        },
+        {
+          "fact": "Khi ĐANG đau họng: CDC khuyên gặm đá viên/popsicles/lozenge để làm tê giảm đau; NHS Scotland khuyên 'ice cubes, ice lollies', NHS Anh khuyên 'eat cool or soft foods'",
+          "source": "CDC + NHS Inform Scotland (nhsinform.scot) + NIH News in Health (3/2013)",
+          "crossCheck": "3 nguồn độc lập, khớp"
+        },
+        {
+          "fact": "An toàn: không cho lozenge/đá cục to cho trẻ dưới 4 tuổi (nguy cơ sặc)",
+          "source": "CDC",
+          "crossCheck": "CDC + NHS Inform, khớp"
+        }
+      ],
+      "outline": [
+        {"scene": 1, "beat": "Hook", "content": "Từ nhỏ mẹ đã dặn: uống nước đá bị viêm họng. Mẹ nói đúng... một nửa.", "visual": "Ly nước đá full-bleed đổ đầy, counter '50%' đập mạnh"},
+        {"scene": 2, "beat": "Myth setup", "content": "Cả nước Việt lớn lên với quan niệm: đồ lạnh = độc, đồ nóng = lành.", "visual": "3 card trà đá/kem/nước mát + stamp CẤM"},
+        {"scene": 3, "beat": "Fact 1", "content": "85–95% viêm họng người trưởng thành do virus, lây qua giọt bắn.", "visual": "Donut chart 85–95% + icon giọt bắn"},
+        {"scene": 4, "beat": "Kích ứng ≠ nhiễm trùng", "content": "Uống đá xong họng ê ẩm = kích ứng tạm thời, tự hết.", "visual": "2 card so sánh + dấu ≠"},
+        {"scene": 5, "beat": "Phần mẹ ĐÚNG", "content": "Cardiff 2005: 13/90 vs 5/90 sau khi ngâm chân nước lạnh.", "visual": "Bar chart 2 cột + card nghiên cứu"},
+        {"scene": 6, "beat": "Cơ chế chi tiết", "content": "4 bước: chân lạnh → co mạch mũi → miễn dịch niêm mạc giảm → virus bùng.", "visual": "Animation 4 bước"},
+        {"scene": 7, "beat": "Twist", "content": "Đang đau họng thì CDC/NHS khuyên gặm đá viên, kem lạnh giảm đau.", "visual": "Card CDC + popsicle + stamp FACT"},
+        {"scene": 8, "beat": "Verdict + an toàn", "content": "Nước đá không GÂY viêm họng; lạnh cơ thể có thể MỞ CỬA. Trẻ <4 tuổi không cho đá cục.", "visual": "Bảng verdict + warning"},
+        {"scene": 9, "beat": "Outro series", "content": "Teaser tập cà phê + CTA follow.", "visual": "Logo + teaser"},
+        {"scene": 10, "beat": "Disclaimer", "content": "Tham khảo y khoa, không thay thế bác sĩ.", "visual": "Card disclaimer + nguồn"}
+      ],
+      "length": "TRUNG BÌNH 90–120s (10 cảnh)",
+      "chosenLength": "TRUNG BINH",
+      "contentClass": "A-kiến thức chính xác",
+      "imageKeywords": ["ly nước đá close-up sweating", "trà đá Việt Nam", "popsicle kem lạnh", "bác sĩ kiểm tra họng bệnh nhân", "virus phóng đại 3D", "phòng thí nghiệm nghiên cứu"],
+      "visualStyle": "clinical-clarity",
+      "channelName": "Thật Hay Thôi?",
+      "voice": "vi-VN-HoaiMyNeural (+15%)",
+      "status": "done",
+      "mp4": "/Volumes/SSD_1TB/Video Remotion/NuocDaViemHong.mp4",
+      "renderedAt": "2026-09-03",
+      "durationSec": 98,
+      "materials": "100% SVG/diagram tự vẽ (clinical-clarity) — donut chart, bar chart Cardiff, cơ chế 4 bước, popsicle, verdict board; không dùng ảnh ngoài",
+      "createdAt": "2026-09-03"
+    },
+    {
+      "episodeId": "ep-002",
+      "topic": "Cơm nguội để qua đêm — thói quen hâm cơm của người Việt",
+      "titles": [
+        "Thói quen hâm cơm của người Việt — đang âm thầm đầu độc",
+        "Cơm nguội để qua đêm — Lần này mẹ đúng 90%",
+        "Hâm lại cơm thừa: bạn đang làm đúng hay đang nguy hiểm?"
+      ],
+      "hook5s": "Tối nay cơm thừa, sáng mai hâm lại ăn. Thói quen của cả nước Việt — và nó đang âm thầm đầu độc bạn.",
+      "keyFacts": [
+        {
+          "fact": "Bào tử Bacillus cereus có sẵn trong gạo, sống sót qua nấu bình thường — diệt bào tử cần 121°C ≥5 phút, trong khi lõi cơm khi chín chỉ đạt 80–90°C",
+          "source": "Rodrigo 2021, PMC7913059 + UF IFAS FS269 + Oxford Academic fqsafe/fyad023 (2023)",
+          "crossCheck": "3 nguồn, khớp"
+        },
+        {
+          "fact": "Độc tố gây nôn cereulide chịu nhiệt 126°C trong >90 phút — hâm/nấu lại KHÔNG phá được; độc tố gây tiêu chảy kém bền nhiệt hơn",
+          "source": "HK Centre for Food Safety FS192 + Leong 2023 (ScienceDirect review fried rice syndrome)",
+          "crossCheck": "2 nguồn, khớp"
+        },
+        {
+          "fact": "Case Brussels 2008: nam sinh viên 20 tuổi ăn mì Ý để 5 ngày ở nhiệt độ phòng (hâm sơ qua), nôn dữ dội và tử vong ~10 giờ sau vì suy gan (hoại tử gan trung tâm tiểu thùy) + viêm tuỵ cấp; mẫu thức ăn chứa B. cereus thể nôn với cereulide cao",
+          "source": "Naranjo M. et al. 2011, Journal of Medical Case Reports, PMC3232990",
+          "crossCheck": "Case report gốc + trích dẫn rộng rãi, khớp"
+        },
+        {
+          "fact": "USDA: đồ chín để nhiệt độ phòng >2 giờ thì bỏ; trời >32°C chỉ 1 giờ. NHS/BBC Good Food: làm nguội cơm nhanh (~1 giờ) rồi mới tủ lạnh; NHS khuyên ăn trong 24 giờ và hâm ĐÚNG 1 lần tới ≥75°C (so sánh: USDA nới 3–4 ngày — video ghi 'theo NHS')",
+          "source": "USDA FSIS Leftovers and Food Safety + NHS/BBC Good Food + Tuổi Trẻ PLO (75°C)",
+          "crossCheck": "USDA + NHS, có chênh lệch ghi rõ từng nguồn"
+        },
+        {
+          "fact": "Twist: RCT crossover 2015 — cơm trắng nấu chín rồi làm nguội tạo resistant starch (retrogradation), giảm đáng kể đáp ứng đường huyết (125±50.1 vs 152±48.3 mmol·min/L, p<0.05); hiệu ứng sống sót qua hâm lại; Nature Nutrients 2022 xác nhận trên bệnh nhân đái tháo đường type 1",
+          "source": "Sonia et al. 2015, PubMed 26693746 + Strozyk 2022, Nature Nutrients s41387-022-00196-1",
+          "crossCheck": "2 nghiên cứu lâm sàng độc lập, khớp"
+        },
+        {
+          "fact": "VN có ca suýt mất mạng vì thói quen ăn thực phẩm để qua đêm (báo chí ghi nhận); nhóm nguy cơ cần thận trọng hơn: trẻ em, người già, phụ nữ mang thai",
+          "source": "VnExpress Ngôi Sao + Thanh Niên + Long Châu (nhóm đối tượng)",
+          "crossCheck": "Báo chính thống VN, khớp"
+        }
+      ],
+      "outline": [
+        {"scene": 1, "beat": "Hook", "content": "Tối nay cơm thừa, sáng mai hâm lại ăn. Thói quen của cả nước Việt — và nó đang âm thầm đầu độc bạn.", "visual": "Nồi cơm điện + khói + counter tối→sáng"},
+        {"scene": 2, "beat": "Myth setup", "content": "Cơm chiên sáng, nồi cơm ăn 2 bữa, cơm hộp văn phòng để bàn từ sáng tới trưa — ai cũng từng.", "visual": "3 card icon thói quen"},
+        {"scene": 3, "beat": "Thủ phạm", "content": "Bacillus cereus: bào tử có sẵn trong gạo, nấu sôi không chết — cần 121°C 5 phút, lõi cơm chỉ 80–90°C.", "visual": "Hạt gạo → bào tử SVG + so sánh nhiệt"},
+        {"scene": 4, "beat": "Vùng nguy hiểm", "content": "5–60°C là sandbox của vi khuẩn; cơm nguội dần lướt qua vùng này; USDA: >2 giờ nhiệt độ phòng là bỏ, >32°C chỉ 1 giờ.", "visual": "Thước nhiệt độ gradient + marker"},
+        {"scene": 5, "beat": "2 loại độc tố", "content": "Nôn (cereulide — chịu 126°C 90 phút, hâm vô nghĩa) vs tiêu chảy (kém bền nhiệt, hâm kỹ giảm).", "visual": "2 card đối chiếu + icon nhiệt"},
+        {"scene": 6, "beat": "Case quốc tế", "content": "Brussels 2008: sinh viên 20 tuổi, mì để 5 ngày, hâm sơ, nôn dữ dội — 10 giờ sau tử vong vì suy gan.", "visual": "Timeline kể chuyện 5 mốc"},
+        {"scene": 7, "beat": "VN cũng có", "content": "Ca suýt mất mạng vì thực phẩm để qua đêm (VnExpress); ngộ độc thường bị coi 'đau bụng thường' → xem nhẹ.", "visual": "Card báo chí + icon cảnh báo"},
+        {"scene": 8, "beat": "Chuyển", "content": "Vậy phải vứt hết cơm thừa? Không. Chìa khoá nằm ở chữ NHIỆT ĐỘ — không phải chữ QUA ĐÊM.", "visual": "Câu hỏi lớn split screen"},
+        {"scene": 9, "beat": "Quy trình chuẩn", "content": "Xới tơi, chia hộp mỏng → làm nguội nhanh ~1 giờ → tủ lạnh ≤24h (NHS) → hâm đúng 1 lần ≥75°C.", "visual": "Sơ đồ 4 bước mũi tên"},
+        {"scene": 10, "beat": "Chỉ hâm 1 lần", "content": "Mỗi chu trình nguội–ấm là thêm một vòng vi khuẩn sinh độc tố; độc tố đã có thì hâm bao nhiêu lần cũng vô nghĩa.", "visual": "Vòng lặp animate +(counter lần hâm)"},
+        {"scene": 11, "beat": "Twist resistant starch", "content": "RCT 2015: cơm nguội đúng cách tạo resistant starch — giảm đỉnh đường huyết rõ rệt, hiệu ứng sống sót qua hâm lại. Cơm nguội đúng cách còn TỐT hơn.", "visual": "Line chart glucose 2 đường"},
+        {"scene": 12, "beat": "Verdict 90%", "content": "Mẹ đúng 90%: cơm nhiệt độ phòng qua đêm là nguy hiểm thật. 10% còn lại: tủ lạnh đúng cách thì cơm qua đêm an toàn — và có lợi.", "visual": "Bảng verdict + đồng hồ 90%"},
+        {"scene": 13, "beat": "Nhóm nguy cơ + recap", "content": "Trẻ em, người già, phụ nữ mang thai cẩn trọng. Recap sơ đồ 4 bước.", "visual": "Warning card + sơ đồ mini"},
+        {"scene": 14, "beat": "Outro + disclaimer", "content": "Teaser tập 3: 'Đau dạ dày vì ăn chua? Thủ phạm thật ở trên mâm cơm' + disclaimer + nguồn.", "visual": "Logo + teaser mâm cơm + nguồn"}
+      ],
+      "length": "DÀI 3–4 phút (14 cảnh, mục tiêu ~3.2 phút)",
+      "chosenLength": "DAI",
+      "contentClass": "A-kiến thức chính xác",
+      "imageKeywords": ["nồi cơm điện", "cơm hộp văn phòng", "hạt gạo close-up", "bào tử vi khuẩn 3D", "tủ lạnh", "mâm cơm gia đình Việt"],
+      "visualStyle": "clinical-clarity",
+      "channelName": "Thật Hay Thôi?",
+      "voice": "vi-VN-HoaiMyNeural (+15%)",
+      "status": "scripted",
+      "createdAt": "2026-09-03"
+    }
+  ],
+  "lastUpdated": "2026-09-03"
+}

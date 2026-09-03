@@ -1,0 +1,25 @@
+{
+  "slug": "an-toan-so",
+  "name": "An Toàn Số",
+  "domain": "science",
+  "visualStyle": "cosmic-neon",
+  "tone": "cảnh báo, dồn dập, hiện đại",
+  "voice": {
+    "provider": "edge-tts",
+    "name": "vi-VN-NamMinhNeural",
+    "rate": "+10%"
+  },
+  "brand": {
+    "showHeader": "hỏi user mỗi lần render",
+    "channelName": "An Toàn Số (đề xuất)"
+  },
+  "activeSeries": [
+    {
+      "name": "Bẫy số — an toàn trong thời AI",
+      "arc": ["92.000 tấn công giả ChatGPT (in production)", "5 dấu hiệu app AI giả", "Deepfake gọi điện xin tiền", "Mã độc trong file QR"],
+      "nextUp": "5 dấu hiệu nhận app AI giả"
+    }
+  ],
+  "niche": "An toàn số/bảo mật gắn với AI — tin nóng + hướng dẫn thực chiến",
+  "createdAt": "2026-09-03"
+}
