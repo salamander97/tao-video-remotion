@@ -43,7 +43,7 @@ The template no longer contains stale copies under `.agents/` or `.claude/`. Run
 Example:
 
 ```bash
-node ../scripts/setup.mjs --targets agents,claude,codex
+node ../scripts/setup.mjs --targets antigravity,claude,codex
 ```
 
 Then use a natural-language request such as:

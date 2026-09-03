@@ -16,6 +16,7 @@ const DEFAULT_OUTPUT_DIR = path.join(REPO_ROOT, "output");
 const CONFIG_FILE = path.join(os.homedir(), ".tao-video-suite", "config.json");
 const SKILL_NAMES = ["tao-chu-de-video", "tao-video-remotion"];
 const TARGETS = {
+  antigravity: path.join(os.homedir(), ".gemini", "config", "skills"),
   agents: path.join(os.homedir(), ".agents", "skills"),
   claude: path.join(os.homedir(), ".claude", "skills"),
   codex: path.join(os.homedir(), ".codex", "skills"),
@@ -28,10 +29,10 @@ function printHelp() {
 
 Usage:
   node scripts/setup.mjs
-  node scripts/setup.mjs --targets agents,claude --output-dir ./output
+  node scripts/setup.mjs --targets antigravity,claude --output-dir ./output
 
 Options:
-  --targets LIST       agents, claude, codex, gemini, zcode hoặc all
+  --targets LIST       antigravity, agents, claude, codex, gemini, zcode hoặc all
   --template-dir DIR   Thư mục Remotion template
   --output-dir DIR     Thư mục lưu MP4
   --non-interactive    Dùng giá trị mặc định, không hỏi
@@ -158,12 +159,12 @@ async function main() {
   try {
     const defaultTargets = Array.isArray(current.targets)
       ? current.targets.join(",")
-      : "agents";
+      : "antigravity";
     const targetsInput =
       options.targets ||
       (prompt
         ? await prompt.question(
-            `Cài skill cho nền tảng nào? agents/claude/codex/gemini/zcode/all [${defaultTargets}]: `,
+            `Cài skill cho nền tảng nào? antigravity/agents/claude/codex/gemini/zcode/all [${defaultTargets}]: `,
           )
         : defaultTargets);
     const targets = parseTargets(targetsInput || defaultTargets);

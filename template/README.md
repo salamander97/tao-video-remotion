@@ -43,7 +43,7 @@ Template không còn giữ các bản sao cũ trong `.agents/` hoặc `.claude/`
 Ví dụ:
 
 ```bash
-node ../scripts/setup.mjs --targets agents,claude,codex
+node ../scripts/setup.mjs --targets antigravity,claude,codex
 ```
 
 Sau đó có thể yêu cầu bằng ngôn ngữ tự nhiên:

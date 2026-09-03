@@ -39,17 +39,18 @@ Trên macOS/Linux có thể dùng lệnh rút gọn tương đương:
 Nhập nhiều nền tảng, phân cách bằng dấu phẩy:
 
 ```bash
-node scripts/setup.mjs --targets agents,claude,gemini,codex
+node scripts/setup.mjs --targets antigravity,claude,codex
 ```
 
-| Giá trị  | Thư mục cài         | Phù hợp                                   |
-| -------- | ------------------- | ----------------------------------------- |
-| `agents` | `~/.agents/skills`  | Antigravity và agent dùng chuẩn `.agents` |
-| `claude` | `~/.claude/skills`  | Claude Code                               |
-| `gemini` | `~/.gemini/skills`  | Gemini CLI có hỗ trợ skill cục bộ         |
-| `codex`  | `~/.codex/skills`   | Codex CLI/Desktop                         |
-| `zcode`  | `~/.zcode/skills`   | ZCode                                     |
-| `all`    | Tất cả thư mục trên | Máy dùng nhiều agent                      |
+| Giá trị       | Thư mục cài               | Phù hợp                                       |
+| ------------- | ------------------------- | --------------------------------------------- |
+| `antigravity` | `~/.gemini/config/skills` | Antigravity IDE/CLI trên toàn máy             |
+| `agents`      | `~/.agents/skills`        | Agent khác dùng thư mục skill chung `.agents` |
+| `claude`      | `~/.claude/skills`        | Claude Code                                   |
+| `gemini`      | `~/.gemini/skills`        | Gemini CLI có hỗ trợ skill cục bộ             |
+| `codex`       | `~/.codex/skills`         | Codex CLI/Desktop                             |
+| `zcode`       | `~/.zcode/skills`         | ZCode                                         |
+| `all`         | Tất cả thư mục trên       | Máy dùng nhiều agent                          |
 
 Ví dụ không cần hỏi tương tác:
 
@@ -100,7 +101,7 @@ Cấu hình máy được lưu ngoài repository:
   "repoRoot": "/path/to/tao-video-suite",
   "templateDir": "/path/to/tao-video-suite/template",
   "outputDir": "/path/to/tao-video-suite/output",
-  "targets": ["agents"]
+  "targets": ["antigravity"]
 }
 ```
 
