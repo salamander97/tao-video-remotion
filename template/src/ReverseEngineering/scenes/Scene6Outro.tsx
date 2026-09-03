@@ -70,7 +70,6 @@ export const Scene6Outro: React.FC = () => {
       <SubtitleBox
         text="Nhớ thả tim và follow kênh để đón xem video tiếp theo nhé!"
         durationInFrames={200}
-        className="mt-40"
       />
     </AbsoluteFill>
   );

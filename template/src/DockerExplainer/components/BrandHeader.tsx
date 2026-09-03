@@ -34,12 +34,12 @@ export const BrandHeader: React.FC<BrandHeaderProps> = ({ channelName }) => {
         transform: `translateX(-50%) scale(${scale})`,
         opacity,
       }}
-      className="z-50 flex items-center gap-3.5 rounded-full border-2 border-sky-400/40 bg-slate-950/90 px-8 py-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.7)] backdrop-blur-xl"
+      className="z-50 flex max-w-[420px] items-center gap-2.5 rounded-full border border-sky-300/30 bg-slate-950/82 px-6 py-2.5 shadow-[0_8px_22px_rgba(0,0,0,0.45)] backdrop-blur-lg"
     >
-      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-tr from-sky-400 to-blue-600 font-black text-white text-lg shadow-[0_0_15px_rgba(56,189,248,0.6)]">
+      <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-sky-400 to-blue-600 text-sm font-black text-white">
         ⚡
       </div>
-      <span className="text-3xl font-black tracking-widest bg-gradient-to-r from-sky-300 via-white to-blue-300 bg-clip-text text-transparent">
+      <span className="truncate text-[26px] font-black tracking-wider bg-gradient-to-r from-sky-300 via-white to-blue-300 bg-clip-text text-transparent">
         {channelName}
       </span>
     </div>

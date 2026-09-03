@@ -102,7 +102,6 @@ export const Scene10Flag: React.FC = () => {
         text="Chiều mười sáu tháng Chín năm 1972, lá cờ quyết chiến quyết thắng lại tung bay trên nóc thành cổ. Tám mươi mốt ngày đêm thép khép lại trong vinh quang, làm rạng rỡ lịch sử dân tộc."
         durationInFrames={durationInFrames - 40}
         highlightKeyword="cờ"
-        className="mt-10"
       />
     </AbsoluteFill>
   );

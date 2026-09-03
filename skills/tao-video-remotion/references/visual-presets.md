@@ -35,20 +35,34 @@ export const motion = {
 } as const;
 ```
 
-Số trên là frame ở 30fps. Mọi `interpolate()` cần clamp hai đầu. Với video dọc, giữ focal content chủ yếu trong vùng xấp xỉ `y=250..1500`; caption nên có cấu hình riêng để không đè nội dung và UI nền tảng.
+Số trên là frame ở 30fps. Mọi `interpolate()` cần clamp hai đầu. Dùng visual full-stage theo `scene-design.md`: primary visual thường hoạt động trong `y≈180..1580`, còn brand và caption là overlay độc lập.
 
 ## Caption token gợi ý
 
 ```ts
 export const caption = {
-  fontSize: 58,
-  lineHeight: 1.08,
+  fontSize: 48,
+  lineHeight: 1.12,
   maxLines: 2,
   maxCharsPerLine: 24,
-  horizontalPadding: 56,
+  horizontalPadding: 32,
+  maxWidth: 900,
+  bottom: 290,
   bottomSafeZone: 260,
   pageDurationMs: [700, 1300],
 };
 ```
 
 Không ép caption luôn một dòng nếu làm chữ quá nhỏ. Với tiếng Việt, hai dòng ngắn thường đọc tốt hơn một dòng 5–7 từ bị co hoặc tràn ngang.
+
+## Chất liệu và độ phủ visual
+
+- Chọn primary visual theo intent, không theo component nào dễ viết nhất. Ảnh/footage cho bối cảnh đời thực; SVG/3D cho cơ chế; chart/map cho dữ liệu; UI demo cho sản phẩm/phần mềm.
+- Primary visual thường rộng 880–1000px hoặc full-bleed. Card nhỏ, badge, emoji, caption, glow và particle không được tính là visual chính.
+- Không dùng emoji làm fallback khi thiếu asset. Dựng diagram đúng ngữ nghĩa hoặc dừng để bổ sung asset.
+- Không quá hai scene liên tiếp dùng cùng một ngôn ngữ hình ảnh. Đặc biệt tránh chuỗi card kính dù đổi màu.
+- Với Clinical Clarity: ưu tiên lab/doctor/medicine media, anatomical hoặc mechanism SVG, waveform và evidence chart; tránh emoji làm tế bào/cơ quan và stock image sai ngữ cảnh.
+- Với công nghệ/an ninh mạng: ưu tiên UI/terminal crop, network graph, data flow, device/browser mockup và code transformation; icon chỉ làm nhãn.
+- Với disclaimer/credit: dùng overlay ngắn trên visual liên quan, không dành một scene dài cho card đứng yên.
+
+Quy tắc visual beat, asset gate và contact-sheet QA nằm trong `scene-design.md`.

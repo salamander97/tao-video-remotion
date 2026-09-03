@@ -81,7 +81,6 @@ export const Scene2Problem: React.FC = () => {
         text="Khi tải một file app hay exe về, bạn chỉ thấy mã máy 0 và 1 hoàn toàn khó hiểu."
         durationInFrames={261}
         highlightKeyword="mã máy"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

@@ -17,6 +17,7 @@ const CONFIG_FILE = path.join(os.homedir(), ".tao-video-suite", "config.json");
 const SKILL_NAMES = ["tao-chu-de-video", "tao-video-remotion"];
 const TARGETS = {
   antigravity: path.join(os.homedir(), ".gemini", "config", "skills"),
+  chatgpt: path.join(os.homedir(), ".agents", "skills"),
   agents: path.join(os.homedir(), ".agents", "skills"),
   claude: path.join(os.homedir(), ".claude", "skills"),
   codex: path.join(os.homedir(), ".codex", "skills"),
@@ -32,7 +33,7 @@ Usage:
   node scripts/setup.mjs --targets antigravity,claude --output-dir ./output
 
 Options:
-  --targets LIST       antigravity, agents, claude, codex, gemini, zcode hoặc all
+  --targets LIST       antigravity, chatgpt, agents, claude, codex, gemini, zcode hoặc all
   --template-dir DIR   Thư mục Remotion template
   --output-dir DIR     Thư mục lưu MP4
   --non-interactive    Dùng giá trị mặc định, không hỏi

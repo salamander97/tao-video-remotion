@@ -41,6 +41,7 @@ export const Scene1Hook: React.FC = () => {
     config: { damping: 10, stiffness: 80 },
   });
   const floatOffset = Math.sin(frame / 12) * 15;
+  const statusPulse = 0.55 + Math.abs(Math.sin(frame / 10)) * 0.45;
 
   return (
     <AbsoluteFill className="flex flex-col items-center justify-center px-10 text-white">
@@ -53,7 +54,10 @@ export const Scene1Hook: React.FC = () => {
         }}
         className="flex items-center gap-3 rounded-full border border-sky-400/40 bg-sky-500/10 px-8 py-3.5 backdrop-blur-md"
       >
-        <span className="h-4 w-4 animate-ping rounded-full bg-sky-400" />
+        <span
+          className="h-4 w-4 rounded-full bg-sky-400"
+          style={{ opacity: statusPulse, transform: `scale(${0.8 + statusPulse * 0.3})` }}
+        />
         <span className="text-3xl font-black tracking-widest text-sky-300 uppercase">
           DEVOPS &amp; BACKEND EXPLAINER
         </span>
@@ -66,10 +70,10 @@ export const Scene1Hook: React.FC = () => {
           style={{
             transform: `scale(${whaleScale}) translateY(${floatOffset}px)`,
           }}
-          className="relative flex h-52 w-52 items-center justify-center rounded-3xl border-2 border-sky-400/40 bg-gradient-to-br from-sky-500/25 via-blue-600/15 to-transparent p-6 shadow-[0_0_90px_rgba(56,189,248,0.45)] backdrop-blur-xl"
+          className="relative flex h-[430px] w-[880px] items-center justify-center overflow-hidden rounded-[3rem] border-2 border-sky-400/40 bg-gradient-to-br from-sky-500/25 via-blue-600/15 to-transparent p-8 shadow-[0_0_110px_rgba(56,189,248,0.38)] backdrop-blur-xl"
         >
           {/* Custom SVG Docker Whale/Container Icon */}
-          <svg viewBox="0 0 100 100" className="h-36 w-36 drop-shadow-lg" fill="none">
+          <svg viewBox="0 0 100 100" className="h-[340px] w-[680px] drop-shadow-lg" fill="none">
             <rect x="22" y="24" width="14" height="12" rx="2" fill="#38BDF8" />
             <rect x="39" y="24" width="14" height="12" rx="2" fill="#38BDF8" />
             <rect x="56" y="24" width="14" height="12" rx="2" fill="#38BDF8" />
@@ -118,7 +122,6 @@ export const Scene1Hook: React.FC = () => {
         text="Bạn có biết Docker thực chất là gì và tại sao mọi lập trình viên đều bắt buộc phải biết nó không?"
         durationInFrames={165}
         highlightKeyword="Docker"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

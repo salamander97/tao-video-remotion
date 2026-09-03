@@ -39,12 +39,13 @@ Trên macOS/Linux có thể dùng lệnh rút gọn tương đương:
 Nhập nhiều nền tảng, phân cách bằng dấu phẩy:
 
 ```bash
-node scripts/setup.mjs --targets antigravity,claude,codex
+node scripts/setup.mjs --targets chatgpt,claude,codex,gemini,zcode
 ```
 
 | Giá trị       | Thư mục cài               | Phù hợp                                       |
 | ------------- | ------------------------- | --------------------------------------------- |
 | `antigravity` | `~/.gemini/config/skills` | Antigravity IDE/CLI trên toàn máy             |
+| `chatgpt`     | `~/.agents/skills`        | ChatGPT/Codex local có hỗ trợ Agent Skills    |
 | `agents`      | `~/.agents/skills`        | Agent khác dùng thư mục skill chung `.agents` |
 | `claude`      | `~/.claude/skills`        | Claude Code                                   |
 | `gemini`      | `~/.gemini/skills`        | Gemini CLI có hỗ trợ skill cục bộ             |
@@ -87,9 +88,10 @@ Hai bản skill cũ trong `template/.agents` và `template/.claude` đã đượ
 
 ## ChatGPT, Gemini và Claude
 
-- Codex, Claude Code, Gemini CLI và Antigravity có thể chạy pipeline local khi được cấp quyền đọc file và chạy lệnh.
-- ChatGPT, Gemini web và Claude web có thể dùng phần tư vấn/kịch bản, nhưng không tự render trên máy nếu không có môi trường thực thi local.
-- Với ChatGPT Project, đưa `skills/tao-chu-de-video/SKILL.md` cùng thư mục `references/` vào Knowledge và dùng `prompts/chatgpt-project.md` làm Instructions.
+- Codex, Claude Code, Gemini CLI, ZCode và Antigravity có thể chạy pipeline local khi được cấp quyền đọc file và chạy lệnh.
+- Target `chatgpt` cài bản local theo chuẩn Agent Skills vào `~/.agents/skills`. ChatGPT web/mobile không tự đồng bộ từ thư mục máy; hãy upload thư mục skill trong giao diện Skills nếu tài khoản hỗ trợ.
+- ChatGPT, Gemini web và Claude web chỉ tự render khi phiên làm việc có môi trường thực thi local phù hợp.
+- Với ChatGPT Project không có Skills, đưa `skills/tao-chu-de-video/SKILL.md` cùng thư mục `references/` vào Knowledge và dùng `prompts/chatgpt-project.md` làm Instructions.
 
 ## Cấu hình
 
@@ -124,6 +126,9 @@ Các nguyên tắc quan trọng:
 
 - Không tự gắn tên kênh nếu người dùng chưa yêu cầu.
 - Không bịa facts hoặc số liệu, đặc biệt với lịch sử, y tế và tài chính.
+- Visual chính dùng full-stage; brand và subtitle là overlay độc lập.
+- Không dùng emoji làm visual chính hoặc dùng card chữ để thay cho asset/diagram cần thiết.
+- Mỗi scene phải có visual beat trải đều, không hoàn thành toàn bộ animation trong 2–3 giây đầu rồi đứng yên.
 - Video lịch sử cần đủ mật độ tư liệu và phải kiểm tra đúng chủ đề/thời kỳ.
 - Kết thúc mỗi video thì cập nhật memory của kênh trong `skills/tao-chu-de-video/channels/`.
 
@@ -152,6 +157,12 @@ tao-video-suite/
 cd template
 npm run lint
 npx remotion compositions
+```
+
+Nếu composition có `visual-plan.json`, kiểm tra trước khi code/render:
+
+```bash
+node ../scripts/validate-visual-plan.mjs src/<TopicName>/visual-plan.json
 ```
 
 ## License và ghi công

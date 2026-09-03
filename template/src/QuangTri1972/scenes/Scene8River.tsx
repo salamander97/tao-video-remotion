@@ -84,7 +84,6 @@ export const Scene8River: React.FC = () => {
         text="Phía trước thành cổ là sông Thạch Hãn. Trong lũ đạn pháo, từng người một, các chiến sĩ băng qua dòng sông để vào thành. Nhiều người đã nằm lại mãi mãi bên dòng sông hiền hòa ấy, mãi mãi ở tuổi hai mươi."
         durationInFrames={durationInFrames - 40}
         highlightKeyword="Thạch Hãn"
-        className="mt-10"
       />
     </AbsoluteFill>
   );

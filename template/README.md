@@ -2,6 +2,8 @@
 
 Template React + Remotion để tạo video dọc 1080×1920, 30fps, có TTS, phụ đề theo câu, visual preset và nhiều composition mẫu. Template hỗ trợ nhiều lĩnh vực và không bị giới hạn ở video công nghệ 50–60 giây.
 
+Scene mới dùng visual full-stage: primary visual thường rộng 880–1000px hoặc full-bleed; brand và caption là overlay độc lập. Đọc `../skills/tao-video-remotion/references/scene-design.md` trước khi code. Không dùng emoji/card làm primary visual và không để animation hoàn thành sớm rồi đứng yên hết lời thoại.
+
 **Tác giả:** [Trung Hiếu](https://github.com/salamander97)
 
 ## Cài đặt

@@ -59,9 +59,9 @@ export const PhotoSlideshow: React.FC<PhotoSlideshowProps> = ({
         opacity: entrance,
         transform: `translateY(${(1 - entrance) * 40}px)`,
       }}
-      className="w-[880px] rounded-2xl border-2 border-amber-200/30 bg-amber-100/5 p-3 shadow-[0_25px_70px_rgba(0,0,0,0.85)]"
+      className="w-[940px] rounded-2xl border-2 border-amber-200/30 bg-amber-100/5 p-3 shadow-[0_25px_70px_rgba(0,0,0,0.85)]"
     >
-      <div className="relative h-[500px] w-full overflow-hidden rounded-xl bg-stone-950">
+      <div className="relative h-[700px] w-full overflow-hidden rounded-xl bg-stone-950">
         <Img
           src={active.file}
           style={{

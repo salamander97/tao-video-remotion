@@ -69,9 +69,9 @@ export const Scene2Problem: React.FC = () => {
         {/* Quote Card */}
         <div
           style={{ transform: `scale(${cardScale})` }}
-          className="w-full max-w-xl rounded-3xl border-2 border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-slate-900/95 to-amber-500/15 p-9 text-center shadow-2xl backdrop-blur-xl"
+          className="w-full max-w-[920px] rounded-3xl border-2 border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-slate-900/95 to-amber-500/15 p-9 text-center shadow-2xl backdrop-blur-xl"
         >
-          <div className="text-6xl">😅</div>
+          <div className="font-mono text-3xl font-black tracking-[0.25em] text-amber-200">LOCAL ≠ SERVER</div>
           <h2 className="mt-4 text-5xl font-black text-amber-300 leading-tight">
             &quot;Ơ kìa, trên máy em vẫn chạy ngon mà?!&quot;
           </h2>
@@ -81,14 +81,14 @@ export const Scene2Problem: React.FC = () => {
         </div>
 
         {/* Comparison: Local Machine vs Server */}
-        <div className="grid w-full max-w-xl grid-cols-2 gap-6">
+        <div className="grid w-full max-w-[920px] grid-cols-2 gap-6">
           {/* Left: Local Machine (OK) */}
           <div
             style={{ transform: `translateX(${leftCardX}px)` }}
             className="flex flex-col items-center rounded-3xl border-2 border-emerald-500/40 bg-emerald-950/40 p-7 text-center shadow-xl backdrop-blur-md"
           >
-            <div className="flex h-18 w-18 items-center justify-center rounded-2xl bg-emerald-500/20 text-4xl">
-              💻
+            <div className="flex h-18 w-18 items-center justify-center rounded-2xl bg-emerald-500/20 font-mono text-xl font-black text-emerald-200">
+              LOCAL
             </div>
             <h3 className="mt-3 text-3xl font-black text-emerald-400">Local Machine</h3>
             <span className="mt-3 inline-flex items-center rounded-full bg-emerald-500/25 px-5 py-1.5 text-2xl font-black text-emerald-300">
@@ -103,8 +103,8 @@ export const Scene2Problem: React.FC = () => {
             }}
             className="flex flex-col items-center rounded-3xl border-2 border-rose-500/50 bg-rose-950/50 p-7 text-center shadow-xl shadow-rose-950/60 backdrop-blur-md"
           >
-            <div className="flex h-18 w-18 items-center justify-center rounded-2xl bg-rose-500/20 text-4xl">
-              💥
+            <div className="flex h-18 w-18 items-center justify-center rounded-2xl bg-rose-500/20 font-mono text-xl font-black text-rose-200">
+              PROD
             </div>
             <h3 className="mt-3 text-3xl font-black text-rose-400">Server Deploy</h3>
             <span className="mt-3 inline-flex items-center rounded-full bg-rose-500/25 px-5 py-1.5 text-2xl font-black text-rose-300">
@@ -119,7 +119,6 @@ export const Scene2Problem: React.FC = () => {
         text="Trước đây, câu nói 'trên máy tôi vẫn chạy được' luôn là cơn ác mộng khi bàn giao code giữa các môi trường khác nhau."
         durationInFrames={187}
         highlightKeyword="chạy"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

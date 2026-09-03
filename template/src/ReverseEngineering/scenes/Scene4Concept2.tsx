@@ -12,17 +12,17 @@ import { SubtitleBox } from "../components/SubtitleBox";
 
 const STEPS = [
   {
-    icon: "🔩",
+    icon: "ASM",
     title: "DISASSEMBLY",
     desc: "Đọc code Assembly",
   },
   {
-    icon: "🧠",
+    icon: "C?",
     title: "DECOMPILE",
     desc: "Dịch ngược thành pseudocode",
   },
   {
-    icon: "🔍",
+    icon: "DBG",
     title: "DEBUG ĐỘNG",
     desc: "Theo dõi chương trình chạy thật",
   },
@@ -74,7 +74,7 @@ export const Scene4Concept2: React.FC = () => {
               style={{ transform: `translateX(${stepX}px)`, opacity: stepOpacity }}
               className="flex w-[860px] items-center gap-8 rounded-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-xl"
             >
-              <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500/30 to-cyan-600/20 text-5xl">
+              <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500/30 to-cyan-600/20 font-mono text-xl font-black text-emerald-100">
                 {step.icon}
               </div>
               <div className="flex-1">
@@ -97,7 +97,6 @@ export const Scene4Concept2: React.FC = () => {
         text="Quy trình gồm ba bước: disassembly để đọc assembly, decompile dịch ngược thành pseudocode, rồi debug động để theo dõi chương trình chạy thật."
         durationInFrames={242}
         highlightKeyword="decompile"
-        className="mt-40"
       />
     </AbsoluteFill>
   );

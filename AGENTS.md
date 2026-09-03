@@ -18,6 +18,7 @@ Repo này chứa 2 skill tạo video + 1 template Remotion. Agent (Codex/Antigra
 
 ## Quy tắc bất di bất dịch
 
+- Trước khi viết scene: đọc `skills/tao-video-remotion/references/scene-design.md`; visual dùng full-stage, brand/caption là overlay, không dùng emoji làm primary visual.
 - Trước khi render: PHẢI hỏi người dùng có hiển thị tên kênh không (không tự gắn brand).
 - Không bịa số liệu/fact — mọi con số trong kịch bản phải có nguồn (lịch sử/y tế/tài chính).
 - Video lịch sử: ≥ 2 tư liệu/cảnh hoặc 1 visual động; ảnh phải kiểm tra đúng chủ đề trước khi dùng.
@@ -29,4 +30,5 @@ Repo này chứa 2 skill tạo video + 1 template Remotion. Agent (Codex/Antigra
 ```bash
 cd template && npm run lint
 npx remotion compositions
+node ../scripts/validate-visual-plan.mjs <đường-dẫn-visual-plan.json>
 ```

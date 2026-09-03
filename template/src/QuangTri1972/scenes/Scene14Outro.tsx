@@ -87,7 +87,6 @@ export const Scene14Outro: React.FC = () => {
       <SubtitleHistory
         text="Nếu bạn thấy biết ơn thế hệ cha anh đã ngã xuống vì độc lập tự do của đất nước, hãy thả tim và follow kênh Lịch Sử Việt Nam."
         durationInFrames={durationInFrames - 30}
-        className="mt-10"
       />
     </AbsoluteFill>
   );

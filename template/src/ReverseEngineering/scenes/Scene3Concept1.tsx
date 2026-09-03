@@ -62,7 +62,7 @@ export const Scene3Concept1: React.FC = () => {
           style={{ transform: `translateX(${leftCardX}px)` }}
           className="flex h-72 w-[380px] flex-col items-center justify-center gap-3 rounded-3xl border-2 border-slate-500/50 bg-slate-900/70 p-8 shadow-2xl backdrop-blur-xl"
         >
-          <span className="text-6xl">📦</span>
+          <span className="rounded-xl bg-slate-800 px-4 py-3 font-mono text-2xl font-black text-slate-200">BIN</span>
           <p className="text-3xl font-black text-slate-300">CHƯƠNG TRÌNH</p>
           <p className="text-3xl font-black text-slate-300">ĐÃ BIÊN DỊCH</p>
           <p className="mt-2 font-mono text-2xl font-bold text-emerald-400/70">010110...</p>
@@ -84,7 +84,7 @@ export const Scene3Concept1: React.FC = () => {
           style={{ transform: `translateX(${rightCardX}px)` }}
           className="flex h-72 w-[380px] flex-col items-center justify-center gap-3 rounded-3xl border-2 border-emerald-400/50 bg-emerald-500/10 p-8 shadow-[0_0_60px_rgba(52,211,153,0.35)] backdrop-blur-xl"
         >
-          <span className="text-6xl">📄</span>
+          <span className="rounded-xl bg-emerald-500/20 px-4 py-3 font-mono text-2xl font-black text-emerald-200">SRC</span>
           <p className="text-3xl font-black text-emerald-300">LOGIC &amp; THUẬT TOÁN</p>
           <p className="font-mono text-2xl font-bold text-emerald-200">if (key == true)</p>
         </div>
@@ -94,7 +94,6 @@ export const Scene3Concept1: React.FC = () => {
         text="Reverse Engineer là kỹ thuật phân tích ngược: từ chương trình đã biên dịch, suy ngược lại logic, thuật toán và cả mã nguồn ban đầu."
         durationInFrames={232}
         highlightKeyword="phân tích ngược"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

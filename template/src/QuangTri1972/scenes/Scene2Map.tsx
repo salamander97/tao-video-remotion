@@ -158,7 +158,6 @@ export const Scene2Map: React.FC = () => {
         text="Xuân hè năm 1972, quân ta mở chiến dịch tiến công chiến lược trên toàn miền Nam, nhằm buộc Mỹ trở lại đàm phán. Quảng Trị, cửa ngõ phía Bắc, trở thành nơi hội tụ của cuộc quyết đấu lớn nhất giữa ta và địch."
         durationInFrames={durationInFrames - 40}
         highlightKeyword="Quảng Trị"
-        className="mt-8"
       />
     </AbsoluteFill>
   );

@@ -56,6 +56,11 @@ export const Scene3Container: React.FC = () => {
     [-1, 1],
     [0.4, 0.8]
   );
+  const activeItem = frame < 82 ? 0 : frame < 145 ? 1 : 2;
+  const focusStyle = (index: number) => ({
+    opacity: activeItem === index ? 1 : 0.58,
+    transform: `translateX(${[item1X, item2X, item3X][index]}px) scale(${activeItem === index ? 1.035 : 0.985})`,
+  });
 
   return (
     <AbsoluteFill className="flex flex-col items-center justify-center px-10 text-white">
@@ -74,7 +79,7 @@ export const Scene3Container: React.FC = () => {
       {/* Center Visual: The All-in-One Container Box */}
       <div
         style={{ transform: `scale(${boxScale})` }}
-        className="relative mt-8 flex w-full max-w-xl flex-col items-center rounded-3xl border-2 border-sky-400/50 bg-gradient-to-b from-sky-950/80 via-slate-900/90 to-slate-950 p-8 shadow-2xl backdrop-blur-2xl"
+        className="relative mt-8 flex w-full max-w-[920px] flex-col items-center rounded-3xl border-2 border-sky-400/50 bg-gradient-to-b from-sky-950/80 via-slate-900/90 to-slate-950 p-10 shadow-2xl backdrop-blur-2xl"
       >
         {/* Glow behind */}
         <div
@@ -84,7 +89,7 @@ export const Scene3Container: React.FC = () => {
 
         {/* Container Header */}
         <div className="flex items-center gap-4">
-          <span className="text-6xl">📦</span>
+          <span className="rounded-2xl bg-sky-500/20 px-5 py-3 font-mono text-3xl font-black text-sky-200">CTR</span>
           <div>
             <h2 className="text-5xl font-black tracking-tight text-white">
               CONTAINER
@@ -97,11 +102,11 @@ export const Scene3Container: React.FC = () => {
         <div className="mt-6 flex w-full flex-col gap-4">
           {/* Element 1: Source Code */}
           <div
-            style={{ transform: `translateX(${item1X}px)` }}
+            style={focusStyle(0)}
             className="flex items-center justify-between rounded-2xl border-2 border-emerald-400/35 bg-emerald-950/45 px-6 py-4"
           >
             <div className="flex items-center gap-3">
-              <span className="text-3xl">📝</span>
+              <span className="font-mono text-xl font-black text-emerald-200">SRC</span>
               <span className="text-3xl font-black text-emerald-300">Mã nguồn (Source)</span>
             </div>
             <span className="rounded-xl bg-emerald-500/25 px-4 py-1.5 text-xl font-black text-emerald-300">Node / Python</span>
@@ -109,11 +114,11 @@ export const Scene3Container: React.FC = () => {
 
           {/* Element 2: Dependencies & Libraries */}
           <div
-            style={{ transform: `translateX(${item2X}px)` }}
+            style={focusStyle(1)}
             className="flex items-center justify-between rounded-2xl border-2 border-amber-400/35 bg-amber-950/45 px-6 py-4"
           >
             <div className="flex items-center gap-3">
-              <span className="text-3xl">📚</span>
+              <span className="font-mono text-xl font-black text-amber-200">LIB</span>
               <span className="text-3xl font-black text-amber-300">Thư viện Runtime</span>
             </div>
             <span className="rounded-xl bg-amber-500/25 px-4 py-1.5 text-xl font-black text-amber-300">node_modules</span>
@@ -121,11 +126,11 @@ export const Scene3Container: React.FC = () => {
 
           {/* Element 3: System Configuration */}
           <div
-            style={{ transform: `translateX(${item3X}px)` }}
+            style={focusStyle(2)}
             className="flex items-center justify-between rounded-2xl border-2 border-indigo-400/35 bg-indigo-950/45 px-6 py-4"
           >
             <div className="flex items-center gap-3">
-              <span className="text-3xl">⚙️</span>
+              <span className="font-mono text-xl font-black text-indigo-200">OS</span>
               <span className="text-3xl font-black text-indigo-300">Hệ điều hành OS</span>
             </div>
             <span className="rounded-xl bg-indigo-500/25 px-4 py-1.5 text-xl font-black text-indigo-300">Alpine Linux</span>
@@ -138,7 +143,6 @@ export const Scene3Container: React.FC = () => {
         text="Docker giải quyết triệt để vấn đề này bằng Container: đóng gói code, thư viện và môi trường vào một khối độc lập siêu nhẹ."
         durationInFrames={211}
         highlightKeyword="Container"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

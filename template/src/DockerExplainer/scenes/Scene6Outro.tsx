@@ -55,7 +55,7 @@ export const Scene6Outro: React.FC = () => {
       {/* Center Main Card */}
       <div
         style={{ transform: `scale(${mainCardScale})` }}
-        className="mt-8 flex w-full max-w-xl flex-col items-center rounded-3xl border-2 border-white/20 bg-gradient-to-b from-slate-900/90 via-sky-950/40 to-slate-950 p-8 text-center shadow-2xl backdrop-blur-xl"
+        className="mt-8 flex w-full max-w-[900px] flex-col items-center rounded-3xl border-2 border-white/20 bg-gradient-to-b from-slate-900/90 via-sky-950/40 to-slate-950 p-10 text-center shadow-2xl backdrop-blur-xl"
       >
         <div
           style={{ transform: `scale(${pulse})` }}
@@ -93,7 +93,6 @@ export const Scene6Outro: React.FC = () => {
         text="Nắm vững Docker ngay hôm nay để tự tin triển khai mọi dự án. Nhớ thả tim và follow kênh để đón xem video tiếp theo nhé!"
         durationInFrames={245}
         highlightKeyword="follow"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

@@ -53,6 +53,9 @@ export const Scene4ImageDockerfile: React.FC = () => {
     fps,
     config: { damping: 12, stiffness: 100 },
   });
+  const activeStep = frame < 78 ? 0 : frame < 146 ? 1 : 2;
+  const focusScale = (index: number, entrance: number) =>
+    entrance * (activeStep === index ? 1.035 : 0.985);
 
   return (
     <AbsoluteFill className="flex flex-col items-center justify-center px-10 text-white">
@@ -69,14 +72,14 @@ export const Scene4ImageDockerfile: React.FC = () => {
       </div>
 
       {/* Center Flow Diagram (Vertical 3-Step) */}
-      <div className="mt-8 flex w-full max-w-xl flex-col items-center gap-3">
+      <div className="mt-8 flex w-full max-w-[920px] flex-col items-center gap-5">
         {/* Step 1: Dockerfile */}
         <div
-          style={{ transform: `scale(${step1Scale})` }}
+          style={{ transform: `scale(${focusScale(0, step1Scale)})`, opacity: activeStep === 0 ? 1 : 0.62 }}
           className="flex w-full items-center gap-5 rounded-3xl border-2 border-indigo-400/35 bg-slate-900/90 p-5 shadow-lg backdrop-blur-md"
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-500/20 text-4xl">
-            📄
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-500/20 font-mono text-lg font-black text-indigo-200">
+            FILE
           </div>
           <div>
             <div className="flex items-center gap-3">
@@ -99,11 +102,11 @@ export const Scene4ImageDockerfile: React.FC = () => {
 
         {/* Step 2: Docker Image */}
         <div
-          style={{ transform: `scale(${step2Scale})` }}
+          style={{ transform: `scale(${focusScale(1, step2Scale)})`, opacity: activeStep === 1 ? 1 : 0.62 }}
           className="flex w-full items-center gap-5 rounded-3xl border-2 border-purple-400/45 bg-gradient-to-r from-purple-950/60 to-slate-900/90 p-5 shadow-xl backdrop-blur-md"
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-500/20 text-4xl">
-            💿
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-500/20 font-mono text-lg font-black text-purple-200">
+            IMG
           </div>
           <div>
             <div className="flex items-center gap-3">
@@ -126,11 +129,11 @@ export const Scene4ImageDockerfile: React.FC = () => {
 
         {/* Step 3: Containers */}
         <div
-          style={{ transform: `scale(${step3Scale})` }}
+          style={{ transform: `scale(${focusScale(2, step3Scale)})`, opacity: activeStep === 2 ? 1 : 0.62 }}
           className="flex w-full items-center gap-5 rounded-3xl border-2 border-sky-400/45 bg-gradient-to-r from-sky-950/60 to-slate-900/90 p-5 shadow-xl backdrop-blur-md"
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-500/20 text-4xl">
-            🚀
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-500/20 font-mono text-lg font-black text-sky-200">
+            RUN
           </div>
           <div>
             <div className="flex items-center gap-3">
@@ -149,7 +152,6 @@ export const Scene4ImageDockerfile: React.FC = () => {
         text="Chỉ với một file Dockerfile đơn giản, bạn tạo ra Docker Image và có thể nhân bản hàng nghìn Container giống hệt nhau trong tích tắc."
         durationInFrames={218}
         highlightKeyword="Dockerfile"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

@@ -45,16 +45,16 @@ Khi nhận chủ đề, KHÔNG bắt tay vào soạn kịch bản ngay. PHẢI l
 
 | Phương án | Độ dài | Số cảnh | Phù hợp khi |
 | :--- | :--- | :--- | :--- |
-| **NGẮN** | 50–60s (1500–1800 frames) | 6 cảnh chuẩn | Khái niệm đơn giản, cần viral nhanh, giữ chân người xem |
-| **TRUNG BÌNH** | 90–120s (2700–3600 frames) | 8–10 cảnh | Có quy trình nhiều bước, cần ví dụ minh họa |
-| **DÀI (deep-dive)** | 3–5 phút (5400–9000 frames) | 12–18 cảnh | Chủ đề rộng, cần đi sâu cơ chế + thực chiến + case study |
+| **NGẮN** | 50–60s (1500–1800 frames) | 7–10 cảnh, khoảng 12–18 visual beat | Khái niệm đơn giản, cần viral nhanh, giữ chân người xem |
+| **TRUNG BÌNH** | 90–120s (2700–3600 frames) | 12–20 cảnh, khoảng 22–36 visual beat | Có quy trình nhiều bước, cần ví dụ minh họa |
+| **DÀI (deep-dive)** | 3–5 phút (5400–9000 frames) | 24–45 cảnh hoặc chapter có nhiều beat | Chủ đề rộng, cần đi sâu cơ chế + thực chiến + case study |
 
 Mỗi phương án phải kèm **outline tóm tắt các cảnh** (tên cảnh + nội dung sẽ nói) để người dùng hình dung. Có thể gợi ý phương án phù hợp nhất dựa trên phân tích ở 0.1 (đánh dấu "Recommended").
 
 **Bước 0.3 — Chỉ khi người dùng đã chọn** phương án và tên kênh (mục branding phía trên) rồi mới bắt đầu: soạn kịch bản chi tiết → TTS → code → render.
 
 **Quy tắc dựng cảnh theo độ dài:**
-- Video dài hơn 60s: KHÔNG kéo dài từng cảnh, mà **Thêm cảnh** (mỗi cảnh vẫn 6–12s để giữ nhịp nhanh). Cấu trúc mở rộng: Hook → Problem → N khái niệm/step → Ví dụ thực tế → Case study → Tổng kết → Outro.
+- Video dài hơn 60s: KHÔNG kéo dài một layout tĩnh để đủ thời lượng. Thêm scene hoặc thêm visual beat có ý nghĩa; scene thường 4–8s, chỉ dài hơn khi có montage/diagram progression/camera change xuyên suốt. Cấu trúc mở rộng: Hook → Problem → N khái niệm/step → Ví dụ thực tế → Case study → Tổng kết → Outro.
 - Mỗi câu thoại vẫn 15–30 từ; tổng thời lượng = tổng frame audio + buffer (+3/cảnh, +10 cảnh cuối).
 - Với video >3 phút: cảnh báo người dùng thời gian render sẽ lâu (tuyến tính theo độ dài) và nên render khi không dùng máy.
 
@@ -68,15 +68,15 @@ It combines:
 
 ---
 
-## 1. Video Structure & Timing (50-60s / 1500-1800 frames @ 30fps) — cấu trúc cơ sở cho phương án NGẮN
+## 1. Video Structure & Timing (50-60s / 1500-1800 frames @ 30fps) — các khối kể chuyện cơ sở
 
-A captivating short video follows the **Hook-Problem-Solution-Value-Outro** framework. Với phương án TRUNG BÌNH/DÀI, giữ nguyên khung nền tảng này và **chèn thêm cảnh** theo quy tắc ở mục 📐 Bước 0.3:
+A captivating short video follows the **Hook-Problem-Solution-Value-Outro** framework. Bảng dưới là sáu **khối kể chuyện**, không bắt buộc là sáu scene: tách một khối thành nhiều scene khi narration hoặc visual không thể phát triển đủ nhịp.
 
 | Scene | Name | Time | Frame Range (@ 30fps) | Purpose & Visuals |
 | :--- | :--- | :--- | :--- | :--- |
 | **1** | **Hook** | 0s – 5s | ~150 frames | Gây chú ý tức thì: Tiêu đề lớn, câu hỏi kích thích tò mò, floating badge. |
-| **2** | **Context / Pain Point** | 5s – 15s | ~300 frames | Nêu vấn đề hoặc bối cảnh vì sao chủ đề này quan trọng. Icon cảnh báo/so sánh. |
-| **3** | **Core Concept Part 1** | 15s – 28s | ~390 frames | Giải thích nguyên lý cốt lõi thứ 1: Card kính, biểu tượng minh họa, từ khóa nổi bật. |
+| **2** | **Context / Pain Point** | 5s – 15s | ~300 frames | Nêu vấn đề hoặc bối cảnh bằng real-world media, comparison, map hoặc evidence visual. |
+| **3** | **Core Concept Part 1** | 15s – 28s | ~390 frames | Giải thích nguyên lý bằng diagram, UI demo, footage, chart hoặc simulation có diễn biến. |
 | **4** | **Core Concept Part 2** | 28s – 42s | ~420 frames | Mở rộng chi tiết hoặc cơ chế hoạt động: Quy trình 3 bước, sơ đồ luồng mượt mà. |
 | **5** | **Real-World Impact** | 42s – 52s | ~300 frames | Ứng dụng thực tế, lời khuyên thực chiến hoặc số liệu ấn tượng. |
 | **6** | **Outro & CTA** | 52s – 60s | ~240 frames | Đúc kết 1 câu đắt giá, lời kêu gọi Like/Share/Follow & thương hiệu cá nhân. |
@@ -203,22 +203,20 @@ const d2 = audioManifest.scenes[1].durationInFrames + 3;
 ```
 
 
-### 3.4 Quy chuẩn Thiết kế Visual (Vertical 1080x1920)
-1. **Background**: Dark Mode cao cấp (`bg-slate-950` hoặc gradient `from-slate-950 via-zinc-900 to-black`) kết hợp hiệu ứng radial glow/grid mờ.
-2. **Glassmorphism Cards**:
-   - `backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-2xl`
-3. **Thương hiệu Kênh Phía Trên (Brand Header)**:
-   - Chỉ hiển thị component thương hiệu `⚡ [CHANNEL_NAME]` khi người dùng yêu cầu. Đặt ở phía trên chính giữa (`top: 150px`, `left: 50%` translate-x) để tránh vùng giao diện của TikTok, Shorts và Reels. Giá trị mặc định phải là chuỗi rỗng.
-4. **Typography Tối ưu cho Mobile (1080x1920)**:
+### 3.4 Quy chuẩn Thiết kế Visual Full-stage (Vertical 1080x1920)
+1. **Visual là nhân vật chính**: background/ảnh/footage có thể full-bleed; primary visual thường rộng 880–1000px. Không dùng `max-w-xl` hoặc một card nhỏ làm sân khấu mặc định.
+2. **Brand và caption là overlay**: định vị độc lập với visual, không đặt chung trong cột `justify-center`. Caption neo trên safe zone đáy; brand nhỏ, chỉ hiện khi user yêu cầu và không tranh độ sáng/kích thước với headline.
+3. **Chất liệu có ý nghĩa**: mỗi scene cần ảnh/footage, diagram/SVG, chart, map/timeline, UI demo hoặc mô phỏng phù hợp. Card, glow, particle, caption và emoji không thay thế primary visual.
+4. **Emoji chỉ là accent**: không dùng emoji làm primary visual hoặc fallback tự động, trừ khi user chủ động yêu cầu phong cách emoji/cartoon.
+5. **Typography Tối ưu cho Mobile (1080x1920)**:
    - Tiêu đề chính: 72px - 96px, in đậm font-black, gradient sắc nét.
    - Nội dung thẻ / trích dẫn: 40px - 50px font-extrabold.
    - Text phụ / giải thích: 28px - 36px font-semibold.
    - Badge danh mục: 28px - 32px font-black uppercase.
-5. **Bố cục Trung tâm & Phụ đề theo Câu (Sentence-Based Caption)**:
-   - **Bố cục chính**: Toàn bộ khối nội dung quan trọng BẮT BUỘC nằm ở **chính giữa màn hình** (`justify-center` theo chiều dọc).
-   - **Vị trí Phụ đề**: Nằm phía dưới khối trung tâm với khoảng cách thoáng đãng (`mt-64`), không bị che bởi thanh công cụ dưới của TikTok/Reels.
+6. **Phụ đề theo Câu (Sentence-Based Caption)**:
+   - **Vị trí**: dùng overlay, thường `bottom: 280..320px`, max-width 840–920px và tối đa 2 dòng. Không dùng `mt-64` để đẩy caption khỏi visual.
    - **QUY TẮC NGẮT CÂU (BẮT BUỘC)**: 1 câu hoàn chỉnh = 1 dòng phụ đề, ngắt theo dấu câu tiếng Việt (`. ! ? …`), KHÔNG BAO GIỜ cắt cứng theo số từ làm đứt giữa câu (kiểu "Xin chào tất cả các / bạn nhé!" là SAI). Câu quá dài (>12 từ) tách tại dấu phẩy gần giữa câu nhất. Thời lượng mỗi câu chia theo tỉ lệ số từ để bám nhịp đọc.
-   - **Dùng thư viện dùng chung** `src/lib/subtitleUtils.ts` của template: `chunkSentences(text, 12)` + `getChunkStartFrames(chunks, durationInFrames)` — luôn import từ đó, không tự viết hàm chunk lại. Chữ to `text-4xl font-black` (cho xuống tối đa 2 dòng, bỏ `whitespace-nowrap`, pill `rounded-[2.5rem]`), highlight từ khóa. Xem `SubtitleBox.tsx` của DockerExplainer làm mẫu.
+   - **Dùng thư viện dùng chung** `src/lib/subtitleUtils.ts` của template: `chunkSentences(text, 12)` + `getChunkStartFrames(chunks, durationInFrames)` — luôn import từ đó, không tự viết hàm chunk lại. Giữ chữ đọc được trên mobile, pill gọn theo nội dung và highlight 1–3 từ khóa. Xem `SubtitleBox.tsx` của DockerExplainer làm mẫu.
 
 ---
 
@@ -229,14 +227,17 @@ Trước khi viết scene JSX, **phân loại chủ đề** thành `science | fi
 - Registry 10 preset + hàm chọn: `src/styles/presets.ts` trong template (cosmic-neon, lab-blueprint, data-documentary, market-terminal, fintech-glass, editorial-macro, clinical-clarity, organic-wellness, **archive-documentary**, museum-map).
 - Chi tiết từng preset (palette, font, hiệu ứng): đọc `references/visual-presets.md`.
 - Component/template mở rộng (caption TikTok, kinetic typography, chart, 3D): đọc `references/remotion-components.md`.
+- **Bắt buộc đọc trước khi lập visual plan/viết scene**: `references/scene-design.md` — full-stage, substantive visual, asset, visual beat và contact-sheet QA.
 - Kiến trúc pipeline artifact/cache/resume: đọc `references/pipeline-patterns.md`.
 
 ### Lập visual-plan TRƯỚC khi code JSX
-Mỗi scene phải có: `narration` (câu thoại chính xác), `visualIntent` (người xem phải hiểu gì), `sceneType` (một trong `heroText | comparison | process | metric | chart | timeline | map | diagram | quote | threeObject`), `data` (nhãn/số liệu — KHÔNG tự bịa số liệu), `assetQuery` (từ khóa tìm ảnh hoặc null nếu vẽ SVG), `motionPreset` (`calm | precise | energetic | cinematic`), `captionEmphasis` (1–3 từ khóa highlight).
+Mỗi scene phải có: `narration`, `visualIntent`, `sceneType`, `primaryVisualType`, `data`, `assetQuery`, `assetRequired`, `visualCoverage`, `visualBeats`, `motionPreset`, `captionEmphasis` và `sourceCredit`. Schema/quy tắc chi tiết nằm trong `references/scene-design.md`.
 
 Quy tắc chống nhàm chán:
 - **Không dùng cùng một bố cục quá 2 scene liên tiếp**.
-- Mỗi 6–12 giây phải có ít nhất một **focal change** (đổi hierarchy, chart state, camera/parallax, diagram step, hoặc keyword emphasis).
+- Micro change mỗi 1–2s, secondary change mỗi 2.5–4s và major focal/layout change mỗi 5–8s. Không giữ primary visual cùng trạng thái quá khoảng 3s.
+- Scene dưới 8s cần ít nhất 3 meaningful visual beat; scene từ 8s cần 4–5 beat hoặc phải tách. Caption, glow, particle và background drift không được tính là meaningful beat.
+- Không dùng emoji làm primary visual. Nếu asset bắt buộc chưa có, tìm/kiểm tra asset hoặc đổi sang diagram chính xác; không thay bằng generic card.
 - Animation luôn theo `frame` (spring/interpolate + clamp 2 đầu), random phải có seed; không CSS transition theo thời gian thực.
 
 ### 📜 LUẬT DÀNH RIÊNG CHO VIDEO LỊCH SỬ (bài học từ Thành cổ Quảng Trị)
@@ -257,8 +258,8 @@ Mỗi stage ghi file ra đĩa để sửa 1 câu chỉ chạy lại 1 stage: `sc
 Khi nhận được yêu cầu: *"Tạo video giải thích về [Chủ đề X]"*:
 
 ### Bước 1: Soạn Kịch bản (Scripting)
-1. Xác định 6 phân cảnh (Hook, Problem, Concept 1, Concept 2, Impact, Outro).
-2. Viết lời thoại tiếng Việt tự nhiên, súc tích, câu ngắn (mỗi cảnh 15-30 từ).
+1. Xác định các khối Hook, Problem, Concept, Impact, Outro rồi tách thành số scene đủ để mỗi scene có visual phát triển xuyên suốt; không mặc định ép về 6 scene.
+2. Viết lời thoại tiếng Việt tự nhiên, súc tích; mỗi scene thường 15–30 từ và phải khớp với `visualBeats`.
 
 ### Bước 2: Sinh Giọng Đọc (TTS Generation)
 1. Tạo script TTS tạm hoặc gọi trực tiếp `scripts/generate-tts.ts` cho topic đó.
@@ -271,13 +272,10 @@ src/<TopicName>/
 ├── <TopicName>.tsx          # Main composition tập hợp các Series.Sequence
 ├── types.ts                 # Schema & Props
 ├── audioData.ts             # Metadata thời lượng audio
-└── scenes/
+├── visual-plan.json         # Primary visual, asset, coverage và visual beat
+└── scenes/                  # Số scene theo nội dung, không cố định 6 file
     ├── Scene1Hook.tsx
-    ├── Scene2Problem.tsx
-    ├── Scene3Concept1.tsx
-    ├── Scene4Concept2.tsx
-    ├── Scene5Impact.tsx
-    └── Scene6Outro.tsx
+    └── ...
 ```
 
 ### Bước 4: Đăng ký Composition vào `src/Root.tsx`
@@ -296,7 +294,8 @@ Thêm Composition mới vào `src/Root.tsx`:
 
 ### Bước 5: Kiểm tra và Báo cáo
 1. Chạy `npm run lint` để kiểm tra lỗi TypeScript/ESLint.
-2. Báo cáo cho người dùng link mở Composition trên Remotion Studio (`http://localhost:3000`) hoặc lệnh render MP4:
+2. Render contact sheet ở 25%/50%/75% mỗi scene và kiểm tra theo `references/scene-design.md`; sửa scene nếu visual nhỏ, lặp hoặc đứng yên.
+3. Báo cáo cho người dùng link mở Composition trên Remotion Studio (`http://localhost:3000`) hoặc lệnh render MP4:
    ```bash
    npx remotion render <TopicName> out/<TopicName>.mp4
    ```

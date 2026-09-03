@@ -45,6 +45,11 @@ export const Scene5Benefits: React.FC = () => {
     to: 0,
     config: { damping: 13, stiffness: 100 },
   });
+  const activeBenefit = frame < 82 ? 0 : frame < 158 ? 1 : 2;
+  const benefitStyle = (index: number, x: number) => ({
+    opacity: activeBenefit === index ? 1 : 0.58,
+    transform: `translateX(${x}px) scale(${activeBenefit === index ? 1.035 : 0.985})`,
+  });
 
   return (
     <AbsoluteFill className="flex flex-col items-center justify-center px-10 text-white">
@@ -61,14 +66,14 @@ export const Scene5Benefits: React.FC = () => {
       </div>
 
       {/* 3 Key Benefits */}
-      <div className="mt-8 flex w-full max-w-xl flex-col gap-4">
+      <div className="mt-8 flex w-full max-w-[920px] flex-col gap-5">
         {/* Benefit 1 */}
         <div
-          style={{ transform: `translateX(${b1X}px)` }}
+          style={benefitStyle(0, b1X)}
           className="flex items-center gap-5 rounded-3xl border-2 border-emerald-500/40 bg-emerald-950/40 p-5 shadow-xl backdrop-blur-md"
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/20 text-4xl">
-            ⚡
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/20 font-mono text-lg font-black text-emerald-200">
+            10×
           </div>
           <div>
             <h3 className="text-3xl font-black text-emerald-300">Nhẹ hơn Máy ảo 10x</h3>
@@ -78,11 +83,11 @@ export const Scene5Benefits: React.FC = () => {
 
         {/* Benefit 2 */}
         <div
-          style={{ transform: `translateX(${b2X}px)` }}
+          style={benefitStyle(1, b2X)}
           className="flex items-center gap-5 rounded-3xl border-2 border-sky-500/40 bg-sky-950/40 p-5 shadow-xl backdrop-blur-md"
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-500/20 text-4xl">
-            💾
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-500/20 font-mono text-lg font-black text-sky-200">
+            RAM
           </div>
           <div>
             <h3 className="text-3xl font-black text-sky-300">Tiết kiệm RAM &amp; CPU</h3>
@@ -92,11 +97,11 @@ export const Scene5Benefits: React.FC = () => {
 
         {/* Benefit 3 */}
         <div
-          style={{ transform: `translateX(${b3X}px)` }}
+          style={benefitStyle(2, b3X)}
           className="flex items-center gap-5 rounded-3xl border-2 border-purple-500/40 bg-purple-950/40 p-5 shadow-xl backdrop-blur-md"
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-500/20 text-4xl">
-            ☁️
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-500/20 font-mono text-lg font-black text-purple-200">
+            ANY
           </div>
           <div>
             <h3 className="text-3xl font-black text-purple-300">Deploy Mọi Nơi</h3>
@@ -110,7 +115,6 @@ export const Scene5Benefits: React.FC = () => {
         text="Nhẹ hơn máy ảo gấp 10 lần, tiết kiệm tài nguyên và dễ dàng deploy lên bất kỳ hệ thống đám mây nào như AWS hay GCP."
         durationInFrames={229}
         highlightKeyword="10 lần"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

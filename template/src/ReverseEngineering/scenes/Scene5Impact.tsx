@@ -10,10 +10,10 @@ import {
 import { SubtitleBox } from "../components/SubtitleBox";
 
 const USE_CASES = [
-  { icon: "🛡️", label: "Tìm lỗ hổng bảo mật" },
-  { icon: "🦠", label: "Phân tích malware" },
-  { icon: "🔑", label: "Nghiên cứu crack phần mềm" },
-  { icon: "📱", label: "Reverse game mobile" },
+  { icon: "CVE", label: "Tìm lỗ hổng bảo mật" },
+  { icon: "MAL", label: "Phân tích malware" },
+  { icon: "KEY", label: "Nghiên cứu crack phần mềm" },
+  { icon: "APK", label: "Reverse game mobile" },
 ];
 
 export const Scene5Impact: React.FC = () => {
@@ -54,7 +54,7 @@ export const Scene5Impact: React.FC = () => {
               style={{ transform: `scale(${cardScale})` }}
               className="flex h-64 w-[430px] flex-col items-center justify-center gap-5 rounded-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-xl"
             >
-              <span className="text-7xl">{useCase.icon}</span>
+              <span className="rounded-2xl bg-emerald-500/15 px-5 py-4 font-mono text-3xl font-black tracking-wider text-emerald-200">{useCase.icon}</span>
               <p className="text-center text-3xl font-extrabold text-slate-100">
                 {useCase.label}
               </p>
@@ -67,7 +67,6 @@ export const Scene5Impact: React.FC = () => {
         text="Kỹ thuật này được dùng để tìm lỗ hổng bảo mật, phân tích malware, crack phần mềm và cả reverse game mobile."
         durationInFrames={223}
         highlightKeyword="malware"
-        className="mt-40"
       />
     </AbsoluteFill>
   );

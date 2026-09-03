@@ -13,7 +13,7 @@ export const SubtitleBox: React.FC<SubtitleBoxProps> = ({
   text,
   durationInFrames,
   highlightKeyword,
-  className = "mt-64",
+  className = "",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -49,6 +49,7 @@ export const SubtitleBox: React.FC<SubtitleBoxProps> = ({
   );
 
   const words = activeChunkText.split(" ");
+  const overlayClassName = className.replace(/\bmt-\d+\b/g, "").trim();
 
   return (
     <div
@@ -56,11 +57,10 @@ export const SubtitleBox: React.FC<SubtitleBoxProps> = ({
         transform: `scale(${scale})`,
         opacity,
       }}
-      className={`z-40 flex items-center justify-center ${className}`}
+      className={`pointer-events-none absolute inset-x-10 bottom-[290px] z-40 flex items-center justify-center ${overlayClassName}`}
     >
-      <div className="flex max-w-[960px] items-center gap-4 rounded-[2.5rem] border-2 border-sky-400/50 bg-slate-950/95 px-10 py-5 shadow-[0_15px_40px_rgba(0,0,0,0.9)] backdrop-blur-2xl">
-        <span className="text-3xl select-none">🎙️</span>
-        <p className="text-4xl font-black tracking-wide text-slate-100 leading-snug">
+      <div className="flex max-w-[900px] items-center rounded-[2rem] border border-emerald-300/35 bg-slate-950/88 px-8 py-4 shadow-[0_12px_28px_rgba(0,0,0,0.55)] backdrop-blur-xl">
+        <p className="text-center text-[42px] font-black leading-[1.12] tracking-wide text-slate-100">
           {words.map((word, idx) => {
             const isKeyword =
               highlightKeyword &&

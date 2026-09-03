@@ -91,7 +91,6 @@ export const Scene1Hook: React.FC = () => {
         text="Tám mươi mốt ngày đêm. Một tòa thành cổ ba trăm năm tuổi bị bom đạn san phẳng, nhưng lá cờ vẫn tung bay trên nóc thành. Đây là câu chuyện về trận Thành cổ Quảng Trị, mùa hè đỏ lửa năm 1972."
         durationInFrames={durationInFrames - 40}
         highlightKeyword="81"
-        className="mt-10"
       />
     </AbsoluteFill>
   );

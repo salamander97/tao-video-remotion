@@ -1,0 +1,134 @@
+{
+  "scenes": [
+    {
+      "id": "scene1_hook",
+      "durationInFrames": 165,
+      "narration": "Bạn có biết Docker thực chất là gì và tại sao mọi lập trình viên đều bắt buộc phải biết nó không?",
+      "visualIntent": "Nhận diện Docker ngay lập tức và tạo cảm giác một hệ đóng gói lớn, thống nhất.",
+      "sceneType": "heroText",
+      "primaryVisualType": "svgDiagram",
+      "data": null,
+      "assetQuery": null,
+      "assetRequired": false,
+      "visualCoverage": 0.82,
+      "visualBeats": [
+        {"frame": 0, "action": "reveal-badge"},
+        {"frame": 45, "action": "reveal-docker-system"},
+        {"frame": 100, "action": "camera-push-title"}
+      ],
+      "motionPreset": "energetic",
+      "captionEmphasis": ["Docker"],
+      "sourceCredit": null,
+      "emojiRole": "accent-only"
+    },
+    {
+      "id": "scene2_problem",
+      "durationInFrames": 187,
+      "narration": "Trước đây, câu nói trên máy tôi vẫn chạy được luôn là cơn ác mộng khi bàn giao code giữa các môi trường khác nhau.",
+      "visualIntent": "Cho thấy cùng một ứng dụng nhưng hai môi trường tạo ra hai kết quả đối lập.",
+      "sceneType": "comparison",
+      "primaryVisualType": "uiDemo",
+      "data": null,
+      "assetQuery": null,
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "show-local-terminal"},
+        {"frame": 55, "action": "deploy-to-server"},
+        {"frame": 115, "action": "server-crashes"}
+      ],
+      "motionPreset": "energetic",
+      "captionEmphasis": ["chạy"],
+      "sourceCredit": null,
+      "emojiRole": "accent-only"
+    },
+    {
+      "id": "scene3_container",
+      "durationInFrames": 211,
+      "narration": "Docker giải quyết triệt để vấn đề này bằng Container: đóng gói code, thư viện và môi trường vào một khối độc lập siêu nhẹ.",
+      "visualIntent": "Người xem thấy ba lớp code, runtime và hệ điều hành được đóng vào một container.",
+      "sceneType": "diagram",
+      "primaryVisualType": "svgDiagram",
+      "data": null,
+      "assetQuery": null,
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "reveal-container-shell"},
+        {"frame": 55, "action": "focus-source"},
+        {"frame": 110, "action": "focus-runtime"},
+        {"frame": 165, "action": "focus-os-and-seal"}
+      ],
+      "motionPreset": "precise",
+      "captionEmphasis": ["Container"],
+      "sourceCredit": null,
+      "emojiRole": "accent-only"
+    },
+    {
+      "id": "scene4_image_dockerfile",
+      "durationInFrames": 218,
+      "narration": "Chỉ với một file Dockerfile đơn giản, bạn tạo ra Docker Image và có thể nhân bản hàng nghìn Container giống hệt nhau trong tích tắc.",
+      "visualIntent": "Diễn giải luồng Dockerfile đến image rồi nhân bản container.",
+      "sceneType": "process",
+      "primaryVisualType": "svgDiagram",
+      "data": null,
+      "assetQuery": null,
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "show-dockerfile"},
+        {"frame": 65, "action": "build-image"},
+        {"frame": 130, "action": "run-container"},
+        {"frame": 190, "action": "replicate-containers"}
+      ],
+      "motionPreset": "precise",
+      "captionEmphasis": ["Dockerfile"],
+      "sourceCredit": null,
+      "emojiRole": "accent-only"
+    },
+    {
+      "id": "scene5_benefits",
+      "durationInFrames": 229,
+      "narration": "Nhẹ hơn máy ảo, tiết kiệm tài nguyên và dễ dàng deploy lên nhiều hệ thống đám mây.",
+      "visualIntent": "So sánh lần lượt footprint, tài nguyên và khả năng triển khai.",
+      "sceneType": "comparison",
+      "primaryVisualType": "dataViz",
+      "data": ["footprint", "resources", "deployment"],
+      "assetQuery": null,
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "compare-footprint"},
+        {"frame": 65, "action": "compare-resources"},
+        {"frame": 135, "action": "show-cloud-targets"},
+        {"frame": 200, "action": "resolve-benefits"}
+      ],
+      "motionPreset": "precise",
+      "captionEmphasis": ["deploy"],
+      "sourceCredit": null,
+      "emojiRole": "accent-only"
+    },
+    {
+      "id": "scene6_outro",
+      "durationInFrames": 245,
+      "narration": "Nắm vững Docker ngay hôm nay để tự tin triển khai mọi dự án. Nhớ thả tim và follow kênh để đón xem video tiếp theo nhé!",
+      "visualIntent": "Thu toàn bộ hệ thống Docker về một kết luận và CTA ngắn.",
+      "sceneType": "quote",
+      "primaryVisualType": "kineticType",
+      "data": null,
+      "assetQuery": null,
+      "assetRequired": false,
+      "visualCoverage": 0.82,
+      "visualBeats": [
+        {"frame": 0, "action": "reveal-summary"},
+        {"frame": 65, "action": "converge-docker-elements"},
+        {"frame": 135, "action": "show-cta"},
+        {"frame": 205, "action": "settle-and-exit"}
+      ],
+      "motionPreset": "calm",
+      "captionEmphasis": ["follow"],
+      "sourceCredit": null,
+      "emojiRole": "accent-only"
+    }
+  ]
+}

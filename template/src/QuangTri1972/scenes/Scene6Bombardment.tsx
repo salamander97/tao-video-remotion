@@ -96,7 +96,6 @@ export const Scene6Bombardment: React.FC = () => {
         text="Mỗi ngày, hàng nghìn quả đạn pháo rơi xuống khu thành cổ chưa đầy hai cây số vuông. Tường thành kiên cố ba thế kỷ bị san phẳng, chỉ còn nền đất đỏ trơ và những hố bom sâu hoắm chồng chất nhau."
         durationInFrames={durationInFrames - 40}
         highlightKeyword="đạn pháo"
-        className="mt-8"
       />
     </AbsoluteFill>
   );

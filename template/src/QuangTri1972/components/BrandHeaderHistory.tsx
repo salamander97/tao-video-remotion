@@ -35,12 +35,12 @@ export const BrandHeaderHistory: React.FC<BrandHeaderHistoryProps> = ({
         transform: `translateX(-50%) scale(${scale})`,
         opacity,
       }}
-      className="z-50 flex items-center gap-3.5 rounded-full border-2 border-amber-400/40 bg-stone-950/90 px-8 py-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.7)] backdrop-blur-xl"
+      className="z-50 flex max-w-[420px] items-center gap-2.5 rounded-full border border-amber-300/30 bg-stone-950/82 px-6 py-2.5 shadow-[0_8px_22px_rgba(0,0,0,0.45)] backdrop-blur-lg"
     >
-      <div className="flex h-9 w-9 items-center justify-center rounded-md bg-red-600 font-black text-amber-300 text-2xl shadow-[0_0_15px_rgba(220,38,38,0.6)]">
+      <div className="flex h-7 w-7 items-center justify-center rounded-md bg-red-600 text-lg font-black text-amber-300">
         ★
       </div>
-      <span className="text-3xl font-black tracking-widest bg-gradient-to-r from-amber-200 via-amber-50 to-amber-300 bg-clip-text text-transparent">
+      <span className="truncate text-[26px] font-black tracking-wider bg-gradient-to-r from-amber-200 via-amber-50 to-amber-300 bg-clip-text text-transparent">
         {channelName}
       </span>
     </div>

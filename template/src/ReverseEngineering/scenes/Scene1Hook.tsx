@@ -13,6 +13,7 @@ import { SubtitleBox } from "../components/SubtitleBox";
 export const Scene1Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const statusPulse = 0.55 + Math.abs(Math.sin(frame / 10)) * 0.45;
 
   const badgeScale = spring({
     frame,
@@ -48,7 +49,10 @@ export const Scene1Hook: React.FC = () => {
         style={{ transform: `scale(${badgeScale})` }}
         className="flex items-center gap-3 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-8 py-3.5 backdrop-blur-md"
       >
-        <span className="h-4 w-4 animate-ping rounded-full bg-emerald-400" />
+        <span
+          className="h-4 w-4 rounded-full bg-emerald-400"
+          style={{ opacity: statusPulse, transform: `scale(${0.8 + statusPulse * 0.3})` }}
+        />
         <span className="text-3xl font-black tracking-widest text-emerald-300 uppercase">
           SECURITY EXPLAINER
         </span>
@@ -97,7 +101,6 @@ export const Scene1Hook: React.FC = () => {
         text="Bạn có biết các hacker và chuyên gia bảo mật đọc được bên trong một phần mềm đóng gói mà không có mã nguồn không?"
         durationInFrames={256}
         highlightKeyword="bảo mật"
-        className="mt-64"
       />
     </AbsoluteFill>
   );

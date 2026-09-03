@@ -87,7 +87,6 @@ export const Scene5Stamp: React.FC = () => {
         text="Từ ngày hai mươi tám tháng Sáu, địch ồ ạt đánh chiếm thành cổ. Bộ đội của ta với quyết tâm sống bám thành, chết kiên quyết, bắt đầu cuộc phòng ngự tám mươi mốt ngày đêm đi vào lịch sử dân tộc."
         durationInFrames={durationInFrames - 40}
         highlightKeyword="kiên quyết"
-        className="mt-10"
       />
     </AbsoluteFill>
   );

@@ -23,5 +23,5 @@ export const imageManifest: Record<string, ImageRecord> = {
   "scene7_b_web": {"id":"scene7_b_web","file":"images/QuangTri1972/scene7_b_web.jpg","title":"Đại tướng Võ Nguyên Giáp cùng chiến sĩ bên pháo binh (tư liệu)","credit":"Báo Quân đội nhân dân","license":"Web (tham khảo)"},
   "scene9_c_web": {"id":"scene9_c_web","file":"images/QuangTri1972/scene9_c_web.jpg","title":"Pháo thủ cao xạp của quân ta (tư liệu)","credit":"Quân Khu 7 Online","license":"Web (tham khảo)"},
   "scene12_b_web": {"id":"scene12_b_web","file":"images/QuangTri1972/scene12_b_web.jpg","title":"Nghĩa trang Liệt sĩ Trường Sơn nhìn từ trên cao","credit":"Topquangbinh","license":"Web (tham khảo)"},
-  "scene11_b": {"id":"scene11_b","file":"images/QuangTri1972/scene11_b.jpg","title":"Le duc Tho and Henry Kissinger White House photo","credit":"Unknown authorUnknown author","license":"Public domain"},
+  "scene11_b": {"id":"scene11_b","file":"images/QuangTri1972/scene11_b.jpg","title":"Le duc Tho and Henry Kissinger White House photo","credit":"Unknown author","license":"Public domain"},
 } as const;

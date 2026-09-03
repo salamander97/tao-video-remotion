@@ -62,7 +62,6 @@ export const ArchivalScene: React.FC<ArchivalSceneProps> = ({
         text={subtitleText}
         durationInFrames={durationInFrames}
         highlightKeyword={highlightKeyword}
-        className="mt-14"
       />
     </AbsoluteFill>
   );

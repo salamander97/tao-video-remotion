@@ -2,6 +2,26 @@
 
 Ưu tiên: code React/TypeScript, animation theo frame, có thể copy hoặc tích hợp với Remotion/Tailwind mà không cần đổi renderer.
 
+Đọc cùng `scene-design.md`. Component chỉ là primitive; scene vẫn phải có primary visual, asset và visual timeline riêng. Không ghép badge + card + emoji rồi coi đó là một scene hoàn chỉnh.
+
+## Primitive full-stage bắt buộc trong template
+
+```text
+SceneStage          vùng visual 1080×1920, không bị caption/brand chiếm flow
+BrandOverlay        brand nhỏ neo top, ẩn khi rỗng
+CaptionOverlay      caption neo bottom safe zone, tối đa 2 dòng
+FullBleedMedia      ảnh/footage cover + crop/zoom/parallax theo frame
+MediaMontage        nhiều asset với nhịp chuyển rõ
+DiagramStage        SVG/path/node có nhiều trạng thái
+DataVizStage        metric → chart → annotation
+SourceCredit        nguồn/license gọn và đọc được
+VisualBeatSequence  điều phối entrance/evolution/resolution theo frame
+```
+
+- `CaptionOverlay` và `BrandOverlay` phải dùng absolute positioning, không tham gia `justify-center` của visual.
+- `SceneStage` dành vùng rộng khoảng 880–1000px cho focal object; không mặc định `max-w-xl`.
+- `VisualBeatSequence` không chỉ stagger entrance. Nó phải thay focus/state xuyên suốt scene và cung cấp exit hoặc transition handoff.
+
 ## Caption kiểu TikTok
 
 | Repo/tài nguyên | Nên học hoặc lấy gì | Mức phù hợp |
