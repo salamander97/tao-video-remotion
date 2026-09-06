@@ -1,4 +1,4 @@
-# 10 visual style preset cho video giải thích dọc
+# 11 visual style preset cho video giải thích dọc
 
 Tất cả preset đều giả định 1080×1920, 30fps và caption nằm trong safe zone. Font được chọn theo hướng có hỗ trợ tiếng Việt; vẫn nên render thử chuỗi `Ă Â Đ Ê Ô Ơ Ư ă â đ ê ô ơ ư` trước khi dùng một weight cụ thể.
 
@@ -17,12 +17,15 @@ Tất cả preset đều giả định 1080×1920, 30fps và caption nằm trong
 
 ## Chọn preset theo intent
 
+**11. Editorial News (`editorial-news`)**: nền kem `#F3EFE3`, surface `#FFFCF5`, mực `#22211D`, đỏ gạch `#B94132`; Noto Serif + Be Vietnam Pro. Headline lớn, caption inline đồng bộ, evidence screenshot/ảnh/diagram có crop/highlight/state change. Shell có thể cố định. Dùng `EditorialFrame`; quy tắc bố cục và motion cụ thể ở `editorial-news.md`. Đây là layout editorial, không ép evidence full-height.
+
 | Intent | Preset mặc định | Biến thể |
 |---|---|---|
 | Giải thích cơ chế khoa học | Lab Blueprint | Cosmic Neon nếu cần cảm giác kỳ vĩ; Data Documentary nếu trọng tâm là số liệu |
 | Tin nhanh thị trường | Market Terminal | Fintech Glass cho tài chính cá nhân/sản phẩm; Editorial Macro cho phân tích chính sách |
 | Kiến thức y khoa | Clinical Clarity | Organic Wellness cho thói quen, tinh thần, dinh dưỡng nhẹ nhàng |
 | Sự kiện/nhân vật lịch sử | Archive Documentary | Museum Map nếu câu chuyện phụ thuộc địa lý, hành trình hoặc đế chế |
+| Tin tức, review công cụ, case study có tài liệu | Editorial News | Full-stage ở focal moment; vẫn áp chuẩn nguồn theo domain |
 
 ## Motion token dùng chung
 
@@ -35,7 +38,7 @@ export const motion = {
 } as const;
 ```
 
-Số trên là frame ở 30fps. Mọi `interpolate()` cần clamp hai đầu. Dùng visual full-stage theo `scene-design.md`: primary visual thường hoạt động trong `y≈180..1580`, còn brand và caption là overlay độc lập.
+Số trên là frame ở 30fps. Mọi `interpolate()` cần clamp hai đầu. Full-stage theo `scene-design.md`; editorial theo `editorial-news.md`. Chọn layout theo intent, không ép cùng một vị trí caption/chiều cao evidence cho cả hai.
 
 ## Caption token gợi ý
 
@@ -60,7 +63,7 @@ Không ép caption luôn một dòng nếu làm chữ quá nhỏ. Với tiếng 
 - Chọn primary visual theo intent, không theo component nào dễ viết nhất. Ảnh/footage cho bối cảnh đời thực; SVG/3D cho cơ chế; chart/map cho dữ liệu; UI demo cho sản phẩm/phần mềm.
 - Primary visual thường rộng 880–1000px hoặc full-bleed. Card nhỏ, badge, emoji, caption, glow và particle không được tính là visual chính.
 - Không dùng emoji làm fallback khi thiếu asset. Dựng diagram đúng ngữ nghĩa hoặc dừng để bổ sung asset.
-- Không quá hai scene liên tiếp dùng cùng một ngôn ngữ hình ảnh. Đặc biệt tránh chuỗi card kính dù đổi màu.
+- Không quá hai scene liên tiếp dùng cùng một cách trình bày nội dung. Editorial được giữ shell nhưng đổi evidenceTreatment; tránh chuỗi card giống nhau dù đổi màu.
 - Với Clinical Clarity: ưu tiên lab/doctor/medicine media, anatomical hoặc mechanism SVG, waveform và evidence chart; tránh emoji làm tế bào/cơ quan và stock image sai ngữ cảnh.
 - Với công nghệ/an ninh mạng: ưu tiên UI/terminal crop, network graph, data flow, device/browser mockup và code transformation; icon chỉ làm nhãn.
 - Với disclaimer/credit: dùng overlay ngắn trên visual liên quan, không dành một scene dài cho card đứng yên.

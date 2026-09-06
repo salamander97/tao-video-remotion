@@ -11,7 +11,7 @@ Nguồn chấp nhận (ưu tiên từ trên xuống):
 Checklist:
 - [ ] Ngày tháng năm sự kiện: khớp ≥ 2 nguồn độc lập.
 - [ ] Con số thương vong/lực lượng: ghi rõ "theo nguồn X" trong kịch bản hoặc caption nếu các nguồn chênh nhau.
-- [ ] Ảnh tư liệu: đúng phía, đúng thời kỳ, có license/credit (Commons CC hoặc web VN có ghi nguồn).
+- [ ] Ảnh tư liệu: đúng phía, đúng thời kỳ, có căn cứ quyền dùng và credit. Ghi nguồn web đơn thuần không thay thế giấy phép.
 - [ ] Nhân vật nói lời trích dẫn: kiểm tra thật – hư; nếu là lời truyền lại thì ghi "tương truyền".
 
 ## 🏥 Y tế & sức khỏe
@@ -43,3 +43,11 @@ Checklist:
 - Caption nhỏ cuối cảnh hoặc cuối video: "Nguồn: WHO (2024)" / "Ảnh: Wikimedia Commons — CC BY-SA".
 - Fact sốc hiển thị số to + nguồn nhỏ bên dưới ngay tại cảnh đó (tăng độ tin).
 - Lưu URL đầy đủ vào `episodes.json` → dùng lại khi người xem phản biện ở comment.
+
+## Nghiên cứu hình ảnh cùng facts
+
+- Với mỗi ý trong outline, xác định ảnh/footage/screenshot/diagram giúp người xem hiểu điều gì; thêm queries có thực thể, thời kỳ/địa điểm và chi tiết cần nhìn thấy.
+- Ghi candidateSourceUrls từ trang gốc đã mở; nguồn cho fact và quyền sử dụng ảnh là hai điều cần kiểm tra riêng. Không bịa direct image URL hoặc license.
+- Ảnh sự kiện/nhân vật phải đúng danh tính/bối cảnh; stock chỉ làm minh họa chung và ghi rõ khi dễ gây hiểu nhầm.
+- Review sản phẩm/công nghệ ưu tiên screenshot trang chính thức/UI thật, có crop đủ đọc. Cơ chế khoa học ưu tiên diagram chính xác kết hợp hình ảnh bối cảnh phù hợp.
+- Đưa kết quả vào visualResearch của topic-package, ghi trạng thái candidate hoặc reviewed và rightsNotes. Bên dựng video dùng lại nguồn, chỉ tìm thêm chỗ thiếu, kiểm tra ảnh thực trước JSX.

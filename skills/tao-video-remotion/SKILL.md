@@ -6,6 +6,8 @@ description: >-
 
 # Tạo video bằng Remotion
 
+Phiên bản hướng dẫn: **2026-09-06 — editorial + web assets**.
+
 > 🔗 **Skill liên kết**: nếu người dùng CHƯA có chủ đề hoặc muốn tìm chủ đề/niche hay nhất cho kênh (lịch sử, sức khỏe, tài chính...), dùng skill **`tao-chu-de-video`** trước — skill đó nghiên cứu, chấm điểm viral, bàn giao topic-package (facts có nguồn + memory kênh) rồi mới quay lại skill này để dựng video.
 
 ## ⚙️ Môi trường làm việc
@@ -45,8 +47,8 @@ Khi nhận chủ đề, KHÔNG bắt tay vào soạn kịch bản ngay. PHẢI l
 
 | Phương án | Độ dài | Số cảnh | Phù hợp khi |
 | :--- | :--- | :--- | :--- |
-| **NGẮN** | 50–60s (1500–1800 frames) | 7–10 cảnh, khoảng 12–18 visual beat | Khái niệm đơn giản, cần viral nhanh, giữ chân người xem |
-| **TRUNG BÌNH** | 90–120s (2700–3600 frames) | 12–20 cảnh, khoảng 22–36 visual beat | Có quy trình nhiều bước, cần ví dụ minh họa |
+| **NGẮN** | 50–60s (1500–1800 frames) | 7–10 cảnh; beat phân bổ theo thời lượng từng cảnh | Khái niệm đơn giản, cần viral nhanh, giữ chân người xem |
+| **TRUNG BÌNH** | 90–120s (2700–3600 frames) | 12–20 cảnh hoặc chapter editorial có diễn biến; beat theo từng cảnh | Có quy trình nhiều bước, cần ví dụ minh họa |
 | **DÀI (deep-dive)** | 3–5 phút (5400–9000 frames) | 24–45 cảnh hoặc chapter có nhiều beat | Chủ đề rộng, cần đi sâu cơ chế + thực chiến + case study |
 
 Mỗi phương án phải kèm **outline tóm tắt các cảnh** (tên cảnh + nội dung sẽ nói) để người dùng hình dung. Có thể gợi ý phương án phù hợp nhất dựa trên phân tích ở 0.1 (đánh dấu "Recommended").
@@ -142,7 +144,7 @@ File âm thanh sẽ được lưu tự động vào `public/audio/<TopicName>/<s
 Khi viết mã nguồn Remotion, BẮT BUỘC tuân thủ các nguyên tắc sau:
 
 ### 3.1 Sử dụng Spring Animations
-Không dùng CSS keyframes/transitions hay linear easing vô hồn. Dùng `spring()`:
+Animation phải theo frame, không dùng CSS keyframes/transitions theo đồng hồ thực. Dùng `spring()` cho entrance cần settling; dùng `interpolate()`/easing phù hợp cho camera, path và highlight, không ép mọi vật nảy:
 ```tsx
 import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 
@@ -204,8 +206,8 @@ const d2 = audioManifest.scenes[1].durationInFrames + 3;
 
 
 ### 3.4 Quy chuẩn Thiết kế Visual Full-stage (Vertical 1080x1920)
-1. **Visual là nhân vật chính**: background/ảnh/footage có thể full-bleed; primary visual thường rộng 880–1000px. Không dùng `max-w-xl` hoặc một card nhỏ làm sân khấu mặc định.
-2. **Brand và caption là overlay**: định vị độc lập với visual, không đặt chung trong cột `justify-center`. Caption neo trên safe zone đáy; brand nhỏ, chỉ hiện khi user yêu cầu và không tranh độ sáng/kích thước với headline.
+1. **Chọn layout theo câu chuyện**: `full-stage` cho hình ảnh/cơ chế nhập vai; `editorial` cho headline + screenshot/tài liệu/bằng chứng. Full-stage có thể full-bleed, primary visual thường rộng 880–1000px. Editorial theo `references/editorial-news.md`, không ép evidence chiếm toàn chiều cao. Không dùng `max-w-xl` hoặc card chữ nhỏ thay visual.
+2. **Brand và caption độc lập với visual**: không đặt chung trong cột `justify-center`. Full-stage dùng caption overlay trên safe zone đáy; editorial cho phép caption inline theo slot. Brand nhỏ, chỉ hiện khi user yêu cầu và không tranh độ sáng/kích thước với headline.
 3. **Chất liệu có ý nghĩa**: mỗi scene cần ảnh/footage, diagram/SVG, chart, map/timeline, UI demo hoặc mô phỏng phù hợp. Card, glow, particle, caption và emoji không thay thế primary visual.
 4. **Emoji chỉ là accent**: không dùng emoji làm primary visual hoặc fallback tự động, trừ khi user chủ động yêu cầu phong cách emoji/cartoon.
 5. **Typography Tối ưu cho Mobile (1080x1920)**:
@@ -213,8 +215,8 @@ const d2 = audioManifest.scenes[1].durationInFrames + 3;
    - Nội dung thẻ / trích dẫn: 40px - 50px font-extrabold.
    - Text phụ / giải thích: 28px - 36px font-semibold.
    - Badge danh mục: 28px - 32px font-black uppercase.
-6. **Phụ đề theo Câu (Sentence-Based Caption)**:
-   - **Vị trí**: dùng overlay, thường `bottom: 280..320px`, max-width 840–920px và tối đa 2 dòng. Không dùng `mt-64` để đẩy caption khỏi visual.
+6. **Phụ đề theo Câu (Sentence-Based Caption)**: mặc định `subtitle-pill`; editorial có thể chọn `editorial-inline` dưới headline. Cả hai phải bám TTS, không dùng mô tả tĩnh thay toàn bộ phụ đề.
+   - **Vị trí**: subtitle-pill dùng overlay, thường `bottom: 280..320px`, max-width 840–920px và tối đa 2 dòng; editorial-inline theo `editorial-news.md`. Không dùng `mt-64` để đẩy caption khỏi visual.
    - **QUY TẮC NGẮT CÂU (BẮT BUỘC)**: 1 câu hoàn chỉnh = 1 dòng phụ đề, ngắt theo dấu câu tiếng Việt (`. ! ? …`), KHÔNG BAO GIỜ cắt cứng theo số từ làm đứt giữa câu (kiểu "Xin chào tất cả các / bạn nhé!" là SAI). Câu quá dài (>12 từ) tách tại dấu phẩy gần giữa câu nhất. Thời lượng mỗi câu chia theo tỉ lệ số từ để bám nhịp đọc.
    - **Dùng thư viện dùng chung** `src/lib/subtitleUtils.ts` của template: `chunkSentences(text, 12)` + `getChunkStartFrames(chunks, durationInFrames)` — luôn import từ đó, không tự viết hàm chunk lại. Giữ chữ đọc được trên mobile, pill gọn theo nội dung và highlight 1–3 từ khóa. Xem `SubtitleBox.tsx` của DockerExplainer làm mẫu.
 
@@ -224,17 +226,21 @@ const d2 = audioManifest.scenes[1].durationInFrames + 3;
 
 Trước khi viết scene JSX, **phân loại chủ đề** thành `science | finance | health | history | general`, rồi **tự chọn visual preset** (không hỏi thêm người dùng — chỉ follow nếu họ chủ động yêu cầu style):
 
-- Registry 10 preset + hàm chọn: `src/styles/presets.ts` trong template (cosmic-neon, lab-blueprint, data-documentary, market-terminal, fintech-glass, editorial-macro, clinical-clarity, organic-wellness, **archive-documentary**, museum-map).
+- Registry 11 preset + hàm chọn: `src/styles/presets.ts` trong template (cosmic-neon, lab-blueprint, data-documentary, market-terminal, fintech-glass, editorial-macro, clinical-clarity, organic-wellness, **archive-documentary**, museum-map, **editorial-news**). Với tin tức/review/case study có bằng chứng, ưu tiên editorial-news; domain vẫn quyết định chuẩn fact-check.
 - Chi tiết từng preset (palette, font, hiệu ứng): đọc `references/visual-presets.md`.
-- Component/template mở rộng (caption TikTok, kinetic typography, chart, 3D): đọc `references/remotion-components.md`.
+- Component/template mở rộng (caption TikTok, kinetic typography, chart, 3D): chỉ đọc mục liên quan trong `references/remotion-components.md` khi cần.
 - **Bắt buộc đọc trước khi lập visual plan/viết scene**: `references/scene-design.md` — full-stage, substantive visual, asset, visual beat và contact-sheet QA.
-- Kiến trúc pipeline artifact/cache/resume: đọc `references/pipeline-patterns.md`.
+- **Tìm hình ảnh cho mỗi video**: đọc `references/asset-sourcing.md`; search Internet theo chủ đề, kiểm tra ảnh/footage/screenshot, quyền dùng và lưu manifest trước JSX. Kế thừa visualResearch nếu có; gọi trực tiếp skill này vẫn phải tự lập kế hoạch tìm ảnh. Ngoại lệ provided-only/diagram-only phải có lý do, không âm thầm thay ảnh bằng card.
+- Khi chọn editorial-news: đọc `references/editorial-news.md`, dùng `EditorialFrame` và dựng diễn biến evidence thật.
+- Kiến trúc pipeline artifact/cache/resume: chỉ đọc `references/pipeline-patterns.md` khi sửa pipeline hoặc cần resume; không tải các catalog component/preset không dùng.
 
 ### Lập visual-plan TRƯỚC khi code JSX
 Mỗi scene phải có: `narration`, `visualIntent`, `sceneType`, `primaryVisualType`, `data`, `assetQuery`, `assetRequired`, `visualCoverage`, `visualBeats`, `motionPreset`, `captionEmphasis` và `sourceCredit`. Schema/quy tắc chi tiết nằm trong `references/scene-design.md`.
 
+Plan mới dùng schemaVersion 2, fps, assetSearch và scenes; scene thêm layoutMode, durationInFrames, assetIds. Chạy gate `--ready` theo `references/asset-sourcing.md` trước JSX và render. Gate không thay QA hình ảnh/chuyển động.
+
 Quy tắc chống nhàm chán:
-- **Không dùng cùng một bố cục quá 2 scene liên tiếp**.
+- **Không lặp cùng cách trình bày nội dung quá 2 scene liên tiếp**. Editorial được giữ shell; đổi evidenceTreatment/focus có ý nghĩa, không đổi màu hoặc tên scene để né luật.
 - Micro change mỗi 1–2s, secondary change mỗi 2.5–4s và major focal/layout change mỗi 5–8s. Không giữ primary visual cùng trạng thái quá khoảng 3s.
 - Scene dưới 8s cần ít nhất 3 meaningful visual beat; scene từ 8s cần 4–5 beat hoặc phải tách. Caption, glow, particle và background drift không được tính là meaningful beat.
 - Không dùng emoji làm primary visual. Nếu asset bắt buộc chưa có, tìm/kiểm tra asset hoặc đổi sang diagram chính xác; không thay bằng generic card.
@@ -244,7 +250,7 @@ Quy tắc chống nhàm chán:
 Video lịch sử **sống bằng tư liệu** — thiếu tư liệu = nhàm chán:
 1. **Mật độ tối thiểu**: mỗi cảnh ≥ 2 tư liệu (ảnh/archival) hoặc 1 visual động tự vẽ (bản đồ SVG diễn biến, counter số liệu, con dấu son, cờ/hiệu động, typography cinematic). Video 2–4 phút cần ≥ 15–20 tư liệu.
 2. **Montage cắt nhanh**: dùng component `PhotoSlideshow` (N ảnh/cảnh, chuyển slide 8 frame, Ken Burns xen kẽ zoom-in/out) — không để 1 ảnh đứng nguyên > 8 giây.
-3. **Nguồn ảnh**: Wikimedia Commons (API, có license, hiện credit) → ảnh web Việt Nam (Báo QĐND, Báo Nhân Dân...) cho khoảng trống Commons không có (credit nguồn + "Web (tham khảo)") → **LUÔN kiểm tra ảnh bằng mắt/AI vision** trước khi dùng: đúng phía, đúng thời kỳ, không phải ảnh Mỹ/ARVN khi nói về bộ đội ta.
+3. **Nguồn ảnh**: Wikimedia Commons/lưu trữ có metadata → nguồn web phù hợp nếu có căn cứ quyền dùng; ghi credit không tự cấp quyền tái sử dụng. Theo `references/asset-sourcing.md` và **LUÔN kiểm tra ảnh bằng mắt/AI vision** trước khi dùng: đúng phía, đúng thời kỳ, đúng sự kiện/nhân vật.
 4. **Nhịp độ**: giọng đọc lịch sử dùng rate **+10% ~ +15%** (kể chuyện vẫn trang trọng nhưng không buồn ngủ); rate +0% chỉ dùng khi user yêu cầu nghi thức trang trọng.
 5. Hiệu ứng chất tài liệu: film grain/vignette, hạt tàn lửa, date stamp, khung ảnh sepia + credit license ngay trên khung.
 
@@ -260,6 +266,7 @@ Khi nhận được yêu cầu: *"Tạo video giải thích về [Chủ đề X]
 ### Bước 1: Soạn Kịch bản (Scripting)
 1. Xác định các khối Hook, Problem, Concept, Impact, Outro rồi tách thành số scene đủ để mỗi scene có visual phát triển xuyên suốt; không mặc định ép về 6 scene.
 2. Viết lời thoại tiếng Việt tự nhiên, súc tích; mỗi scene thường 15–30 từ và phải khớp với `visualBeats`.
+3. Chọn preset/layout, lập visual plan nháp và asset search từ outline; lấy/tìm nguồn thực và kiểm tra ảnh theo `references/asset-sourcing.md`. Không viết JSX khi asset bắt buộc còn thiếu. Sau TTS, cập nhật beat frame theo thời lượng thực và chạy gate ready.
 
 ### Bước 2: Sinh Giọng Đọc (TTS Generation)
 1. Tạo script TTS tạm hoặc gọi trực tiếp `scripts/generate-tts.ts` cho topic đó.
@@ -295,7 +302,8 @@ Thêm Composition mới vào `src/Root.tsx`:
 ### Bước 5: Kiểm tra và Báo cáo
 1. Chạy `npm run lint` để kiểm tra lỗi TypeScript/ESLint.
 2. Render contact sheet ở 25%/50%/75% mỗi scene và kiểm tra theo `references/scene-design.md`; sửa scene nếu visual nhỏ, lặp hoặc đứng yên.
+   Sau đó phát preview tốc độ thật cho hook, chuyển cảnh, scene dài và đoạn cuối: kiểm tra hành động bám lời đọc, caption, tiếng và khoảng giữ tĩnh; still đẹp không chứng minh animation tốt. Không tuyên bố đã xem/nghe nếu công cụ chỉ cung cấp still; nêu phần QA chưa thực hiện.
 3. Báo cáo cho người dùng link mở Composition trên Remotion Studio (`http://localhost:3000`) hoặc lệnh render MP4:
    ```bash
-   npx remotion render <TopicName> out/<TopicName>.mp4
+   npx remotion render <TopicName> "<outputDir>/<TopicName>.mp4"
    ```

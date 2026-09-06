@@ -31,6 +31,15 @@ export interface VisualStylePreset {
 }
 
 export const VISUAL_PRESETS: Record<string, VisualStylePreset> = {
+  "editorial-news": {
+    id: "editorial-news",
+    domains: ["general", "science", "finance", "health", "history"],
+    colors: { background: "#F3EFE3", surface: "#FFFCF5", primary: "#22211D", secondary: "#B94132", accent: "#E8CF65", text: "#22211D", muted: "#686359" },
+    fonts: { display: "Noto Serif", body: "Be Vietnam Pro" },
+    caption: { active: "#B94132", inactive: "#22211D", surface: "transparent", maxLines: 2 },
+    effects: ["headline-reveal", "document-focus", "highlight-sweep", "photo-detail", "chapter-cut"],
+    motion: "precise",
+  },
   "cosmic-neon": {
     id: "cosmic-neon",
     domains: ["science"],
@@ -128,6 +137,7 @@ export const chooseVisualStyle = (
   domain: TopicDomain,
   tone?: string
 ): string => {
+  if (tone && ["news", "review", "editorial", "case-study"].includes(tone)) return "editorial-news";
   if (domain === "science" && tone === "epic") return "cosmic-neon";
   if (domain === "science" && tone === "data") return "data-documentary";
   if (domain === "science") return "lab-blueprint";

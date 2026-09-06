@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { cp, mkdir, readFile, stat, writeFile, rm } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readFile, stat, writeFile, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -23,6 +23,7 @@ const TARGETS = {
   codex: path.join(os.homedir(), ".codex", "skills"),
   gemini: path.join(os.homedir(), ".gemini", "skills"),
   zcode: path.join(os.homedir(), ".zcode", "skills"),
+  qwen: path.join(os.homedir(), ".qwen", "skills"),
 };
 
 function printHelp() {
@@ -33,7 +34,7 @@ Usage:
   node scripts/setup.mjs --targets antigravity,claude --output-dir ./output
 
 Options:
-  --targets LIST       antigravity, chatgpt, agents, claude, codex, gemini, zcode hoặc all
+  --targets LIST       antigravity, chatgpt, agents, claude, codex, gemini, zcode, qwen hoặc all
   --template-dir DIR   Thư mục Remotion template
   --output-dir DIR     Thư mục lưu MP4
   --non-interactive    Dùng giá trị mặc định, không hỏi
@@ -135,15 +136,25 @@ async function isDirectory(targetPath) {
   }
 }
 
-async function copySkills(targetName, dryRun) {
+async function copySkills(targetName, dryRun, backupDir) {
   const destination = TARGETS[targetName];
   for (const skillName of SKILL_NAMES) {
     const source = path.join(SKILLS_DIR, skillName);
     const target = path.join(destination, skillName);
     if (!dryRun) {
       await mkdir(destination, { recursive: true });
+      const backup = path.join(backupDir, targetName, skillName);
+      if (existsSync(target)) {
+        await mkdir(path.dirname(backup), { recursive: true });
+        await cp(target, backup, { recursive: true, dereference: true });
+      }
       await rm(target, { recursive: true, force: true });
       await cp(source, target, { recursive: true });
+      // Channel memory belongs to the installed agent; do not reset episodes on upgrade.
+      const memory = path.join(backup, "channels");
+      if (skillName === "tao-chu-de-video" && existsSync(memory)) {
+        await cp(memory, path.join(target, "channels"), { recursive: true, force: true });
+      }
     }
     console.log(`✓ ${skillName} → ${target}${dryRun ? " (dry run)" : ""}`);
   }
@@ -165,7 +176,7 @@ async function main() {
       options.targets ||
       (prompt
         ? await prompt.question(
-            `Cài skill cho nền tảng nào? antigravity/agents/claude/codex/gemini/zcode/all [${defaultTargets}]: `,
+            `Cài skill cho nền tảng nào? antigravity/chatgpt/agents/claude/codex/gemini/zcode/qwen/all [${defaultTargets}]: `,
           )
         : defaultTargets);
     const targets = parseTargets(targetsInput || defaultTargets);
@@ -196,7 +207,19 @@ async function main() {
         : outputDefault);
     const outputDir = normalizePath(outputInput, outputDefault);
 
-    for (const target of targets) await copySkills(target, options.dryRun);
+    let backupDir;
+    if (!options.dryRun) {
+      const backups = path.join(path.dirname(CONFIG_FILE), "skill-backups");
+      await mkdir(backups, { recursive: true });
+      backupDir = await mkdtemp(path.join(backups, "upgrade-"));
+    }
+    const destinations = new Set();
+    for (const target of targets) {
+      if (destinations.has(TARGETS[target])) continue;
+      destinations.add(TARGETS[target]);
+      await copySkills(target, options.dryRun, backupDir);
+    }
+    if (backupDir) console.log(`✓ Bản sao skill cũ (bao gồm memory): ${backupDir}`);
 
     const config = {
       schemaVersion: 1,

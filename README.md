@@ -51,6 +51,7 @@ node scripts/setup.mjs --targets chatgpt,claude,codex,gemini,zcode
 | `gemini`      | `~/.gemini/skills`        | Gemini CLI có hỗ trợ skill cục bộ             |
 | `codex`       | `~/.codex/skills`         | Codex CLI/Desktop                             |
 | `zcode`       | `~/.zcode/skills`         | ZCode                                         |
+| `qwen`        | `~/.qwen/skills`          | Qwen Code                                     |
 | `all`         | Tất cả thư mục trên       | Máy dùng nhiều agent                          |
 
 Ví dụ không cần hỏi tương tác:
@@ -85,6 +86,8 @@ Tạo video deep-dive về cơ chế hoạt động của HTTPS.
 ```
 
 Hai bản skill cũ trong `template/.agents` và `template/.claude` đã được loại bỏ. `skills/` ở root là nguồn chuẩn duy nhất; setup sẽ sao chép từ đây sang đúng thư mục của từng nền tảng.
+
+Sau khi nâng cấp, chạy lại setup với các target đã dùng và mở phiên agent mới. Setup sao lưu bản cũ tại `<home>/.tao-video-suite/skill-backups/` và giữ `channels/` của từng agent để không mất lịch sử tập. Có file trên đĩa chưa đồng nghĩa phiên đang mở đã nạp bản mới; yêu cầu agent đọc đường dẫn skill và nêu phiên bản **2026-09-06 — editorial + web assets** để kiểm tra. Qwen dùng target `qwen` nếu chưa cài.
 
 ## ChatGPT, Gemini và Claude
 
@@ -126,9 +129,11 @@ Các nguyên tắc quan trọng:
 
 - Không tự gắn tên kênh nếu người dùng chưa yêu cầu.
 - Không bịa facts hoặc số liệu, đặc biệt với lịch sử, y tế và tài chính.
-- Visual chính dùng full-stage; brand và subtitle là overlay độc lập.
+- Chọn full-stage hoặc preset mới `editorial-news`: headline serif, caption inline đồng bộ và evidence thật có crop/highlight/đổi trạng thái. Brand nhỏ, chỉ hiện khi được yêu cầu.
+- Mỗi video mới tìm và dùng hình ảnh/footage/screenshot Internet đúng chủ đề; xem asset, xác minh nguồn/quyền dùng rồi lưu local và manifest trước JSX. Ngoại lệ provided-only/diagram-only phải có lý do rõ trong plan.
 - Không dùng emoji làm visual chính hoặc dùng card chữ để thay cho asset/diagram cần thiết.
 - Mỗi scene phải có visual beat trải đều, không hoàn thành toàn bộ animation trong 2–3 giây đầu rồi đứng yên.
+- Kiểm tra contact sheet và preview chuyển động: shell editorial được giữ, evidence phải có diễn biến mang thông tin. Không coi glow/caption/zoom trang trí là đủ beat.
 - Video lịch sử cần đủ mật độ tư liệu và phải kiểm tra đúng chủ đề/thời kỳ.
 - Kết thúc mỗi video thì cập nhật memory của kênh trong `skills/tao-chu-de-video/channels/`.
 
@@ -164,6 +169,15 @@ Nếu composition có `visual-plan.json`, kiểm tra trước khi code/render:
 ```bash
 node ../scripts/validate-visual-plan.mjs src/<TopicName>/visual-plan.json
 ```
+
+Plan mới dùng schemaVersion 2; trước JSX và trước render chạy gate asset:
+
+```bash
+node ../scripts/validate-visual-plan.mjs src/<TopicName>/visual-plan.json \
+  --ready --asset-manifest src/<TopicName>/asset-manifest.json --public-dir public
+```
+
+Gate kiểm tra file/hash/metadata đã review, beat đầu–giữa–đuôi và bố cục; không chứng minh nội dung ảnh đúng hoặc motion đẹp. Plan cũ vẫn chạy kiểm tra mặc định, cần bổ sung metadata để dùng `--ready`. Chi tiết: [tìm asset](skills/tao-video-remotion/references/asset-sourcing.md), [preset editorial](skills/tao-video-remotion/references/editorial-news.md). Công cụ search của agent thực hiện tìm nguồn; script `fetch-images.ts` cũ là ví dụ theo topic, không phải dịch vụ tìm ảnh tổng quát.
 
 ## License và ghi công
 

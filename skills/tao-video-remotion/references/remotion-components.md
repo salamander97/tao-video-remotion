@@ -6,6 +6,8 @@
 
 ## Primitive full-stage bắt buộc trong template
 
+Đã có `SceneStage`, `VisualBeatSequence` và `EditorialFrame` trong `src/components/`. Các tên khác bên dưới là vai trò/pattern cần triển khai khi dùng, không giả định đã có file. `EditorialFrame` là lựa chọn cho editorial-news, không bọc nó trong vùng flex giữa màn hình của SceneStage. Dùng `references/editorial-news.md` cho slot/motion cụ thể.
+
 ```text
 SceneStage          vùng visual 1080×1920, không bị caption/brand chiếm flow
 BrandOverlay        brand nhỏ neo top, ẩn khi rỗng

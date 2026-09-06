@@ -18,7 +18,9 @@ Repo này chứa 2 skill tạo video + 1 template Remotion. Agent (Codex/Antigra
 
 ## Quy tắc bất di bất dịch
 
-- Trước khi viết scene: đọc `skills/tao-video-remotion/references/scene-design.md`; visual dùng full-stage, brand/caption là overlay, không dùng emoji làm primary visual.
+- Trước khi viết scene: đọc `skills/tao-video-remotion/references/scene-design.md`; chọn full-stage hoặc editorial-news theo nội dung, không dùng emoji làm primary visual.
+- Mỗi video mới tìm hình ảnh Internet đúng chủ đề theo `references/asset-sourcing.md` của skill dựng video; kế thừa visualResearch từ topic-package. Asset phải được xem, xác minh nguồn/quyền dùng và có file/hash trong manifest trước JSX; chạy validator với `--ready` trước JSX/render. Ngoại lệ offline/provided-only/diagram-only ghi lý do trong plan.
+- Editorial được giữ shell nhưng evidence phải có crop/highlight/đổi trạng thái mang thông tin; preview chuyển động ở tốc độ thật ngoài contact sheet.
 - Trước khi render: PHẢI hỏi người dùng có hiển thị tên kênh không (không tự gắn brand).
 - Không bịa số liệu/fact — mọi con số trong kịch bản phải có nguồn (lịch sử/y tế/tài chính).
 - Video lịch sử: ≥ 2 tư liệu/cảnh hoặc 1 visual động; ảnh phải kiểm tra đúng chủ đề trước khi dùng.

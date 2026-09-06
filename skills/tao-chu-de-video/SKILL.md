@@ -6,6 +6,8 @@ description: >-
 
 # Skill: Tạo Chủ Đề Video (Interactive Topic & Content Discovery)
 
+Phiên bản hướng dẫn: **2026-09-06 — editorial + web assets**.
+
 Skill này là **trợ lý tư vấn nội dung** — hội thoại vòng lặp với user cho đến khi chốt được chủ đề + nội dung, rồi bàn giao cho skill `tao-video-remotion` (bộ máy sản xuất). **Không giới hạn lĩnh vực** — lịch sử, sức khỏe, tài chính chỉ là ví dụ; bất kỳ hướng nào user muốn đều làm được cùng một khung quy trình.
 
 ## 🔄 QUY TRÌNH HỘI THOẠI (vòng lặp — không chạy một mạch)
@@ -16,7 +18,7 @@ Dùng `AskUserQuestion` hỏi: **"Anh/chị muốn làm video về lĩnh vực n
 - 2-3 hướng đang dễ viral (lấy từ `references/niche-playbooks.md` hoặc WebSearch trend hôm nay)
 - User luôn có thể gõ lĩnh vực bất kỳ (Other) — thể thao, ẩm thực, du lịch, phim, giáo dục...
 
-Mọi lĩnh vực đều map được sang 1 trong **10 visual style có sẵn** trong template (`src/styles/presets.ts`) — dùng bảng này khi gợi ý để user hình dung ngay phong cách:
+Mọi lĩnh vực đều map được sang 1 trong **11 visual style có sẵn** trong template (`src/styles/presets.ts`) — chọn theo intent và chất liệu, không chỉ domain:
 
 | Hướng nội dung | Visual style | Cảm giác |
 |---|---|---|
@@ -30,6 +32,7 @@ Mọi lĩnh vực đều map được sang 1 trong **10 visual style có sẵn**
 | Dinh dưỡng, giấc ngủ, tinh thần | `organic-wellness` | Kem, xanh rêu, nhẹ nhàng |
 | Sự kiện/nhân vật lịch sử, tiểu sử | `archive-documentary` | Sepia, tư liệu, Ken Burns |
 | Đế chế, khảo cổ, lịch sử địa lý | `museum-map` | Bản đồ vàng, bảo tàng |
+| Tin tức, review sản phẩm/công cụ, case study có screenshot | `editorial-news` | Headline serif, evidence thật, highlight/crop có diễn biến |
 | Lĩnh vực khác (thể thao, ẩm thực, du lịch, phim...) | chọn gần nhất theo cảm giác, hoặc `data-documentary` + custom palette | — |
 
 Nếu user chưa có ý tưởng gì: WebSearch "xu hướng video ngắn Việt Nam" tuần này rồi đề xuất 3 hướng kèm lý do.
@@ -54,11 +57,11 @@ Ngay khi user chốt nội dung, hỏi độ dài dự kiến để outline và 
 
 | Lựa chọn | Độ dài | Số cảnh | Phù hợp |
 |---|---|---|---|
-| NGẮN | 50–60s | 6 | Khái niệm đơn giản, viral nhanh |
-| TRUNG BÌNH | 90–120s | 8–10 | Quy trình, có ví dụ |
-| DÀI | 3–4 phút | 12–18 | Deep-dive, kể chuyện |
+| NGẮN | 50–60s | 7–10 | Khái niệm đơn giản, viral nhanh |
+| TRUNG BÌNH | 90–120s | 12–20 hoặc chapter có nhiều trạng thái | Quy trình, có ví dụ |
+| DÀI | 3–5 phút | 24–45 hoặc chapter có nhiều trạng thái | Deep-dive, kể chuyện |
 
-Độ dài user chốt ghi vào package (`chosenLength`) — skill tạo video sẽ KHÔNG hỏi lại. Outline ở Vòng 2 dựng đúng theo số cảnh của độ dài đã chọn.
+Độ dài user chốt ghi vào package (`chosenLength`) — skill tạo video sẽ KHÔNG hỏi lại. Số cảnh là gợi ý; outline theo nội dung và nhịp kể, không kéo dài cảnh tĩnh để đạt thời lượng.
 
 ### Vòng 2 — Nghiên cứu & duyệt facts (phân loại theo LOẠI NỘI DUNG)
 User chọn nội dung xong → **phân loại nội dung trước**:
@@ -79,6 +82,12 @@ Cả hai loại: trình bày lại cho user **3-5 facts đắt giá (kèm nguồ
 1. Lưu topic-package vào memory kênh (status `scripted`), package bắt buộc chứa: `topic`, `titles`, `hook5s`, `keyFacts` (kèm nguồn + ngày/năm), `outline` (đúng số cảnh của `chosenLength`), `contentClass` ("A-kiến thức chính xác" | "B-tin tức"), `imageKeywords`, `visualStyle`, `chosenLength`, `channelName` (nếu biết).
 2. Invoke skill **`tao-video-remotion`** với package. Vì độ dài đã chốt ở Vòng 1.5, skill tạo video **không hỏi lại độ dài** — chỉ hỏi branding nếu package chưa có channelName.
 3. Video render xong: append/cập nhật `episodes.json` (status done, mp4, ngày) — BẮT BUỘC.
+
+### Kế hoạch hình ảnh trong topic-package
+
+Khi nghiên cứu facts đã được chọn, tìm luôn nguồn ảnh/screenshot/footage theo đúng thực thể và bối cảnh; ưu tiên nguồn đã mở để tránh search lặp. Bổ sung `visualResearch` (giữ `imageKeywords` cho tương thích): mỗi mục có `outlineId`, `visualIntent`, `primaryVisualType`, `assetRequired`, `queries`, `candidateSourceUrls`, `rightsNotes`, `status` (`candidate|reviewed`). Xem checklist cuối `references/research-standards.md`.
+
+Phân biệt cảnh bối cảnh/bằng chứng nên dùng ảnh thật với cảnh cơ chế cần diagram. Tin tức/công cụ có screenshot phù hợp thì gợi ý editorial-news. Không chỉ bàn giao vài từ khóa chung chung; ghi rõ ảnh cần cho câu/claim nào. Chỉ đánh dấu reviewed nếu thực sự xem asset; tìm thấy URL chưa đồng nghĩa tải/xác minh quyền dùng xong. Skill dựng video chịu trách nhiệm tải, review cuối, manifest và gate ready. Không tìm lại cùng nguồn ở cả hai skill, không tải hàng loạt asset trước khi user chốt chủ đề.
 
 ## 🧠 MEMORY THEO KÊNH
 

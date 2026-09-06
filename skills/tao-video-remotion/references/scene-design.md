@@ -6,6 +6,8 @@
 
 Visual chính là nhân vật chính; brand và caption là lớp phủ hỗ trợ.
 
+Chọn `layoutMode=full-stage` (mặc định cũ) hoặc `editorial`. Bảng bên dưới áp dụng full-stage. Editorial dùng headline + evidence theo `editorial-news.md`; không ép chiều cao evidence theo bảng full-stage. Brand vẫn nhỏ và optional; caption inline là slot độc lập với evidence.
+
 | Lớp | Vùng/giới hạn khuyến nghị | Quy tắc |
 |---|---|---|
 | Visual canvas | Toàn bộ 1080×1920 | Ảnh, footage và background có thể full-bleed. |
@@ -30,6 +32,8 @@ Mỗi scene phải có ít nhất một visual mang thông tin, trừ một hook
 
 Brand, category badge, headline, subtitle, particle nền, glow, card chữ và emoji **không** được tính là substantive visual.
 
+Card chứa screenshot/ảnh/diagram có thông tin vẫn hợp lệ; đánh giá nội dung bên trong, không cấm mọi hình chữ nhật. Mỗi video mới tìm và dùng asset Internet đúng chủ đề theo `asset-sourcing.md`, trừ ngoại lệ có lý do được ghi trong plan.
+
 ### Emoji và icon
 
 - Không dùng emoji làm primary visual, trừ khi user chủ động chọn phong cách emoji/cartoon.
@@ -47,6 +51,8 @@ Không ép ảnh thật vào mọi scene. Chọn chất liệu giúp người xe
 - **Lịch sử:** tư liệu thật và bản đồ/timeline; tuân thủ thêm luật lịch sử trong `SKILL.md`.
 
 Với video giải thích 50–60 giây, dùng một media mix có chủ ý thay vì quota cứng: thường nên có nhiều hơn một nhóm trong `real media | diagram/simulation | data/map | kinetic type`, không để quá hai scene liên tiếp cùng một ngôn ngữ hình ảnh. Text-only chỉ dùng cho focal moment ngắn.
+
+Editorial có thể giữ shell/headline grid nhưng đổi cách khám phá evidence: document focus, photo story, mechanism, comparison, chart. Sự lặp được đánh giá ở nội dung/evidenceTreatment, không chỉ lớp vỏ. Screenshot nguyên trang chữ nhỏ hoặc zoom trang trí không đủ để biến card thành cảnh hấp dẫn.
 
 ## 4. Visual beat phải trải đều scene
 
@@ -70,6 +76,7 @@ Ràng buộc:
 - Scene dưới 8 giây cần ít nhất 3 meaningful visual beat.
 - Scene từ 8 giây trở lên cần ít nhất 4–5 beat; nếu không có đủ chất liệu thì tách scene.
 - Caption đổi câu, particle, glow và background drift không được tính là meaningful beat.
+- Entrance/exit và headline reveal không tự đủ quota. Beat cần mô tả ý mới, trạng thái mới hoặc chi tiết bằng chứng được khám phá. Khoảng trống đầu và đuôi scene cũng không được vượt khoảng 3 giây; kiểm tra cả đoạn sau beat cuối.
 - Tối đa hai chuyển động mạnh đồng thời; motion phải dẫn mắt hoặc giải thích nội dung.
 - Scene dài vẫn hợp lệ nếu có montage, diagram progression, camera/focus change hoặc nhiều trạng thái rõ ràng.
 
@@ -118,6 +125,8 @@ sourceCredit
 
 Nếu `assetRequired=true`, không được thay asset thiếu bằng emoji hoặc generic card. Tìm nguồn phù hợp, đổi visual plan sang diagram chính xác, hoặc báo blocker.
 
+Plan mới dùng schemaVersion 2 theo `asset-sourcing.md`: thêm fps, assetSearch; mỗi scene thêm layoutMode, durationInFrames, assetIds. Với editorial thêm headline, captionMode, evidenceTreatment. Giữ tên `visualBeats` (không tạo field motionBeats song song). Gate `--ready` bắt buộc trước JSX/render, kiểm tra asset thực và metadata; plan cũ vẫn kiểm tra được ở chế độ mặc định.
+
 ## 6. Pattern theo loại scene
 
 - **Hook:** full-bleed media hoặc focal object lớn + kinetic headline + camera punch/mask reveal.
@@ -144,3 +153,5 @@ Render still ở khoảng 25%, 50% và 75% của từng scene rồi kiểm tra b
 - Nguồn và asset có đúng nội dung, thời kỳ và giấy phép không?
 
 Nếu thumbnail ở 25% kích thước vẫn trông như một slide gồm vài card nhỏ giữa nền trống, scene chưa đạt.
+
+Tiếp tục phát preview tốc độ thật của hook, chuyển cảnh, chapter dài và outro. Kiểm tra reveal/crop/highlight bám lời đọc, không giữ tĩnh lâu sau entrance và caption không che evidence. Contact sheet không chứng minh chuyển động hoặc đồng bộ audio đạt. Editorial được có khoảng thở nhưng vẫn phải đọc được evidence khi xem nhỏ.
