@@ -139,6 +139,16 @@ Plan mới dùng schemaVersion 2 theo `asset-sourcing.md`: thêm fps, assetSearc
 
 Mỗi scene chọn một hero effect và tối đa hai hiệu ứng phụ. Tránh chuỗi `card → card → card` dù màu sắc khác nhau.
 
+## 6.5 Hold/rest tối thiểu và độ đọc chữ (bổ sung sau tích hợp Shotcraft, xem `docs/shotcraft-integration-audit.md`)
+
+Mục 4 đã có giới hạn TRÊN ("không giữ primary visual quá 3 giây"). Bổ sung giới hạn DƯỚI để tránh dồn dập không điểm nghỉ:
+
+- Sau một major focal change hoặc transition mạnh, giữ trạng thái ổn định tối thiểu **~18 khung (0.6s)** trước khi bắt đầu chuyển động tiếp theo — dùng `template/src/motion/settle.ts` (`holdThenSettle`) nếu cần một settle nhẹ thay vì đứng hình cứng.
+- Brand/kết luận/CTA ở outro nên hold **≥30 khung (~1s)** trước khi video kết thúc.
+- Tra `template/src/motion/shots/registry.ts` field `holdRestFrames` cho từng loại shot khi không chắc nên giữ bao lâu.
+
+**Ghi chú độ đọc chữ (Q11):** khi text bị component cha scale nhỏ (preview, thumbnail, hoặc render ở độ phân giải thấp hơn), kiểm tra chiều cao chữ hiệu dụng ở kích thước hiển thị thực tế, không chỉ theo `fontSize` khai báo trong code — chữ có thể đủ lớn trong code nhưng nhỏ khi bị scale bởi container cha.
+
 ## 7. Contact-sheet QA trước render
 
 Render still ở khoảng 25%, 50% và 75% của từng scene rồi kiểm tra bằng mắt:
@@ -153,5 +163,7 @@ Render still ở khoảng 25%, 50% và 75% của từng scene rồi kiểm tra b
 - Nguồn và asset có đúng nội dung, thời kỳ và giấy phép không?
 
 Nếu thumbnail ở 25% kích thước vẫn trông như một slide gồm vài card nhỏ giữa nền trống, scene chưa đạt.
+
+Bổ sung still theo frame cụ thể cho scene mới/phức tạp (không thay thế contact-sheet 25/50/75%): `npx remotion still <TopicName> out/qa/<sceneId>-<frame>.png --frame=<N>` tại 2-3 mốc quan trọng (VD ngay sau major focal change, giữa hold, ngay trước transition) để so khớp trước/sau khi chỉnh sửa motion.
 
 Tiếp tục phát preview tốc độ thật của hook, chuyển cảnh, chapter dài và outro. Kiểm tra reveal/crop/highlight bám lời đọc, không giữ tĩnh lâu sau entrance và caption không che evidence. Contact sheet không chứng minh chuyển động hoặc đồng bộ audio đạt. Editorial được có khoảng thở nhưng vẫn phải đọc được evidence khi xem nhỏ.

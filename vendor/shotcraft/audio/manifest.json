@@ -1,0 +1,1538 @@
+{
+  "generatedAt": "2026-09-11T00:39:55.523Z",
+  "source": "video-shotcraft assets/audio/ATTRIBUTION.md",
+  "sfx": [
+    {
+      "file": "click-camera.mp3",
+      "path": "sfx/camera/click-camera.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "Camera shutter click · https://assets.mixkit.co/active_storage/sfx/1133/1133-preview.mp3",
+      "peakDb": -5.705931,
+      "durationSec": 0.35,
+      "leadingSilenceMs": 138
+    },
+    {
+      "file": "impact-transition.mp3",
+      "path": "sfx/impact/impact-transition.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "Movie trailer epic impact · https://assets.mixkit.co/active_storage/sfx/2908/2908-preview.mp3",
+      "peakDb": -0.426846,
+      "durationSec": 4.87,
+      "leadingSilenceMs": 4866
+    },
+    {
+      "file": "swoosh-quick.mp3",
+      "path": "sfx/transition/swoosh-quick.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "Fast small sweep transition · https://assets.mixkit.co/active_storage/sfx/166/166-preview.mp3",
+      "peakDb": -0.089789,
+      "durationSec": 0.78,
+      "leadingSilenceMs": 72
+    },
+    {
+      "file": "transition-snap.mp3",
+      "path": "sfx/transition/transition-snap.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "Fast transitions swoosh · https://assets.mixkit.co/active_storage/sfx/3115/3115-preview.mp3",
+      "peakDb": -4.187687,
+      "durationSec": 0.57,
+      "leadingSilenceMs": 60
+    },
+    {
+      "file": "transition-soft.mp3",
+      "path": "sfx/transition/transition-soft.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "Air zoom vacuum · https://assets.mixkit.co/active_storage/sfx/2608/2608-preview.mp3",
+      "peakDb": -0.93476,
+      "durationSec": 1.27,
+      "leadingSilenceMs": 143
+    },
+    {
+      "file": "whoosh-fast.mp3",
+      "path": "sfx/transition/whoosh-fast.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "Fast whoosh transition · https://assets.mixkit.co/active_storage/sfx/1490/1490-preview.mp3",
+      "peakDb": -1.893973,
+      "durationSec": 1.76,
+      "leadingSilenceMs": 93
+    },
+    {
+      "file": "air-zoom-vacuum.mp3",
+      "path": "sfx/transition/air-zoom-vacuum.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2608/2608-preview.mp3",
+      "peakDb": -0.93476,
+      "durationSec": 1.27,
+      "leadingSilenceMs": 143
+    },
+    {
+      "file": "bass-hit-futuristic.mp3",
+      "path": "sfx/impact/bass-hit-futuristic.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2303/2303-preview.mp3",
+      "peakDb": -1.580241,
+      "durationSec": 2.75,
+      "leadingSilenceMs": 931
+    },
+    {
+      "file": "bass-hit-short.mp3",
+      "path": "sfx/impact/bass-hit-short.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2299/2299-preview.mp3",
+      "peakDb": -0.300998,
+      "durationSec": 1.1,
+      "leadingSilenceMs": 59
+    },
+    {
+      "file": "camera-shutter-hard.mp3",
+      "path": "sfx/camera/camera-shutter-hard.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1430/1430-preview.mp3",
+      "peakDb": -0.485518,
+      "durationSec": 0.63,
+      "leadingSilenceMs": 100
+    },
+    {
+      "file": "glitch-electric-small.mp3",
+      "path": "sfx/data/glitch-electric-small.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2595/2595-preview.mp3",
+      "peakDb": -0.085607,
+      "durationSec": 1.02,
+      "leadingSilenceMs": 93
+    },
+    {
+      "file": "glitch-static.mp3",
+      "path": "sfx/data/glitch-static.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1457/1457-preview.mp3",
+      "peakDb": -0.550792,
+      "durationSec": 1.4,
+      "leadingSilenceMs": 133
+    },
+    {
+      "file": "heartbeat-single.mp3",
+      "path": "sfx/crowd/heartbeat-single.mp3",
+      "category": "crowd",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/490/490-preview.mp3",
+      "peakDb": -2.231479,
+      "durationSec": 1.1,
+      "leadingSilenceMs": 294
+    },
+    {
+      "file": "impact-deep-whoosh.mp3",
+      "path": "sfx/impact/impact-deep-whoosh.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1143/1143-preview.mp3",
+      "peakDb": -0.375445,
+      "durationSec": 4.06,
+      "leadingSilenceMs": 170
+    },
+    {
+      "file": "impact-epic-trailer.mp3",
+      "path": "sfx/impact/impact-epic-trailer.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2908/2908-preview.mp3",
+      "peakDb": -0.426846,
+      "durationSec": 4.87,
+      "leadingSilenceMs": 4866
+    },
+    {
+      "file": "impact-zoom-quick.mp3",
+      "path": "sfx/impact/impact-zoom-quick.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/772/772-preview.mp3",
+      "peakDb": -0.982875,
+      "durationSec": 1.22,
+      "leadingSilenceMs": 79
+    },
+    {
+      "file": "shimmer-sparkle-sweep.mp3",
+      "path": "sfx/light/shimmer-sparkle-sweep.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2633/2633-preview.mp3",
+      "peakDb": -1.00339,
+      "durationSec": 3,
+      "leadingSilenceMs": 51
+    },
+    {
+      "file": "sweep-fast-small.mp3",
+      "path": "sfx/transition/sweep-fast-small.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/166/166-preview.mp3",
+      "peakDb": -0.089789,
+      "durationSec": 0.78,
+      "leadingSilenceMs": 72
+    },
+    {
+      "file": "sweep-metal-quick.mp3",
+      "path": "sfx/transition/sweep-metal-quick.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2639/2639-preview.mp3",
+      "peakDb": -1.49679,
+      "durationSec": 1.72,
+      "leadingSilenceMs": 238
+    },
+    {
+      "file": "sweep-scifi-fast.mp3",
+      "path": "sfx/transition/sweep-scifi-fast.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3114/3114-preview.mp3",
+      "peakDb": -5.846346,
+      "durationSec": 1.21,
+      "leadingSilenceMs": 93
+    },
+    {
+      "file": "camera-autofocus.mp3",
+      "path": "sfx/camera/camera-autofocus.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1437/1437-preview.mp3",
+      "peakDb": -0.107513,
+      "durationSec": 9.59,
+      "leadingSilenceMs": 331
+    },
+    {
+      "file": "camera-lens-shutter.mp3",
+      "path": "sfx/camera/camera-lens-shutter.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1433/1433-preview.mp3",
+      "peakDb": -0.710265,
+      "durationSec": 1.42,
+      "leadingSilenceMs": 1419
+    },
+    {
+      "file": "camera-shutter-vintage.mp3",
+      "path": "sfx/camera/camera-shutter-vintage.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1438/1438-preview.mp3",
+      "peakDb": -2.413701,
+      "durationSec": 1.16,
+      "leadingSilenceMs": 27
+    },
+    {
+      "file": "ui-zoom-in.mp3",
+      "path": "sfx/camera/ui-zoom-in.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2618/2618-preview.mp3",
+      "peakDb": -14.30523,
+      "durationSec": 0.66,
+      "leadingSilenceMs": 100
+    },
+    {
+      "file": "ui-zoom-out.mp3",
+      "path": "sfx/camera/ui-zoom-out.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2619/2619-preview.mp3",
+      "peakDb": -11.433618,
+      "durationSec": 1.15,
+      "leadingSilenceMs": 106
+    },
+    {
+      "file": "zoom-air-fast.mp3",
+      "path": "sfx/camera/zoom-air-fast.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2625/2625-preview.mp3",
+      "peakDb": -1.074557,
+      "durationSec": 1.28,
+      "leadingSilenceMs": 62
+    },
+    {
+      "file": "zoom-futuristic.mp3",
+      "path": "sfx/camera/zoom-futuristic.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2626/2626-preview.mp3",
+      "peakDb": -1.027804,
+      "durationSec": 2.17,
+      "leadingSilenceMs": 23
+    },
+    {
+      "file": "zoom-swipe-fast.mp3",
+      "path": "sfx/camera/zoom-swipe-fast.mp3",
+      "category": "camera",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2627/2627-preview.mp3",
+      "peakDb": -1.070532,
+      "durationSec": 1.06,
+      "leadingSilenceMs": 59
+    },
+    {
+      "file": "clock-knob-spin.mp3",
+      "path": "sfx/counter/clock-knob-spin.mp3",
+      "category": "counter",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1062/1062-preview.mp3",
+      "peakDb": -13.976091,
+      "durationSec": 0.74,
+      "leadingSilenceMs": 105
+    },
+    {
+      "file": "clock-mech-retract.mp3",
+      "path": "sfx/counter/clock-mech-retract.mp3",
+      "category": "counter",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1049/1049-preview.mp3",
+      "peakDb": -5.923763,
+      "durationSec": 1.37,
+      "leadingSilenceMs": 1372
+    },
+    {
+      "file": "clock-tick-single.mp3",
+      "path": "sfx/counter/clock-tick-single.mp3",
+      "category": "counter",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1061/1061-preview.mp3",
+      "peakDb": -13.915491,
+      "durationSec": 0.85,
+      "leadingSilenceMs": 187
+    },
+    {
+      "file": "countdown-bleeps.mp3",
+      "path": "sfx/counter/countdown-bleeps.mp3",
+      "category": "counter",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/916/916-preview.mp3",
+      "peakDb": -3.166119,
+      "durationSec": 5,
+      "leadingSilenceMs": 1000
+    },
+    {
+      "file": "applause-rhythmic-loop.mp3",
+      "path": "sfx/crowd/applause-rhythmic-loop.mp3",
+      "category": "crowd",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/522/522-preview.mp3",
+      "peakDb": -1.747468,
+      "durationSec": 5.03,
+      "leadingSilenceMs": 0
+    },
+    {
+      "file": "clap-single.mp3",
+      "path": "sfx/crowd/clap-single.mp3",
+      "category": "crowd",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/481/481-preview.mp3",
+      "peakDb": -5.677704,
+      "durationSec": 0.2,
+      "leadingSilenceMs": 101
+    },
+    {
+      "file": "break-glitch-digital.mp3",
+      "path": "sfx/data/break-glitch-digital.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2951/2951-preview.mp3",
+      "peakDb": -1.199071,
+      "durationSec": 1.07,
+      "leadingSilenceMs": 242
+    },
+    {
+      "file": "data-compute.mp3",
+      "path": "sfx/data/data-compute.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3122/3122-preview.mp3",
+      "peakDb": -1.894149,
+      "durationSec": 4,
+      "leadingSilenceMs": 488
+    },
+    {
+      "file": "data-load-os.mp3",
+      "path": "sfx/data/data-load-os.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2529/2529-preview.mp3",
+      "peakDb": -25.255453,
+      "durationSec": 2.63,
+      "leadingSilenceMs": 69
+    },
+    {
+      "file": "data-scan.mp3",
+      "path": "sfx/data/data-scan.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2847/2847-preview.mp3",
+      "peakDb": -2.081478,
+      "durationSec": 2.03,
+      "leadingSilenceMs": 110
+    },
+    {
+      "file": "glitch-static-electric.mp3",
+      "path": "sfx/data/glitch-static-electric.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2597/2597-preview.mp3",
+      "peakDb": -0.497879,
+      "durationSec": 1.5,
+      "leadingSilenceMs": 206
+    },
+    {
+      "file": "glitch-virtual-quick.mp3",
+      "path": "sfx/data/glitch-virtual-quick.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2946/2946-preview.mp3",
+      "peakDb": -0.937884,
+      "durationSec": 2.04,
+      "leadingSilenceMs": 304
+    },
+    {
+      "file": "power-up-electronic.mp3",
+      "path": "sfx/data/power-up-electronic.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2602/2602-preview.mp3",
+      "peakDb": 0.039804,
+      "durationSec": 5.02,
+      "leadingSilenceMs": 107
+    },
+    {
+      "file": "power-up-static.mp3",
+      "path": "sfx/data/power-up-static.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2600/2600-preview.mp3",
+      "peakDb": -2.18762,
+      "durationSec": 2.81,
+      "leadingSilenceMs": 48
+    },
+    {
+      "file": "static-electric-present.mp3",
+      "path": "sfx/data/static-electric-present.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2592/2592-preview.mp3",
+      "peakDb": -1.994976,
+      "durationSec": 3.99,
+      "leadingSilenceMs": 36
+    },
+    {
+      "file": "sweep-digital.mp3",
+      "path": "sfx/data/sweep-digital.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2631/2631-preview.mp3",
+      "peakDb": -1.936852,
+      "durationSec": 1.13,
+      "leadingSilenceMs": 28
+    },
+    {
+      "file": "whoosh-electric.mp3",
+      "path": "sfx/data/whoosh-electric.mp3",
+      "category": "data",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2596/2596-preview.mp3",
+      "peakDb": -1.436159,
+      "durationSec": 3.11,
+      "leadingSilenceMs": 80
+    },
+    {
+      "file": "cassette-stretch.mp3",
+      "path": "sfx/film/cassette-stretch.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3097/3097-preview.mp3",
+      "peakDb": -9.240506,
+      "durationSec": 2.69,
+      "leadingSilenceMs": 276
+    },
+    {
+      "file": "cassette-working.mp3",
+      "path": "sfx/film/cassette-working.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2557/2557-preview.mp3",
+      "peakDb": 0.018593,
+      "durationSec": 2.73,
+      "leadingSilenceMs": 187
+    },
+    {
+      "file": "projector-spin-antique.mp3",
+      "path": "sfx/film/projector-spin-antique.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1444/1444-preview.mp3",
+      "peakDb": -1.261517,
+      "durationSec": 21.71,
+      "leadingSilenceMs": 21335
+    },
+    {
+      "file": "reel-rewind.mp3",
+      "path": "sfx/film/reel-rewind.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1095/1095-preview.mp3",
+      "peakDb": -3.376935,
+      "durationSec": 3.82,
+      "leadingSilenceMs": 34
+    },
+    {
+      "file": "tape-rewind-cine.mp3",
+      "path": "sfx/film/tape-rewind-cine.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1088/1088-preview.mp3",
+      "peakDb": -0.045456,
+      "durationSec": 4.39,
+      "leadingSilenceMs": 139
+    },
+    {
+      "file": "tape-rewind-fast.mp3",
+      "path": "sfx/film/tape-rewind-fast.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1092/1092-preview.mp3",
+      "peakDb": -0.04265,
+      "durationSec": 1.92,
+      "leadingSilenceMs": 120
+    },
+    {
+      "file": "vinyl-needle-drop.mp3",
+      "path": "sfx/film/vinyl-needle-drop.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/701/701-preview.mp3",
+      "peakDb": -3.039738,
+      "durationSec": 0.33,
+      "leadingSilenceMs": 37
+    },
+    {
+      "file": "vinyl-scratch-small.mp3",
+      "path": "sfx/film/vinyl-scratch-small.mp3",
+      "category": "film",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/710/710-preview.mp3",
+      "peakDb": -0.701523,
+      "durationSec": 1.2,
+      "leadingSilenceMs": 1196
+    },
+    {
+      "file": "liquid-bubble.mp3",
+      "path": "sfx/fluid/liquid-bubble.mp3",
+      "category": "fluid",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3000/3000-preview.mp3",
+      "peakDb": -0.670808,
+      "durationSec": 1.05,
+      "leadingSilenceMs": 1047
+    },
+    {
+      "file": "sand-swish.mp3",
+      "path": "sfx/fluid/sand-swish.mp3",
+      "category": "fluid",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1494/1494-preview.mp3",
+      "peakDb": -9.29533,
+      "durationSec": 1.91,
+      "leadingSilenceMs": 1906
+    },
+    {
+      "file": "water-bubble.mp3",
+      "path": "sfx/fluid/water-bubble.mp3",
+      "category": "fluid",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1317/1317-preview.mp3",
+      "peakDb": -8.761679,
+      "durationSec": 0.42,
+      "leadingSilenceMs": 47
+    },
+    {
+      "file": "water-drop-cave.mp3",
+      "path": "sfx/fluid/water-drop-cave.mp3",
+      "category": "fluid",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3179/3179-preview.mp3",
+      "peakDb": -8.094882,
+      "durationSec": 2,
+      "leadingSilenceMs": 34
+    },
+    {
+      "file": "water-splash.mp3",
+      "path": "sfx/fluid/water-splash.mp3",
+      "category": "fluid",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1311/1311-preview.mp3",
+      "peakDb": -0.567188,
+      "durationSec": 1.48,
+      "leadingSilenceMs": 97
+    },
+    {
+      "file": "glass-break-hammer.mp3",
+      "path": "sfx/glass/glass-break-hammer.mp3",
+      "category": "glass",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/759/759-preview.mp3",
+      "peakDb": 1.010271,
+      "durationSec": 1.44,
+      "leadingSilenceMs": 802
+    },
+    {
+      "file": "glass-debris-sweep.mp3",
+      "path": "sfx/glass/glass-debris-sweep.mp3",
+      "category": "glass",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/172/172-preview.mp3",
+      "peakDb": -5.88147,
+      "durationSec": 3.12,
+      "leadingSilenceMs": 101
+    },
+    {
+      "file": "glass-hit-cine.mp3",
+      "path": "sfx/glass/glass-hit-cine.mp3",
+      "category": "glass",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/677/677-preview.mp3",
+      "peakDb": -0.573603,
+      "durationSec": 4.72,
+      "leadingSilenceMs": 3606
+    },
+    {
+      "file": "glass-plate-slide.mp3",
+      "path": "sfx/glass/glass-plate-slide.mp3",
+      "category": "glass",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1527/1527-preview.mp3",
+      "peakDb": -11.002221,
+      "durationSec": 1.13,
+      "leadingSilenceMs": 26
+    },
+    {
+      "file": "gravel-fall-hit.mp3",
+      "path": "sfx/impact/gravel-fall-hit.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/756/756-preview.mp3",
+      "peakDb": -0.126511,
+      "durationSec": 1.23,
+      "leadingSilenceMs": 45
+    },
+    {
+      "file": "hit-blow.mp3",
+      "path": "sfx/impact/hit-blow.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2150/2150-preview.mp3",
+      "peakDb": -2.252111,
+      "durationSec": 0.59,
+      "leadingSilenceMs": 106
+    },
+    {
+      "file": "hit-fast-exciting.mp3",
+      "path": "sfx/impact/hit-fast-exciting.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2180/2180-preview.mp3",
+      "peakDb": -9.420693,
+      "durationSec": 2,
+      "leadingSilenceMs": 127
+    },
+    {
+      "file": "hit-weak.mp3",
+      "path": "sfx/impact/hit-weak.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2148/2148-preview.mp3",
+      "peakDb": -5.636736,
+      "durationSec": 0.59,
+      "leadingSilenceMs": 103
+    },
+    {
+      "file": "impact-cine-big.mp3",
+      "path": "sfx/impact/impact-cine-big.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/788/788-preview.mp3",
+      "peakDb": -0.405298,
+      "durationSec": 7.93,
+      "leadingSilenceMs": 431
+    },
+    {
+      "file": "impact-movie-epic.mp3",
+      "path": "sfx/impact/impact-movie-epic.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2901/2901-preview.mp3",
+      "peakDb": 0.351455,
+      "durationSec": 5.14,
+      "leadingSilenceMs": 46
+    },
+    {
+      "file": "metal-spring-hit.mp3",
+      "path": "sfx/impact/metal-spring-hit.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2302/2302-preview.mp3",
+      "peakDb": -1.051794,
+      "durationSec": 3,
+      "leadingSilenceMs": 118
+    },
+    {
+      "file": "stomp-apocalyptic.mp3",
+      "path": "sfx/impact/stomp-apocalyptic.mp3",
+      "category": "impact",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3057/3057-preview.mp3",
+      "peakDb": -0.702109,
+      "durationSec": 2.85,
+      "leadingSilenceMs": 2343
+    },
+    {
+      "file": "light-aura.mp3",
+      "path": "sfx/light/light-aura.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2581/2581-preview.mp3",
+      "peakDb": -1.825325,
+      "durationSec": 5.5,
+      "leadingSilenceMs": 190
+    },
+    {
+      "file": "light-spell.mp3",
+      "path": "sfx/light/light-spell.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2588/2588-preview.mp3",
+      "peakDb": -0.488554,
+      "durationSec": 8,
+      "leadingSilenceMs": 73
+    },
+    {
+      "file": "light-sweep-magic.mp3",
+      "path": "sfx/light/light-sweep-magic.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2586/2586-preview.mp3",
+      "peakDb": -7.116412,
+      "durationSec": 4.75,
+      "leadingSilenceMs": 309
+    },
+    {
+      "file": "light-transition-magic.mp3",
+      "path": "sfx/light/light-transition-magic.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2583/2583-preview.mp3",
+      "peakDb": -4.022989,
+      "durationSec": 5.06,
+      "leadingSilenceMs": 353
+    },
+    {
+      "file": "sparkle-poof-hit.mp3",
+      "path": "sfx/light/sparkle-poof-hit.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3082/3082-preview.mp3",
+      "peakDb": -0.027636,
+      "durationSec": 3.19,
+      "leadingSilenceMs": 1499
+    },
+    {
+      "file": "sparkle-touch.mp3",
+      "path": "sfx/light/sparkle-touch.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3083/3083-preview.mp3",
+      "peakDb": -2.190284,
+      "durationSec": 2.33,
+      "leadingSilenceMs": 91
+    },
+    {
+      "file": "sparkle-wand.mp3",
+      "path": "sfx/light/sparkle-wand.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3062/3062-preview.mp3",
+      "peakDb": -4.102148,
+      "durationSec": 2.5,
+      "leadingSilenceMs": 974
+    },
+    {
+      "file": "stardust-swish.mp3",
+      "path": "sfx/light/stardust-swish.mp3",
+      "category": "light",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1498/1498-preview.mp3",
+      "peakDb": -0.951947,
+      "durationSec": 4.8,
+      "leadingSilenceMs": 56
+    },
+    {
+      "file": "door-open-futuristic.mp3",
+      "path": "sfx/mech/door-open-futuristic.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/183/183-preview.mp3",
+      "peakDb": -5.08799,
+      "durationSec": 2.05,
+      "leadingSilenceMs": 52
+    },
+    {
+      "file": "gear-lock-metallic.mp3",
+      "path": "sfx/mech/gear-lock-metallic.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2858/2858-preview.mp3",
+      "peakDb": -1.000347,
+      "durationSec": 1.1,
+      "leadingSilenceMs": 27
+    },
+    {
+      "file": "lock-digital.mp3",
+      "path": "sfx/mech/lock-digital.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2859/2859-preview.mp3",
+      "peakDb": -1.809788,
+      "durationSec": 1.09,
+      "leadingSilenceMs": 330
+    },
+    {
+      "file": "lock-quick.mp3",
+      "path": "sfx/mech/lock-quick.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2854/2854-preview.mp3",
+      "peakDb": -0.258532,
+      "durationSec": 1.13,
+      "leadingSilenceMs": 60
+    },
+    {
+      "file": "machine-activate-short.mp3",
+      "path": "sfx/mech/machine-activate-short.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3180/3180-preview.mp3",
+      "peakDb": -1.728739,
+      "durationSec": 2.71,
+      "leadingSilenceMs": 103
+    },
+    {
+      "file": "mech-robotic-futuristic.mp3",
+      "path": "sfx/mech/mech-robotic-futuristic.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2530/2530-preview.mp3",
+      "peakDb": -0.794042,
+      "durationSec": 9.6,
+      "leadingSilenceMs": 36
+    },
+    {
+      "file": "mech-tech-movement.mp3",
+      "path": "sfx/mech/mech-tech-movement.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3117/3117-preview.mp3",
+      "peakDb": -2.561586,
+      "durationSec": 2.5,
+      "leadingSilenceMs": 29
+    },
+    {
+      "file": "metal-drop-scifi-small.mp3",
+      "path": "sfx/mech/metal-drop-scifi-small.mp3",
+      "category": "mech",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/888/888-preview.mp3",
+      "peakDb": -7.791491,
+      "durationSec": 5.5,
+      "leadingSilenceMs": 124
+    },
+    {
+      "file": "paper-book-browse-fast.mp3",
+      "path": "sfx/paper/paper-book-browse-fast.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1102/1102-preview.mp3",
+      "peakDb": -4.919157,
+      "durationSec": 9.28,
+      "leadingSilenceMs": 113
+    },
+    {
+      "file": "paper-crumple-quick.mp3",
+      "path": "sfx/paper/paper-crumple-quick.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2996/2996-preview.mp3",
+      "peakDb": -0.471449,
+      "durationSec": 1.33,
+      "leadingSilenceMs": 591
+    },
+    {
+      "file": "paper-move-quick.mp3",
+      "path": "sfx/paper/paper-move-quick.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2380/2380-preview.mp3",
+      "peakDb": -1.788852,
+      "durationSec": 0.9,
+      "leadingSilenceMs": 116
+    },
+    {
+      "file": "paper-page-turn.mp3",
+      "path": "sfx/paper/paper-page-turn.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1104/1104-preview.mp3",
+      "peakDb": -3.140112,
+      "durationSec": 0.45,
+      "leadingSilenceMs": 57
+    },
+    {
+      "file": "paper-page-turn-big.mp3",
+      "path": "sfx/paper/paper-page-turn-big.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1105/1105-preview.mp3",
+      "peakDb": -5.975267,
+      "durationSec": 0.83,
+      "leadingSilenceMs": 51
+    },
+    {
+      "file": "paper-scissors-cut.mp3",
+      "path": "sfx/paper/paper-scissors-cut.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2378/2378-preview.mp3",
+      "peakDb": -0.109209,
+      "durationSec": 2.94,
+      "leadingSilenceMs": 36
+    },
+    {
+      "file": "paper-slice-quick.mp3",
+      "path": "sfx/paper/paper-slice-quick.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2384/2384-preview.mp3",
+      "peakDb": -8.212363,
+      "durationSec": 0.35,
+      "leadingSilenceMs": 27
+    },
+    {
+      "file": "paper-slide.mp3",
+      "path": "sfx/paper/paper-slide.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1530/1530-preview.mp3",
+      "peakDb": -0.536484,
+      "durationSec": 1.09,
+      "leadingSilenceMs": 26
+    },
+    {
+      "file": "paper-staple.mp3",
+      "path": "sfx/paper/paper-staple.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2995/2995-preview.mp3",
+      "peakDb": -0.720552,
+      "durationSec": 1.15,
+      "leadingSilenceMs": 54
+    },
+    {
+      "file": "paper-wind-blow.mp3",
+      "path": "sfx/paper/paper-wind-blow.mp3",
+      "category": "paper",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2652/2652-preview.mp3",
+      "peakDb": -1.851878,
+      "durationSec": 5.5,
+      "leadingSilenceMs": 178
+    },
+    {
+      "file": "hitech-bleep.mp3",
+      "path": "sfx/scifi/hitech-bleep.mp3",
+      "category": "scifi",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2521/2521-preview.mp3",
+      "peakDb": -5.214186,
+      "durationSec": 0.69,
+      "leadingSilenceMs": 100
+    },
+    {
+      "file": "scifi-click.mp3",
+      "path": "sfx/scifi/scifi-click.mp3",
+      "category": "scifi",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/900/900-preview.mp3",
+      "peakDb": -5.66503,
+      "durationSec": 0.7,
+      "leadingSilenceMs": 100
+    },
+    {
+      "file": "scifi-computer-ambience.mp3",
+      "path": "sfx/scifi/scifi-computer-ambience.mp3",
+      "category": "scifi",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2507/2507-preview.mp3",
+      "peakDb": -5.038296,
+      "durationSec": 23.5,
+      "leadingSilenceMs": 669
+    },
+    {
+      "file": "space-intro-futuristic.mp3",
+      "path": "sfx/scifi/space-intro-futuristic.mp3",
+      "category": "scifi",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2523/2523-preview.mp3",
+      "peakDb": -0.062906,
+      "durationSec": 8.06,
+      "leadingSilenceMs": 8060
+    },
+    {
+      "file": "tech-hum-futuristic.mp3",
+      "path": "sfx/scifi/tech-hum-futuristic.mp3",
+      "category": "scifi",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2133/2133-preview.mp3",
+      "peakDb": -3.814644,
+      "durationSec": 6,
+      "leadingSilenceMs": 202
+    },
+    {
+      "file": "chalk-line.mp3",
+      "path": "sfx/text/chalk-line.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2372/2372-preview.mp3",
+      "peakDb": -0.31689,
+      "durationSec": 1.07,
+      "leadingSilenceMs": 27
+    },
+    {
+      "file": "marker-pen-line.mp3",
+      "path": "sfx/text/marker-pen-line.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2998/2998-preview.mp3",
+      "peakDb": -4.386247,
+      "durationSec": 1.24,
+      "leadingSilenceMs": 1240
+    },
+    {
+      "file": "pen-click-twice.mp3",
+      "path": "sfx/text/pen-click-twice.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2371/2371-preview.mp3",
+      "peakDb": 0.263703,
+      "durationSec": 1.58,
+      "leadingSilenceMs": 152
+    },
+    {
+      "file": "pen-write-paper.mp3",
+      "path": "sfx/text/pen-write-paper.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2367/2367-preview.mp3",
+      "peakDb": -7.000521,
+      "durationSec": 1.47,
+      "leadingSilenceMs": 34
+    },
+    {
+      "file": "pencil-write-short.mp3",
+      "path": "sfx/text/pencil-write-short.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2376/2376-preview.mp3",
+      "peakDb": -22.708742,
+      "durationSec": 0.92,
+      "leadingSilenceMs": 168
+    },
+    {
+      "file": "typewriter-digital.mp3",
+      "path": "sfx/text/typewriter-digital.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1363/1363-preview.mp3",
+      "peakDb": -5.830395,
+      "durationSec": 1.85,
+      "leadingSilenceMs": 111
+    },
+    {
+      "file": "typewriter-hit-hard.mp3",
+      "path": "sfx/text/typewriter-hit-hard.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1364/1364-preview.mp3",
+      "peakDb": -1.01917,
+      "durationSec": 1.1,
+      "leadingSilenceMs": 26
+    },
+    {
+      "file": "typewriter-hit-single.mp3",
+      "path": "sfx/text/typewriter-hit-single.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1382/1382-preview.mp3",
+      "peakDb": -1.099085,
+      "durationSec": 0.7,
+      "leadingSilenceMs": 111
+    },
+    {
+      "file": "typewriter-hit-soft.mp3",
+      "path": "sfx/text/typewriter-hit-soft.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1366/1366-preview.mp3",
+      "peakDb": -2.974574,
+      "durationSec": 0.53,
+      "leadingSilenceMs": 102
+    },
+    {
+      "file": "typewriter-return-bell.mp3",
+      "path": "sfx/text/typewriter-return-bell.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1383/1383-preview.mp3",
+      "peakDb": -0.01532,
+      "durationSec": 1.79,
+      "leadingSilenceMs": 107
+    },
+    {
+      "file": "write-blackboard.mp3",
+      "path": "sfx/text/write-blackboard.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2366/2366-preview.mp3",
+      "peakDb": -0.289748,
+      "durationSec": 13.95,
+      "leadingSilenceMs": 106
+    },
+    {
+      "file": "write-fast.mp3",
+      "path": "sfx/text/write-fast.mp3",
+      "category": "text",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3196/3196-preview.mp3",
+      "peakDb": -19.988408,
+      "durationSec": 0.79,
+      "leadingSilenceMs": 167
+    },
+    {
+      "file": "air-whoosh-powerful.mp3",
+      "path": "sfx/transition/air-whoosh-powerful.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3220/3220-preview.mp3",
+      "peakDb": -0.076509,
+      "durationSec": 1.84,
+      "leadingSilenceMs": 32
+    },
+    {
+      "file": "air-woosh-deep.mp3",
+      "path": "sfx/transition/air-woosh-deep.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2604/2604-preview.mp3",
+      "peakDb": -0.302003,
+      "durationSec": 2.98,
+      "leadingSilenceMs": 29
+    },
+    {
+      "file": "air-woosh-quick.mp3",
+      "path": "sfx/transition/air-woosh-quick.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2605/2605-preview.mp3",
+      "peakDb": -0.267414,
+      "durationSec": 1.51,
+      "leadingSilenceMs": 1511
+    },
+    {
+      "file": "sweep-fast.mp3",
+      "path": "sfx/transition/sweep-fast.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/164/164-preview.mp3",
+      "peakDb": -0.393749,
+      "durationSec": 1.92,
+      "leadingSilenceMs": 47
+    },
+    {
+      "file": "sweep-short.mp3",
+      "path": "sfx/transition/sweep-short.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/175/175-preview.mp3",
+      "peakDb": -4.821657,
+      "durationSec": 0.61,
+      "leadingSilenceMs": 183
+    },
+    {
+      "file": "swoosh-slow.mp3",
+      "path": "sfx/transition/swoosh-slow.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/163/163-preview.mp3",
+      "peakDb": -0.07298,
+      "durationSec": 5.5,
+      "leadingSilenceMs": 122
+    },
+    {
+      "file": "transition-tech.mp3",
+      "path": "sfx/transition/transition-tech.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3176/3176-preview.mp3",
+      "peakDb": -10.357325,
+      "durationSec": 3.12,
+      "leadingSilenceMs": 127
+    },
+    {
+      "file": "transition-tech-slide.mp3",
+      "path": "sfx/transition/transition-tech-slide.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3120/3120-preview.mp3",
+      "peakDb": -10.754161,
+      "durationSec": 1.65,
+      "leadingSilenceMs": 1650
+    },
+    {
+      "file": "warp-slide.mp3",
+      "path": "sfx/transition/warp-slide.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3113/3113-preview.mp3",
+      "peakDb": -5.533111,
+      "durationSec": 2.12,
+      "leadingSilenceMs": 100
+    },
+    {
+      "file": "whoosh-swirl.mp3",
+      "path": "sfx/transition/whoosh-swirl.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1493/1493-preview.mp3",
+      "peakDb": -0.948571,
+      "durationSec": 2.49,
+      "leadingSilenceMs": 93
+    },
+    {
+      "file": "wind-pass-vibrate.mp3",
+      "path": "sfx/transition/wind-pass-vibrate.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2705/2705-preview.mp3",
+      "peakDb": -0.307085,
+      "durationSec": 5.02,
+      "leadingSilenceMs": 100
+    },
+    {
+      "file": "wind-swoosh-short.mp3",
+      "path": "sfx/transition/wind-swoosh-short.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1461/1461-preview.mp3",
+      "peakDb": -1.003314,
+      "durationSec": 1.39,
+      "leadingSilenceMs": 1390
+    },
+    {
+      "file": "wind-woosh-throw.mp3",
+      "path": "sfx/transition/wind-woosh-throw.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1488/1488-preview.mp3",
+      "peakDb": -0.212274,
+      "durationSec": 0.96,
+      "leadingSilenceMs": 102
+    },
+    {
+      "file": "wing-flutter.mp3",
+      "path": "sfx/transition/wing-flutter.mp3",
+      "category": "transition",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2697/2697-preview.mp3",
+      "peakDb": -17.864896,
+      "durationSec": 5.65,
+      "leadingSilenceMs": 146
+    },
+    {
+      "file": "chime-crystal.mp3",
+      "path": "sfx/ui/chime-crystal.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3108/3108-preview.mp3",
+      "peakDb": -2.820363,
+      "durationSec": 2,
+      "leadingSilenceMs": 67
+    },
+    {
+      "file": "hitech-touch-magnet.mp3",
+      "path": "sfx/ui/hitech-touch-magnet.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3171/3171-preview.mp3",
+      "peakDb": -2.644611,
+      "durationSec": 2.21,
+      "leadingSilenceMs": 349
+    },
+    {
+      "file": "pop-electric.mp3",
+      "path": "sfx/ui/pop-electric.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2365/2365-preview.mp3",
+      "peakDb": -0.846458,
+      "durationSec": 1.11,
+      "leadingSilenceMs": 1107
+    },
+    {
+      "file": "switch-click-quick.mp3",
+      "path": "sfx/ui/switch-click-quick.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2582/2582-preview.mp3",
+      "peakDb": 0.147978,
+      "durationSec": 1.04,
+      "leadingSilenceMs": 1036
+    },
+    {
+      "file": "switch-light.mp3",
+      "path": "sfx/ui/switch-light.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2579/2579-preview.mp3",
+      "peakDb": -10.721553,
+      "durationSec": 0.17,
+      "leadingSilenceMs": 167
+    },
+    {
+      "file": "switch-tap.mp3",
+      "path": "sfx/ui/switch-tap.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2585/2585-preview.mp3",
+      "peakDb": -0.750478,
+      "durationSec": 1.11,
+      "leadingSilenceMs": 1106
+    },
+    {
+      "file": "ui-click-tone.mp3",
+      "path": "sfx/ui/ui-click-tone.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3",
+      "peakDb": -6.132856,
+      "durationSec": 0.2,
+      "leadingSilenceMs": 199
+    },
+    {
+      "file": "ui-confirm-bleep.mp3",
+      "path": "sfx/ui/ui-confirm-bleep.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2520/2520-preview.mp3",
+      "peakDb": -8.347297,
+      "durationSec": 0.61,
+      "leadingSilenceMs": 101
+    },
+    {
+      "file": "ui-confirm-tone.mp3",
+      "path": "sfx/ui/ui-confirm-tone.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2867/2867-preview.mp3",
+      "peakDb": -0.676827,
+      "durationSec": 1.3,
+      "leadingSilenceMs": 1304
+    },
+    {
+      "file": "ui-message-pop.mp3",
+      "path": "sfx/ui/ui-message-pop.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2354/2354-preview.mp3",
+      "peakDb": -3.171367,
+      "durationSec": 1.06,
+      "leadingSilenceMs": 53
+    },
+    {
+      "file": "ui-notify-tech.mp3",
+      "path": "sfx/ui/ui-notify-tech.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3123/3123-preview.mp3",
+      "peakDb": -3.695065,
+      "durationSec": 2.08,
+      "leadingSilenceMs": 2083
+    },
+    {
+      "file": "ui-option-select.mp3",
+      "path": "sfx/ui/ui-option-select.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2573/2573-preview.mp3",
+      "peakDb": -0.300556,
+      "durationSec": 1.55,
+      "leadingSilenceMs": 105
+    },
+    {
+      "file": "ui-popup-dry.mp3",
+      "path": "sfx/ui/ui-popup-dry.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2356/2356-preview.mp3",
+      "peakDb": -5.023478,
+      "durationSec": 0.3,
+      "leadingSilenceMs": 26
+    },
+    {
+      "file": "ui-select-click.mp3",
+      "path": "sfx/ui/ui-select-click.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/1109/1109-preview.mp3",
+      "peakDb": -3.993982,
+      "durationSec": 1.1,
+      "leadingSilenceMs": 247
+    },
+    {
+      "file": "ui-select-modern.mp3",
+      "path": "sfx/ui/ui-select-modern.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/3124/3124-preview.mp3",
+      "peakDb": -4.754363,
+      "durationSec": 0.5,
+      "leadingSilenceMs": 500
+    },
+    {
+      "file": "ui-success-soft.mp3",
+      "path": "sfx/ui/ui-success-soft.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2865/2865-preview.mp3",
+      "peakDb": -0.69818,
+      "durationSec": 1.62,
+      "leadingSilenceMs": 1280
+    },
+    {
+      "file": "ui-tone-quick.mp3",
+      "path": "sfx/ui/ui-tone-quick.mp3",
+      "category": "ui",
+      "license": "Mixkit Sound Effects Free License",
+      "sourceUrl": "https://assets.mixkit.co/active_storage/sfx/2866/2866-preview.mp3",
+      "peakDb": -0.671908,
+      "durationSec": 1.29,
+      "leadingSilenceMs": 672
+    }
+  ],
+  "bgm": [
+    {
+      "file": "cat-walk.mp3",
+      "path": "bgm/cat-walk.mp3",
+      "title": "Cat Walk",
+      "artist": "Arulo",
+      "genre": "House",
+      "bpm": "129",
+      "license": "Mixkit Stock Music Free License",
+      "sourceUrl": "https://assets.mixkit.co/music/371/371.mp3",
+      "peakDb": 0.050188,
+      "durationSec": 123.99,
+      "leadingSilenceMs": 1155
+    },
+    {
+      "file": "g-eazy-nba-type.mp3",
+      "path": "bgm/g-eazy-nba-type.mp3",
+      "title": "G Eazy NBA type",
+      "artist": "Arulo",
+      "genre": "Hip Hop",
+      "bpm": "86",
+      "license": "Mixkit Stock Music Free License",
+      "sourceUrl": "https://assets.mixkit.co/music/403/403.mp3",
+      "peakDb": -1.43689,
+      "durationSec": 104.31,
+      "leadingSilenceMs": 64285
+    },
+    {
+      "file": "house-vibez.mp3",
+      "path": "bgm/house-vibez.mp3",
+      "title": "House Vibez",
+      "artist": "Lily J",
+      "genre": "House",
+      "bpm": "123",
+      "license": "Mixkit Stock Music Free License",
+      "sourceUrl": "https://assets.mixkit.co/music/745/745.mp3",
+      "peakDb": 0.316055,
+      "durationSec": 111.46,
+      "leadingSilenceMs": 53
+    },
+    {
+      "file": "tonight-hiphop.mp3",
+      "path": "bgm/tonight-hiphop.mp3",
+      "title": "Tonight",
+      "artist": "Michael Ramir C.",
+      "genre": "Hip Hop",
+      "bpm": "103",
+      "license": "Mixkit Stock Music Free License",
+      "sourceUrl": "https://assets.mixkit.co/music/841/841.mp3",
+      "peakDb": 1.867717,
+      "durationSec": 113.48,
+      "leadingSilenceMs": 315
+    }
+  ],
+  "quarantined": [
+    {
+      "file": "keyboard.mp3",
+      "role": "sfx",
+      "category": "text",
+      "reason": "unresolved source URL in ATTRIBUTION.md — excluded from vendoring per provenance policy"
+    },
+    {
+      "file": "pop.mp3",
+      "role": "sfx",
+      "category": "ui",
+      "reason": "unresolved source URL in ATTRIBUTION.md — excluded from vendoring per provenance policy"
+    },
+    {
+      "file": "riser-cine.mp3",
+      "role": "sfx",
+      "category": "riser",
+      "reason": "unresolved source URL in ATTRIBUTION.md — excluded from vendoring per provenance policy"
+    },
+    {
+      "file": "sparkle.mp3",
+      "role": "sfx",
+      "category": "light",
+      "reason": "unresolved source URL in ATTRIBUTION.md — excluded from vendoring per provenance policy"
+    },
+    {
+      "file": "whoosh-big.mp3",
+      "role": "sfx",
+      "category": "transition",
+      "reason": "unresolved source URL in ATTRIBUTION.md — excluded from vendoring per provenance policy"
+    },
+    {
+      "file": "bgm-tech-house.mp3",
+      "role": "bgm",
+      "reason": "unresolved source track in ATTRIBUTION.md — excluded from vendoring per provenance policy"
+    }
+  ],
+  "measuredAt": "2026-09-11T00:50:39.124Z"
+}

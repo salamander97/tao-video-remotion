@@ -1,0 +1,1969 @@
+{
+  "generatedAt": "2026-09-11T08:59:02.354Z",
+  "totalCandidates": 218,
+  "skipped": [
+    {
+      "stem": "ClipCardLooping",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/clipcard-looping/ClipCardLooping.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "7cb55dade7c7d38b5678e7d84979c49a3ff3ca7a5a2683fdf49b13979477bc40",
+      "reason": "requires real external mp4 material this snapshot does not vendor"
+    },
+    {
+      "stem": "VerticalTicker",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/page-waterfall-wall/VerticalTicker.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "e4f90b838559beae465c6bb08736c00097bb0107d6dd4a378f64308e2acf1bae",
+      "reason": "not standalone-renderable — a shared library component requiring a `columns` prop with no default, consumed by PageWaterfallWall (which IS smoke-tested)"
+    }
+  ],
+  "attempted": 216,
+  "passed": 216,
+  "failed": 0,
+  "results": [
+    {
+      "stem": "Basic3DScene",
+      "relPath": "vendor/shotcraft/demos/camera/basic-3d-scene/Basic3DScene.tsx",
+      "category": "camera",
+      "sourceSha256": "9e853848e3db1dd1415c49f42a243c916c750ff6058367edd98826a8e5f67705",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "ed74bbfd3aa275ec76e54a80c0baa5d72d096ef209f95b0ef168414b709a2787"
+    },
+    {
+      "stem": "CrashImpactReal",
+      "relPath": "vendor/shotcraft/demos/camera/crash-zoom-punch/CrashImpactReal.tsx",
+      "category": "camera",
+      "sourceSha256": "6150253befeb22cff49492dcf3a5b56c01d667e3df6136466e480d7b3b92789d",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "e157ac824dbb31a63db3d89ff1c822930fde15b551c97b4607e33f36c4274b07"
+    },
+    {
+      "stem": "CrashZoomReal",
+      "relPath": "vendor/shotcraft/demos/camera/crash-zoom-punch/CrashZoomReal.tsx",
+      "category": "camera",
+      "sourceSha256": "495a5afc91a4c93424d15edf35c8767d1ff90f4d9515bb9194f68d7f355a181f",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "e157ac824dbb31a63db3d89ff1c822930fde15b551c97b4607e33f36c4274b07"
+    },
+    {
+      "stem": "CursorFlyover",
+      "relPath": "vendor/shotcraft/demos/camera/cursor-flyover/CursorFlyover.tsx",
+      "category": "camera",
+      "sourceSha256": "911e6f6a541c6aed41eb311fbc25af1f0d096591283f2bcf70e1f907ae87e78f",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "5e3ad6a6a69f59bcefc305aabb41e5f9e3105c8c308d43e09402bc405b42aee6"
+    },
+    {
+      "stem": "DollyZoomReal",
+      "relPath": "vendor/shotcraft/demos/camera/depth-layer-moves/DollyZoomReal.tsx",
+      "category": "camera",
+      "sourceSha256": "47d44cad258e8a3c7b7bfd7c5e5b3535360b486f21621e6fb25d210c7e4797b0",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "171c3ae4dc9be61ee857e5c0e51bde353e59cfbd4d2baaeea586f51a4fecce3d"
+    },
+    {
+      "stem": "MultiplaneReal",
+      "relPath": "vendor/shotcraft/demos/camera/depth-layer-moves/MultiplaneReal.tsx",
+      "category": "camera",
+      "sourceSha256": "b67c6ab37f02f1df6033b54fdb08d1fa0aa85300404578be50715285d16d2124",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "9546a1d453a8d0acfb8565d86842037aee01501a28aedeb72f3d66f392b931b5"
+    },
+    {
+      "stem": "GrazeFaceTour",
+      "relPath": "vendor/shotcraft/demos/camera/graze-face-tour/GrazeFaceTour.tsx",
+      "category": "camera",
+      "sourceSha256": "67a92ec45709381b23e79b669a154c9fab2d4ce4997d95226c97c297fd038165",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "4f157f63f74d67aafbb7f25ff665b6cf9ab1a26ad1969e30c9e51cbd9913c0f4"
+    },
+    {
+      "stem": "OverheadTabletopDrop",
+      "relPath": "vendor/shotcraft/demos/camera/overhead-camera-moves/OverheadTabletopDrop.tsx",
+      "category": "camera",
+      "sourceSha256": "a73f96609940cef8a5436126310af3487c685dde9833ae3ffbedc2a48785a29e",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "c6eb94ad6dbd4cb2b1815a5ce473ef179045f2f517f4c01c64dfe444808b6e2b"
+    },
+    {
+      "stem": "TiltReveal",
+      "relPath": "vendor/shotcraft/demos/camera/overhead-camera-moves/TiltReveal.tsx",
+      "category": "camera",
+      "sourceSha256": "a981ba2bbe4c78e042e11bb6db9efcc63519564acaf5a60caf02237c435db20a",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "52f617d9b5a567f5796a40493b6586c40936fa9255086a4af65058555e2073f5"
+    },
+    {
+      "stem": "DroneDiveLanding",
+      "relPath": "vendor/shotcraft/demos/camera/space-camera-moves/DroneDiveLanding.tsx",
+      "category": "camera",
+      "sourceSha256": "531389b779782c6b8bb4728d11ca1fead05ce98f1ef7d5259061ebde28c95597",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "86aff5d5cbff1c3ab8c8a28f7217fb3a81bee47e4dee0c87f99432d89e14c72b"
+    },
+    {
+      "stem": "ExplodedView",
+      "relPath": "vendor/shotcraft/demos/camera/space-camera-moves/ExplodedView.tsx",
+      "category": "camera",
+      "sourceSha256": "75ff3c91f4c0c254db89d3f060a34e23d306c6fa4fb38bccbc5049795d1eed09",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d322f68637189dc58848d2ba56e5a548acd6039bebb0224b09b61cb1818897e1"
+    },
+    {
+      "stem": "SteepTiltGlide",
+      "relPath": "vendor/shotcraft/demos/camera/steep-tilt-glide/SteepTiltGlide.tsx",
+      "category": "camera",
+      "sourceSha256": "184740415dfcaf34311e42fe63b82a69ff987fbb4633f5a8bfb4318ec20e179c",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "089def609b3f406959463401276f8a68c1a5c7bcaecbc5ed5fded3a32a099530"
+    },
+    {
+      "stem": "BulletTimeFreezeOrbit",
+      "relPath": "vendor/shotcraft/demos/camera/tension-camera-moves/BulletTimeFreezeOrbit.tsx",
+      "category": "camera",
+      "sourceSha256": "975f02697f579905a6d83461727f7e258f285fa4738d783ac96b3e6f997413bb",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8b0df89385edc8371887bcc5de4acf71051af6461b9ef2f28bfab53cfaa20e5e"
+    },
+    {
+      "stem": "DutchRollToLevel",
+      "relPath": "vendor/shotcraft/demos/camera/tension-camera-moves/DutchRollToLevel.tsx",
+      "category": "camera",
+      "sourceSha256": "de3f0848a382c77d5f1d7824041fce6a371cef804be592845fba981dd83564d0",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "2ca44e552f6e5d606f77d37ae0d0b49c8876d3cbd43b842bf9948cef0d63557d"
+    },
+    {
+      "stem": "PullBackIsolation",
+      "relPath": "vendor/shotcraft/demos/camera/tension-camera-moves/PullBackIsolation.tsx",
+      "category": "camera",
+      "sourceSha256": "93e36a2f42e96497627fb6aac92854d914f70037239a772e5cb3830e7f1a9844",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "1a902aa8e38958a4579543e9b71b0ea7b964b16f6d2d4e23bd8b3e83fc4c4c5a"
+    },
+    {
+      "stem": "SlowPushIn",
+      "relPath": "vendor/shotcraft/demos/camera/tension-camera-moves/SlowPushIn.tsx",
+      "category": "camera",
+      "sourceSha256": "db43d1d0d52b27cba3a97f17bf2999bcbb8750f5c4aee460889285d7c2647446",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "2a2f2778d62badea6644b4e0906c136693bd0a2d4084924457aa18c1099ccf56"
+    },
+    {
+      "stem": "Terminal3D",
+      "relPath": "vendor/shotcraft/demos/camera/terminal-3d/Terminal3D.tsx",
+      "category": "camera",
+      "sourceSha256": "810807a14ff6a7f813fe2ef999a40364734043428d34d9e272b24e7df18280d4",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "07ad20878c608ab7bcff824d57b7179286cb0aa45d048df1047a0c85fef90fb3"
+    },
+    {
+      "stem": "AvatarGridRadialBuildColorize",
+      "relPath": "vendor/shotcraft/demos/data/avatar-grid-radial-build-colorize/AvatarGridRadialBuildColorize.tsx",
+      "category": "data",
+      "sourceSha256": "ae2e10a5b3c39c65409dd9e5e417d63729419d468e1e598f323efc8b5435cb0c",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "ffb88a1589a1dd83f2cd4856ddad52e7483a4a913e99c840291406af37556939"
+    },
+    {
+      "stem": "BeforeAfterSliderScrub",
+      "relPath": "vendor/shotcraft/demos/data/before-after-slider-scrub/BeforeAfterSliderScrub.tsx",
+      "category": "data",
+      "sourceSha256": "69096e8839be16b7818d3ac375ad170828cb08fa7fcd4fd826d4cc1b4cdf7f69",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "ddfc4299b758590d7dcb240dff14b552feae754a227ba8164d22724af9b68447"
+    },
+    {
+      "stem": "AxisRescaleShockV2",
+      "relPath": "vendor/shotcraft/demos/data/chart-live-moves/AxisRescaleShockV2.tsx",
+      "category": "data",
+      "sourceSha256": "13ad5232884e4ad2a3439c4949f7237136ef98d98de17efd7fd261852ebb7313",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "731e348ff04381360ca22bd83e4cc87ff00473a0f10fedad920aca9981cf648b"
+    },
+    {
+      "stem": "OscilloscopeStreamV2",
+      "relPath": "vendor/shotcraft/demos/data/chart-live-moves/OscilloscopeStreamV2.tsx",
+      "category": "data",
+      "sourceSha256": "ef59ae09fda561c104995ad0f080024fb0f1c3a7016ca911f3a68454c4b2675c",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "02c75a8053e1b948f92e5437a3a8a8d1bf90ad7b6c87fc7fc9d0889d1b33739b"
+    },
+    {
+      "stem": "UnitDotSwarmRegroupV2",
+      "relPath": "vendor/shotcraft/demos/data/chart-live-moves/UnitDotSwarmRegroupV2.tsx",
+      "category": "data",
+      "sourceSha256": "8d5527f02869a91cf13b5fe091c347f672c8fab02105d948678b09a86be4e043",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d5d7cf442ff8cf0cd17a8f32bfe4362e4269abcda8dda619278bdcc574e03ad3"
+    },
+    {
+      "stem": "CounterConfetti",
+      "relPath": "vendor/shotcraft/demos/data/counter-confetti/CounterConfetti.tsx",
+      "category": "data",
+      "sourceSha256": "eb10f603abc5ae1167cc1d289b81ec7b078b1e0947e8f9e5265a836b1f06ee94",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "44b022f526168d6faf6aa9b6a0d4e5bdb123f5a58dd7ee8c3fbef08135581aed"
+    },
+    {
+      "stem": "CycleGlassNodeMorph",
+      "relPath": "vendor/shotcraft/demos/data/cycle-glass-node-morph/CycleGlassNodeMorph.tsx",
+      "category": "data",
+      "sourceSha256": "9fde3566b29e6ca7af2339611a3ee84b674eea69c8318b5a45bccf3b6e6f3f86",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "8fe2907d8d05ba4ecd0f43dba7912f0a8f35d7a3522f26693ecdefa12f0a7335"
+    },
+    {
+      "stem": "NeedleSweepSelftest",
+      "relPath": "vendor/shotcraft/demos/data/gauge-readout-moves/NeedleSweepSelftest.tsx",
+      "category": "data",
+      "sourceSha256": "609d771627b254fe7481664248604da72f4331eb565d87cf998336127603f80f",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "49ba18482ace724c1de78770d6fb5eceadb0f335bc1e25d350ed36f23aa7d05a"
+    },
+    {
+      "stem": "TapeScrollFixedPointer",
+      "relPath": "vendor/shotcraft/demos/data/gauge-readout-moves/TapeScrollFixedPointer.tsx",
+      "category": "data",
+      "sourceSha256": "dd9c6b97788c86fc96de6cf1711da5d9048b6e9c8ba824e18e0d92efc8d49941",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6286c4412c581a7f8d6d81adcb3001d28b532c3b8304970aaa54ef1e0023d797"
+    },
+    {
+      "stem": "HatchDepth",
+      "relPath": "vendor/shotcraft/demos/data/hatch-depth/HatchDepth.tsx",
+      "category": "data",
+      "sourceSha256": "a6e3050ac9b86590a6c74fc9aae3f764e5a4664c891957a98a421303bc8e6b49",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "7b812c76760cf73e139aca31f82fe006c54287c79082da47c3333ba0dce5e1af"
+    },
+    {
+      "stem": "OdometerDigitRoll",
+      "relPath": "vendor/shotcraft/demos/data/odometer-digit-roll/OdometerDigitRoll.tsx",
+      "category": "data",
+      "sourceSha256": "e91c46c1c80f68f83fbed2c1c39e5ad22d6be5799f3541978f56b9e61ee73af2",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "f8018e89c60bdc4543bfe5cbae7844877ff5fb899bc225c739e0267d413238ad"
+    },
+    {
+      "stem": "ConfettiCrossfire",
+      "relPath": "vendor/shotcraft/demos/data/particle-celebrate-hits/ConfettiCrossfire.tsx",
+      "category": "data",
+      "sourceSha256": "4944a90332df7129abb3c037c5bc9a0982f141b1cd2fa6c40cb12692242494dc",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "fa411bcbbc4270ea2344630080014d4b5153391a5b712ea0d996a6813cffb951"
+    },
+    {
+      "stem": "CounterTickSparks",
+      "relPath": "vendor/shotcraft/demos/data/particle-celebrate-hits/CounterTickSparks.tsx",
+      "category": "data",
+      "sourceSha256": "c03d41ef49c1d0c919834c037b59d1aed772a555847631bf56a5b3b8736b9aca",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "e6e4649f4794c3467279ecd5dfab3db12cac50f1c6e1600ce623d8b7c0a28584"
+    },
+    {
+      "stem": "ParticleSandFill",
+      "relPath": "vendor/shotcraft/demos/data/particle-sand-fill/ParticleSandFill.tsx",
+      "category": "data",
+      "sourceSha256": "f0094421646b5c68af5a57592d4e7f554daeb94d8892aa4bbf40bf381ca97617",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6002dbc17582d2e32fcd7146b72d35dbf048cd0985bea94d60182665b6a784e1"
+    },
+    {
+      "stem": "RingDiagramAnnotationReveal",
+      "relPath": "vendor/shotcraft/demos/data/ring-diagram-annotation-reveal/RingDiagramAnnotationReveal.tsx",
+      "category": "data",
+      "sourceSha256": "183c1a472675d8d31fecffbb8f7a6b75ece56b94e3cdd4a3f2325d536db6a47b",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "382d5d2d53529a783f231394e26d38b7f46f2f30750d2b8ab99164b89b84c6e5"
+    },
+    {
+      "stem": "BrakeReticleLock",
+      "relPath": "vendor/shotcraft/demos/data/scroll-brake-moves/BrakeReticleLock.tsx",
+      "category": "data",
+      "sourceSha256": "a46716c0f5bac8e2967c7c094b71fbe1e46746e42a7c4b871acfe8402cec5be9",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "13dd7feee9a8bde1cb10772a9e0f9dc21b90cf58524bfe4713b9c09259055986"
+    },
+    {
+      "stem": "ChangelogScrollBrake",
+      "relPath": "vendor/shotcraft/demos/data/scroll-brake-moves/ChangelogScrollBrake.tsx",
+      "category": "data",
+      "sourceSha256": "d7a6d95511cde7b5d39fbcce7b4b75c1acd118da1ca0020b8bb33bc9c72f528e",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5deca3fbe893e4fd0677e663482f731b6618c31cac97f6806e7e5d077ba2cccc"
+    },
+    {
+      "stem": "TimelineTravel",
+      "relPath": "vendor/shotcraft/demos/data/timeline-travel/TimelineTravel.tsx",
+      "category": "data",
+      "sourceSha256": "be4399cdbf8ea9b4e27d61471328d508c725158b75ad75124f194e3d83b4a8fc",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "adbb7cd782421ef861af2f10835898a24615ee7e50899da78da7170f6611a7e7"
+    },
+    {
+      "stem": "AssembleThenTypeFlyin",
+      "relPath": "vendor/shotcraft/demos/effects/assemble-then-type-flyin/AssembleThenTypeFlyin.tsx",
+      "category": "effects",
+      "sourceSha256": "2e5996b09bbef56ef4a8316a60f78cafcc2161d6d034be31a8d281d45100e4f2",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "c6f2288305d21098e55059b33c874ec601a68794407ad74af2c7ea95b62e9b2c"
+    },
+    {
+      "stem": "AuroraBloomBgFlip",
+      "relPath": "vendor/shotcraft/demos/effects/aurora-bloom-bg-flip/AuroraBloomBgFlip.tsx",
+      "category": "effects",
+      "sourceSha256": "0fc90fd03f153065cea48ff973c175c6c66653bb1a035e40c7ac33bbb356fa21",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "d876103a429185978455efcb39a569dc0572ab0d84c9070724069fcc2a100b95"
+    },
+    {
+      "stem": "BrandFrameSnap",
+      "relPath": "vendor/shotcraft/demos/effects/brand-frame-snap/BrandFrameSnap.tsx",
+      "category": "effects",
+      "sourceSha256": "4a90782092ade6c63ec05dc7e509096c03793242c60ceb836d6b491c34fbf94b",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "a8584ba39c44264f8cac3471352845f61c6b4a2122b94236e4880fad8ed4e2fd"
+    },
+    {
+      "stem": "DashboardGlowHighlightPill",
+      "relPath": "vendor/shotcraft/demos/effects/dashboard-glow-highlight-pill/DashboardGlowHighlightPill.tsx",
+      "category": "effects",
+      "sourceSha256": "84d2f989f506e1bb9059d00468e82daf16c0e38f73984fec98638037583b32bd",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "c49b0a23292de3ea3d0a6aae05ddde876feed63f65e8862b4c0ab777faef3380"
+    },
+    {
+      "stem": "LineUnfoldPanel",
+      "relPath": "vendor/shotcraft/demos/effects/fui-hud-moves/LineUnfoldPanel.tsx",
+      "category": "effects",
+      "sourceSha256": "87329b62b3dfe20b6c08c9f3a559b2f77ee4841b4860cc2be1a00ddf2d5d0122",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "0778fd5012d8183e06bf5203b044829727a3baf34dce03e4fe2c41de94c61f09"
+    },
+    {
+      "stem": "ReticleLockOn",
+      "relPath": "vendor/shotcraft/demos/effects/fui-hud-moves/ReticleLockOn.tsx",
+      "category": "effects",
+      "sourceSha256": "46bf287a5de1fde17d34e3725ed6cf66d443a90cff63ebcc907293cf0c31fdf5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "FlylineArc",
+      "relPath": "vendor/shotcraft/demos/effects/glow-flyline-moves/FlylineArc.tsx",
+      "category": "effects",
+      "sourceSha256": "6c2f3a636d343474dcb489393ad7c71d6f454c1962113c9c90988bfa5f48ae4c",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "a2a0da67faf502f5ed1b131781e078b4669313854c47c410edbeaa34e105da68"
+    },
+    {
+      "stem": "GlowOrbAmbient",
+      "relPath": "vendor/shotcraft/demos/effects/glow-flyline-moves/GlowOrbAmbient.tsx",
+      "category": "effects",
+      "sourceSha256": "ae443fcbf79de1fd63b1219c2073830b47115c168d03aea2ef501154fd09fa60",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "345b2b0df666764a58d79ac2962d8423dffb5211a0517885db3c0581c951511f"
+    },
+    {
+      "stem": "OrbFlylineRelay",
+      "relPath": "vendor/shotcraft/demos/effects/glow-flyline-moves/OrbFlylineRelay.tsx",
+      "category": "effects",
+      "sourceSha256": "d554a49d5bef9064c29d5b9b1bb704ca29798486f44b287d56da43acdc246c20",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "85de3b5d154a058158e13609488cbd34e25830776dd5697c7d3c817e03f38932"
+    },
+    {
+      "stem": "AttentionBounce",
+      "relPath": "vendor/shotcraft/demos/effects/icon-performance-moves/AttentionBounce.tsx",
+      "category": "effects",
+      "sourceSha256": "c467057383f91a4433be617db40d92d03f5f53f47e4cbcedb66091492f50cb87",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "24643c7e6ba1948c08fbd867a98045b25b1788c4131098d9696363cb96b152bb"
+    },
+    {
+      "stem": "PopBurstConfirm",
+      "relPath": "vendor/shotcraft/demos/effects/icon-performance-moves/PopBurstConfirm.tsx",
+      "category": "effects",
+      "sourceSha256": "cca22774f4d75754795f96e0060f727a8b062c3005b7bab5cf45fce86f02b80f",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "86a8eeec99115cbcb6115a63b263479d197958f5eafcbddb4100b573ee3fca33"
+    },
+    {
+      "stem": "AnimeImpact",
+      "relPath": "vendor/shotcraft/demos/effects/impact-feedback/AnimeImpact.tsx",
+      "category": "effects",
+      "sourceSha256": "8a513f31e9899de5eae15962e4a3884f3640c352111dd0ba231e6221a9fef2dc",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "2fe198476425a5365f6c8f7b40a397e6ca4d5cb33d12eb44ea73affcbd64d0bd"
+    },
+    {
+      "stem": "HitCounter",
+      "relPath": "vendor/shotcraft/demos/effects/impact-feedback/HitCounter.tsx",
+      "category": "effects",
+      "sourceSha256": "dd83270319aca314ee45a08b53fea9737aba88a1b401b1aa3561b5ab9e63a4da",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "2ec52d8727bbee0de83fc951702983b82321aa74302902165b71de9002e5ed02"
+    },
+    {
+      "stem": "HalationBloom",
+      "relPath": "vendor/shotcraft/demos/effects/light-play-moves/HalationBloom.tsx",
+      "category": "effects",
+      "sourceSha256": "515567c881a3b18c8ae92d001b0b656b506f3bbadea32d75a82a476c6ea47096",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "508b0a5db2e1ad87b4b2ef4baf8dbd579925e6eecadd6169d2ae7c4ab3f9c7ed"
+    },
+    {
+      "stem": "SheenSweepRetry",
+      "relPath": "vendor/shotcraft/demos/effects/light-play-moves/SheenSweepRetry.tsx",
+      "category": "effects",
+      "sourceSha256": "c411aedec951a84afcf1722c93e8d9bec2864752610c652cc8a7d9e862f5e799",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "9d619ec204383233f918d930317b2753db237bbfb4e0c82972662b926419f9b6"
+    },
+    {
+      "stem": "SpotlightSweepReveal",
+      "relPath": "vendor/shotcraft/demos/effects/light-play-moves/SpotlightSweepReveal.tsx",
+      "category": "effects",
+      "sourceSha256": "2abd85f00e8221f6a6b67c89d0be24fea3dc661a1f00d68e3dc954567cb4b438",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "952437f98b184d42896cacfc0c83a777a7533c3c711faffd8a06de4e25442f20"
+    },
+    {
+      "stem": "LineBoil",
+      "relPath": "vendor/shotcraft/demos/effects/line-boil/LineBoil.tsx",
+      "category": "effects",
+      "sourceSha256": "063d193e15fe3f742779ebe8c6e9a95339e9d718050c261a96f069e7f213bf25",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "c5d269693a47da8d06064aff097390737ecc0be87db29f96ef0237ff0f617007"
+    },
+    {
+      "stem": "RadialRipplePhoneChips",
+      "relPath": "vendor/shotcraft/demos/effects/radial-ripple-phone-chips/RadialRipplePhoneChips.tsx",
+      "category": "effects",
+      "sourceSha256": "c1157c36434d884d015c3056b44bbf4fd94a3cad616385f53af7a54b1d4104db",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "47bb3f40a981162e9d85d7275dfd7572805844c2f5b9e04075ac2b04309dcdec"
+    },
+    {
+      "stem": "RisoBeatPump",
+      "relPath": "vendor/shotcraft/demos/effects/riso-print-hits/RisoBeatPump.tsx",
+      "category": "effects",
+      "sourceSha256": "430f71b64bb4791eb2b6d492c8ca298d48dc795395f188eecbb4a83dd15bdafc",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "93e7fcbd97f5bb13a16f818ae6ae1e3f3929bc0a9a49f1022c638fd38c7b8b9c"
+    },
+    {
+      "stem": "RisoMisregistrationHit",
+      "relPath": "vendor/shotcraft/demos/effects/riso-print-hits/RisoMisregistrationHit.tsx",
+      "category": "effects",
+      "sourceSha256": "55b63608168db7c56b2e4abbe4b8dd7252a61447dd46c364deaaa325d86641df",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "9c20deb106fdfd036a7e02436643820902818c882450118076fc28e1c94c5d23"
+    },
+    {
+      "stem": "ScanBracketSweep",
+      "relPath": "vendor/shotcraft/demos/effects/scan-bracket-sweep/ScanBracketSweep.tsx",
+      "category": "effects",
+      "sourceSha256": "e96046d8b393545fc17a5b6c5d0158aae95d2f2285b6d2a997232a6595e6686e",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "4ef62bcfd99043eaf40024ec71af69ac7cf3998399f7f2442b2e9e76d627b6d8"
+    },
+    {
+      "stem": "ScanlineAnnotateFocus",
+      "relPath": "vendor/shotcraft/demos/effects/scanline-annotate-focus/ScanlineAnnotateFocus.tsx",
+      "category": "effects",
+      "sourceSha256": "c0bff214f004465455400f468847b0ed73f672a6d75b05d6ee8b3704b9d82fd7",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "42bd46a2c8412eae43dc7ba6ec1c0470b7d46833cba940426fff2dfdaf7ecd39"
+    },
+    {
+      "stem": "ScanlineAssembleFlyin",
+      "relPath": "vendor/shotcraft/demos/effects/scanline-assemble-flyin/ScanlineAssembleFlyin.tsx",
+      "category": "effects",
+      "sourceSha256": "e088c86069806039e0affbaad44af6af2dcda1c32ae1a37dfed05acb7d5e92eb",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "f31570267132d2d44722a9735609f0215ccc1d299db60be066df89e81ced0982"
+    },
+    {
+      "stem": "ImpactBurstKit",
+      "relPath": "vendor/shotcraft/demos/effects/slam-entrance-moves/ImpactBurstKit.tsx",
+      "category": "effects",
+      "sourceSha256": "ae207afed57e5a634528e908da438a58d6734845424f6a96ce0d94b80751aba7",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "80a1d464917fc4ce8da0f9276750f0653d2ce540d19c8c03dba800c1c2c7d9a8"
+    },
+    {
+      "stem": "KanadaPerspectiveSnap",
+      "relPath": "vendor/shotcraft/demos/effects/slam-entrance-moves/KanadaPerspectiveSnap.tsx",
+      "category": "effects",
+      "sourceSha256": "1c768591eb775d4daab8f7f956547df26cf937f920cf0904809793fbdcade026",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d925d0f33a3e975e8a31d76e8e9d7ca299f6ac7c4ff9ecd3d7f4f7a6d48e3d22"
+    },
+    {
+      "stem": "ScoreSlam",
+      "relPath": "vendor/shotcraft/demos/effects/slam-entrance-moves/ScoreSlam.tsx",
+      "category": "effects",
+      "sourceSha256": "e2ce99bd4e387e0ff03ffc22948d787fc1e7696f72ffe482f50daabd9336e878",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d098d80be90a66dc398a577c023db987dde72880310e80e52ce31ba529112ca5"
+    },
+    {
+      "stem": "CornerSpotlightReveal",
+      "relPath": "vendor/shotcraft/demos/effects/spotlight-sweep-moves/CornerSpotlightReveal.tsx",
+      "category": "effects",
+      "sourceSha256": "bc5919cf33b701f1080b265ab3f1f3ff9046fe5b2c50355cff2d0c920a8db33d",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "1f746298ce7221563bf5e2f132f3f557233d7250d7e8cf723fd0f70cbb375d03"
+    },
+    {
+      "stem": "GlowWakeSleepPanel",
+      "relPath": "vendor/shotcraft/demos/effects/spotlight-sweep-moves/GlowWakeSleepPanel.tsx",
+      "category": "effects",
+      "sourceSha256": "4ef113f4562992102cc5ffa05fc9f796a840ae9d2fb7cc40bc923b76257277b5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "523981b9e09d123193737a21cbb16ca3baf53dae4d0c268c6c8bfea56c548650"
+    },
+    {
+      "stem": "SlideSpotlightPan",
+      "relPath": "vendor/shotcraft/demos/effects/spotlight-sweep-moves/SlideSpotlightPan.tsx",
+      "category": "effects",
+      "sourceSha256": "4ed15797a085a5526a8c075217413d6b49ceb20d65fcd1b5f2a1c472fd6c4755",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "036fdf85bcee1247bbe7e8edcb5e2fea976346a7433ee0c0bf5be9941be5e0c6"
+    },
+    {
+      "stem": "StreamResponse",
+      "relPath": "vendor/shotcraft/demos/interaction/ai-stream-response/StreamResponse.tsx",
+      "category": "interaction",
+      "sourceSha256": "017726ea7fd92256de50a1c5018391b88efc9920abb7d0cf42dce0e2c0db3df5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "fdbd0d72d1fe1a62c01bd98d39d72c94dd0764e650cd4868aee5ff22e0fbf9e5"
+    },
+    {
+      "stem": "AutolayoutGapDial",
+      "relPath": "vendor/shotcraft/demos/interaction/autolayout-gap-dial/AutolayoutGapDial.tsx",
+      "category": "interaction",
+      "sourceSha256": "80766040683f84e3a2465b0dd3d800a4ecacd672c58f9ea4db0a63318e9c1f9c",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "a7e6c1da1cc9b0549494cd146478baf6170e8e12b879c519736b4470af524f5f"
+    },
+    {
+      "stem": "DiagramCascadeBuild",
+      "relPath": "vendor/shotcraft/demos/interaction/canvas-materialize-moves/DiagramCascadeBuild.tsx",
+      "category": "interaction",
+      "sourceSha256": "c22146209dc68542d3ac630c8816d713d92786501c9cc9e592d1637852fbb548",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "9a06f72f33c86f766dca160a977d660f6dafcbdb0bafd1bfe4933ac4d1326139"
+    },
+    {
+      "stem": "PanelToCanvasMaterialize",
+      "relPath": "vendor/shotcraft/demos/interaction/canvas-materialize-moves/PanelToCanvasMaterialize.tsx",
+      "category": "interaction",
+      "sourceSha256": "1db5d71355732e59394aaade156e7c9c588bdc1fa7f901b1bdcdaf641f52b595",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d5b19bf9fd845dbd77d6efde6a65043026ac14431f7ba8db290c37047e7fc69e"
+    },
+    {
+      "stem": "ChipGridSingleSelectBlackout",
+      "relPath": "vendor/shotcraft/demos/interaction/chip-grid-single-select-blackout/ChipGridSingleSelectBlackout.tsx",
+      "category": "interaction",
+      "sourceSha256": "64edeef21295812d0754a0cc5c1f9652d677db3350eb53b0efe1d82bca793338",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "4ef62bcfd99043eaf40024ec71af69ac7cf3998399f7f2442b2e9e76d627b6d8"
+    },
+    {
+      "stem": "ChipLiftToUserPill",
+      "relPath": "vendor/shotcraft/demos/interaction/chip-lift-to-user-pill/ChipLiftToUserPill.tsx",
+      "category": "interaction",
+      "sourceSha256": "afceecb6c9fa57520df71bd7973471b5e4b5c980537ae7045e6560014fe517bb",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "5019632e06e4d8aff190035a7ba554c5b8450eb1e493810b31b717160c261446"
+    },
+    {
+      "stem": "CursorCastEnsemble",
+      "relPath": "vendor/shotcraft/demos/interaction/collab-cursor-moves/CursorCastEnsemble.tsx",
+      "category": "interaction",
+      "sourceSha256": "9ee65f171a355e99bb6faf6f38effd19c65c9a194b43520b20067d73e264033e",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "93a1cec167a7a302bba316c90a55704d9dcb8e31aab62651906a217bbf32be87"
+    },
+    {
+      "stem": "CursorDialogueDuet",
+      "relPath": "vendor/shotcraft/demos/interaction/collab-cursor-moves/CursorDialogueDuet.tsx",
+      "category": "interaction",
+      "sourceSha256": "d7fd896d41d0ecbe0f538c241f80b1775ea575323d538cd6e69f263880e0f538",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "68356f4e94de587f79d6cc0957284a7d8c7e2ecb4cd2398db94f159b8ca15cbf"
+    },
+    {
+      "stem": "CommandPaletteSummon",
+      "relPath": "vendor/shotcraft/demos/interaction/command-palette-summon/CommandPaletteSummon.tsx",
+      "category": "interaction",
+      "sourceSha256": "b66b2e5945b72ae36df532a9da0a95cd064515fd837688b1fd666c9e5566f848",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "GlassPillDictationTyping",
+      "relPath": "vendor/shotcraft/demos/interaction/glass-pill-dictation-typing/GlassPillDictationTyping.tsx",
+      "category": "interaction",
+      "sourceSha256": "b3d70491d046eb645ea594e5e2a5f9d24d40dd0cf3860d7e65496e528e47f688",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "d8a47083af576d4b882a0495196940e6d70dd81c7b285e51e76f649a70fe8703"
+    },
+    {
+      "stem": "HashtagToPillMaterialize",
+      "relPath": "vendor/shotcraft/demos/interaction/hashtag-to-pill-materialize/HashtagToPillMaterialize.tsx",
+      "category": "interaction",
+      "sourceSha256": "e94a48600e18d53f41e2c3caee1ebfb3456a39e5e2681eb63e51ad71df1ddc46",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d36ca21817c35b2724909f940a6f232d464ee46497974ef8d77289b6215de3ff"
+    },
+    {
+      "stem": "CursorPerformancePunchIn",
+      "relPath": "vendor/shotcraft/demos/interaction/input-trigger-moves/CursorPerformancePunchIn.tsx",
+      "category": "interaction",
+      "sourceSha256": "a2970990b385856cd9e176757eebdcd778fca864f7bf979c976b8fd4cfab53d3",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d00679dc236ad6cbb8affdbbdbe9662d6bacb74928bda55c0e8b4477eb184f42"
+    },
+    {
+      "stem": "KeycapSmashCut",
+      "relPath": "vendor/shotcraft/demos/interaction/input-trigger-moves/KeycapSmashCut.tsx",
+      "category": "interaction",
+      "sourceSha256": "cd995c264dd139a0e6c161d59bb9b5cff17d92fc2ac4efba2e7003e329d53904",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8daa0a5ff73f9598921ae7bbaab5e345f9a69e8a19ac0fecac6e1aef76de39d7"
+    },
+    {
+      "stem": "PickerCarouselFeatureCycle",
+      "relPath": "vendor/shotcraft/demos/interaction/picker-carousel-feature-cycle/PickerCarouselFeatureCycle.tsx",
+      "category": "interaction",
+      "sourceSha256": "123381f36cd03fa6480704b3abd406e09772196a035fcee12d540f3078af69c3",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "ffb88a1589a1dd83f2cd4856ddad52e7483a4a913e99c840291406af37556939"
+    },
+    {
+      "stem": "SegmentedThumbHero",
+      "relPath": "vendor/shotcraft/demos/interaction/segmented-thumb-hero/SegmentedThumbHero.tsx",
+      "category": "interaction",
+      "sourceSha256": "c55e1f2662eba198ccb0fbfba55e6ce37b5bf4cee2b310f33cfe06d44e1d3e41",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "93d7a6e2b01ed2e22f639f04202419c108199f81fd9a6f8c83843ab6575b804d"
+    },
+    {
+      "stem": "PaletteThemeRipple",
+      "relPath": "vendor/shotcraft/demos/interaction/theme-switch-moves/PaletteThemeRipple.tsx",
+      "category": "interaction",
+      "sourceSha256": "66aa7cd97905c876cda8c0e736efe53a8b19fb1546a2f9b65aa9dea82f6d189f",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "ThemeSweepToggle",
+      "relPath": "vendor/shotcraft/demos/interaction/theme-switch-moves/ThemeSweepToggle.tsx",
+      "category": "interaction",
+      "sourceSha256": "2bc27f7ca7c358bfd3fd8e6591b1e3a5f18c48cbd842134aacaefd747598dd39",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "13e547d0193a31b1933ddbf9e1016750a28023d64edfeaac8b945203d80580ae"
+    },
+    {
+      "stem": "TypeAndFilter",
+      "relPath": "vendor/shotcraft/demos/interaction/type-and-filter/TypeAndFilter.tsx",
+      "category": "interaction",
+      "sourceSha256": "95ab942c3e7f0416fbab7563ff326724123cc2a4ddc9fea478aebc8901cdf3b8",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "ccb8a2a413cc47f7cc865c028eae5b8f7a14210d003aee510e62ad5d4e34b5dd"
+    },
+    {
+      "stem": "VoiceWaveformLive",
+      "relPath": "vendor/shotcraft/demos/interaction/voice-waveform-live/VoiceWaveformLive.tsx",
+      "category": "interaction",
+      "sourceSha256": "77ab5983344687d7d591e2101febe8f80bd72fcef2043b470fa24fb95ee9f833",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "798990f6dd39dfe534dd24980b4b50b54f302ab8d226c2b3ec8964e156a193ee"
+    },
+    {
+      "stem": "CraneRiseReveal",
+      "relPath": "vendor/shotcraft/demos/opening/crane-rise-reveal/CraneRiseReveal.tsx",
+      "category": "opening",
+      "sourceSha256": "50035f51d88795b4a47e322f86f2efbdd41e2755356857668f555832ed66bbd0",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "b6054a5fb930f5559926c6baf41efe0af91d8ef82df797db7c28c6c4b6b1b153"
+    },
+    {
+      "stem": "DatavizLandscapeOpen",
+      "relPath": "vendor/shotcraft/demos/opening/dataviz-landscape-open/DatavizLandscapeOpen.tsx",
+      "category": "opening",
+      "sourceSha256": "f575d1387ed5fe5bd1172ab50cdda20fe0562d44bfb469ec6d199b97bacd024a",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "107fb60a9a4b72860c2886889ca8acf6fd59f001f552488968a2357445c6ee1c"
+    },
+    {
+      "stem": "Fracture",
+      "relPath": "vendor/shotcraft/demos/opening/fracture/Fracture.tsx",
+      "category": "opening",
+      "sourceSha256": "0f413346a2f34863ae7cde0e000f3ee5527edb8650099e07e27001c45bc9e544",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "fa0c5bc9b1186998b87ade3433df1c2a68493a39b8f34c15668205055a832f21"
+    },
+    {
+      "stem": "IconFieldColorize",
+      "relPath": "vendor/shotcraft/demos/opening/icon-field-colorize/IconFieldColorize.tsx",
+      "category": "opening",
+      "sourceSha256": "d80a950a762bddc1b1b26e6459aabdc47145316f2c873f00845bcba7a6ed6590",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "ef95badf05e346654d795f1ab827f76463a0b40f760379a7c879aaf735235237"
+    },
+    {
+      "stem": "LetterspaceMaterialize",
+      "relPath": "vendor/shotcraft/demos/opening/letterspace-materialize/LetterspaceMaterialize.tsx",
+      "category": "opening",
+      "sourceSha256": "c66c6a726608e8de3584afd8ff25406eecd387edcf313c701a14d577cf7c9341",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "477e32fdc28395713831ffa41590b659d8c94d9edc2c18d8e4a31700771e5106"
+    },
+    {
+      "stem": "MagicianCardFlourish",
+      "relPath": "vendor/shotcraft/demos/opening/magician-card-flourish/MagicianCardFlourish.tsx",
+      "category": "opening",
+      "sourceSha256": "b4ce830665fa3db4e82e314efd94bbac1b7777e2fab6e77a914e749244dd63de",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d8a47083af576d4b882a0495196940e6d70dd81c7b285e51e76f649a70fe8703"
+    },
+    {
+      "stem": "OrbitRingTitleOpen",
+      "relPath": "vendor/shotcraft/demos/opening/orbit-ring-title-open/OrbitRingTitleOpen.tsx",
+      "category": "opening",
+      "sourceSha256": "54b9528497e2ba43f9726becd862ca51a715fb56d0e7f5b07918d3bcc8f2cd33",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "1afcf5263a926b6c313e0dd776fd4bb370859c48bed47ed21a91267edd3b7e78"
+    },
+    {
+      "stem": "SpotlightHeroCard",
+      "relPath": "vendor/shotcraft/demos/opening/spotlight-hero-card/SpotlightHeroCard.tsx",
+      "category": "opening",
+      "sourceSha256": "9dcc839d8953ff930ade91c82a7da178a31afdaa1e81b1b7ff59820e4b6cb04c",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "71d828a7e529694e54d22267645bdb947b1343f986a8dcaba189f7ecc322e0e3"
+    },
+    {
+      "stem": "StrokeSegmentBuild",
+      "relPath": "vendor/shotcraft/demos/opening/stroke-segment-build/StrokeSegmentBuild.tsx",
+      "category": "opening",
+      "sourceSha256": "56847499d68a79584b039701ed4236194b5c2ebcdf322364e75c1e21ebce73dc",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d768d4b5ec7f9117225090d6459a75724a29869cc7409784f5b05a4c09271f68"
+    },
+    {
+      "stem": "TextAsMask",
+      "relPath": "vendor/shotcraft/demos/opening/text-as-mask/TextAsMask.tsx",
+      "category": "opening",
+      "sourceSha256": "68a6ae67c43cc5b9df63280f3cc0bcf8e212cbe8c86d1c90eeafb935abf61864",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "9ecfaf95d5cb68026df33ef6b7ad500d7c38a2fda3ecaa391bf925f7428259d5"
+    },
+    {
+      "stem": "LogoStingButton",
+      "relPath": "vendor/shotcraft/demos/outro/edit-hook-moves/LogoStingButton.tsx",
+      "category": "outro",
+      "sourceSha256": "b693cbed3ca283502684e3585fb58844e2f707733cec9675c8376143b4cf5d43",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5e5331cba7888b55a4409b4c833d5f0d5eefde947cfaa4b3c6d24954f3521a8d"
+    },
+    {
+      "stem": "GrainDissolve",
+      "relPath": "vendor/shotcraft/demos/outro/grain-dissolve/GrainDissolve.tsx",
+      "category": "outro",
+      "sourceSha256": "3c5700bf5902266481c891f95028fa016d986f8be380485fc6d0471daf067ca0",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "b25846b1d168f9ba91c18b03a05cc54797199e68d911d6d4de3965ae01aac0f1"
+    },
+    {
+      "stem": "LogoShrinkWordmarkLockup",
+      "relPath": "vendor/shotcraft/demos/outro/logo-shrink-wordmark-lockup/LogoShrinkWordmarkLockup.tsx",
+      "category": "outro",
+      "sourceSha256": "d8581f081b037f36954214276aefed9039ebe8d76aadbe91ffdf7c6ff3d4a4df",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "d762e8c68fc7aea70648822e8d91a3c96c7ab17a8114db4f318ebf09e51ad5b3"
+    },
+    {
+      "stem": "NeonTripleMarquee",
+      "relPath": "vendor/shotcraft/demos/outro/neon-triple-marquee/NeonTripleMarquee.tsx",
+      "category": "outro",
+      "sourceSha256": "990ff41bf447308d6dab8b0d9d84320ed1515df6c71ab848830c173c45847df5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "13a3846a95ceff5cbb207b4df4ef3804aaab18d50f915538610b50369138cf4c"
+    },
+    {
+      "stem": "OutroGroupPhotoLaunch",
+      "relPath": "vendor/shotcraft/demos/outro/outro-group-photo-launch/OutroGroupPhotoLaunch.tsx",
+      "category": "outro",
+      "sourceSha256": "af4bbbf21570b65bc8e33b6ed679700089315bd17dffaf17864e4a8ac1e39830",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "79f188ac22e6cbecfed792985639ae73cc5e9388793e2635045947abc3bfa402"
+    },
+    {
+      "stem": "UiStripAwayOutro",
+      "relPath": "vendor/shotcraft/demos/outro/ui-strip-away-outro/UiStripAwayOutro.tsx",
+      "category": "outro",
+      "sourceSha256": "68bc9a8437b2c8f3f4a1980dc8b4e5a3fa4e40127615270140042e5b93a866e3",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "cf08d137279a56437aa2b56d9cd7b6714db5c52a8295665384e022a5bcc1f8da"
+    },
+    {
+      "stem": "IconFlipBloomLogo",
+      "relPath": "vendor/shotcraft/demos/outro/ui-to-brand-morph/IconFlipBloomLogo.tsx",
+      "category": "outro",
+      "sourceSha256": "a4ed4cd2e998df90bb16b4ae958635d14d6bdd48bcd54e2291e8780093664bc9",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6e8cd6f4d4a1b20cc7939d6a698a746f0b0776919198a0016dadb1132f9f9160"
+    },
+    {
+      "stem": "InputMorphsIntoLogo",
+      "relPath": "vendor/shotcraft/demos/outro/ui-to-brand-morph/InputMorphsIntoLogo.tsx",
+      "category": "outro",
+      "sourceSha256": "8822a5505d06a24bcde526ac47904278b4ebdb2d730504b83dfff46f62cff930",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "ba6a7a17bf4f64e4f846f08b11a561136b6070c08d308e4c9a295ae7e8df8c2d"
+    },
+    {
+      "stem": "BeatCutAccelerando",
+      "relPath": "vendor/shotcraft/demos/rhythm/beat-cut-moves/BeatCutAccelerando.tsx",
+      "category": "rhythm",
+      "sourceSha256": "e84aa85acb422b851c1a65182538a6e23501878a0d64f143a611174832a25b1b",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8b2ce621120cc06fdae46860d382aa48c028d358805c9f386d7426830f574bf5"
+    },
+    {
+      "stem": "PaparazziFlash",
+      "relPath": "vendor/shotcraft/demos/rhythm/beat-cut-moves/PaparazziFlash.tsx",
+      "category": "rhythm",
+      "sourceSha256": "a3f622be9af943c752f7ac2ae293a7fac762c51a29d6e9812e8896cd706888f3",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "7e3eb8dfe70d087342495cb6ac526c6d562149c9bc159e1cd538ab292dfe9334"
+    },
+    {
+      "stem": "BeatStepListThemeCycle",
+      "relPath": "vendor/shotcraft/demos/rhythm/beat-step-list-theme-cycle/BeatStepListThemeCycle.tsx",
+      "category": "rhythm",
+      "sourceSha256": "6dfe335735c21865303c3f817489b3c81578a855a2aef4f5f9e678b56e6ac434",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "172e8c8791e8d164c525ce1f4fd293ef1ed63f2b50a9e256ed2d6179ab77e082"
+    },
+    {
+      "stem": "DominoCascade",
+      "relPath": "vendor/shotcraft/demos/rhythm/montage-rhythm-moves/DominoCascade.tsx",
+      "category": "rhythm",
+      "sourceSha256": "9f9bb2d3bda0766bab3f8c19c82c2c7bd7588d2b2d61e53461e74c436dd00323",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "fcbc666523b7b0397718e56180a0b69dedf9c2af49ff96d065b6afbd33146234"
+    },
+    {
+      "stem": "DropBlackoutSlam",
+      "relPath": "vendor/shotcraft/demos/rhythm/montage-rhythm-moves/DropBlackoutSlam.tsx",
+      "category": "rhythm",
+      "sourceSha256": "da2f4b7a3ed1767525e33ca44551e2ca7ad02dc5104fae14f6fb2eba51ec8529",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "576dc6f48b8296de666b58a2efdc822703dd42d9ddb9408d22c118ae8e565a88"
+    },
+    {
+      "stem": "WrightTripleCut",
+      "relPath": "vendor/shotcraft/demos/rhythm/montage-rhythm-moves/WrightTripleCut.tsx",
+      "category": "rhythm",
+      "sourceSha256": "ed71ad7e2081a78876b043601a14b793c0b2637ff33cc1034e2ba93f820a76cf",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "ComicPanelSplit",
+      "relPath": "vendor/shotcraft/demos/rhythm/panel-grid-moves/ComicPanelSplit.tsx",
+      "category": "rhythm",
+      "sourceSha256": "12f6f3e7cb1039720f4f756aa13b7ba732bdca166467bfca416858e0d2cd2919",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "06303e8e93e408b60b42bf62eb05dc3232072b705d53a9685f720520924df359"
+    },
+    {
+      "stem": "FlipGridReflow",
+      "relPath": "vendor/shotcraft/demos/rhythm/panel-grid-moves/FlipGridReflow.tsx",
+      "category": "rhythm",
+      "sourceSha256": "b6b4edd123fadc47fa948590f4589dbe19f70b168115222dc48f52f3669aef91",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "fc8adeb28b3870f262a5b2f1feefa2452ab08fd814679d1892625eb25f74c303"
+    },
+    {
+      "stem": "GridFlashMosaic",
+      "relPath": "vendor/shotcraft/demos/rhythm/panel-grid-moves/GridFlashMosaic.tsx",
+      "category": "rhythm",
+      "sourceSha256": "33188969b8e40ee8bf3a9bac2b794184a8884037021df774bacc06ff7ae7766e",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6e8cd6f4d4a1b20cc7939d6a698a746f0b0776919198a0016dadb1132f9f9160"
+    },
+    {
+      "stem": "QuadSplitParallelScenes",
+      "relPath": "vendor/shotcraft/demos/rhythm/quad-split-parallel-scenes/QuadSplitParallelScenes.tsx",
+      "category": "rhythm",
+      "sourceSha256": "0ef89104610b5a00fc7bb89367957fa8b42df0b616a6c98ed535af6984f07c8e",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "9bc473936dd6e72649f04949ddb4fdd4e7aa48a8bef58edbf678b961ef14d197"
+    },
+    {
+      "stem": "JumpCutPunchIn",
+      "relPath": "vendor/shotcraft/demos/rhythm/rhythm-interrupt-moves/JumpCutPunchIn.tsx",
+      "category": "rhythm",
+      "sourceSha256": "8af8c4161f1c66d15e956d1ff1d3a3e87d69bfed35733edd3086efa9bb7732b8",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5a9bb81c6f5ee4e58b6923f4f7b774adf9473005da84e0112c7b856b4cc107d5"
+    },
+    {
+      "stem": "StrobeBlackFrames",
+      "relPath": "vendor/shotcraft/demos/rhythm/rhythm-interrupt-moves/StrobeBlackFrames.tsx",
+      "category": "rhythm",
+      "sourceSha256": "0b8da8214c0c3741cfd5a848cfc264e47d71c6a1d62e8ff7bc3b559c58f01f85",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "a516fc9020f179c045fd6d61d1b3e7aa01719b3ca17163376324931ec56348fc"
+    },
+    {
+      "stem": "SakugaTimingShift",
+      "relPath": "vendor/shotcraft/demos/rhythm/sakuga-timing-shift/SakugaTimingShift.tsx",
+      "category": "rhythm",
+      "sourceSha256": "bc514f8b217c102c2ebbce24a546c30e444bd8f7102efa32d22a2792da8cda50",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "ae628e86864f752c969c01a0477a7c78b01982288b5dc48b00b9688865993715"
+    },
+    {
+      "stem": "SmearMultiples",
+      "relPath": "vendor/shotcraft/demos/rhythm/smear-multiples/SmearMultiples.tsx",
+      "category": "rhythm",
+      "sourceSha256": "ce3d900cb4ad5cf964997a0f5d2170a5a9749ddee3962c76cdb6e7894ce4ae49",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "94bc936bde07d59ebd509c397a58484c7d362b3fb804228032852d701364b1c8"
+    },
+    {
+      "stem": "SpectrumMorphUi",
+      "relPath": "vendor/shotcraft/demos/rhythm/spectrum-morph-ui/SpectrumMorphUi.tsx",
+      "category": "rhythm",
+      "sourceSha256": "b161d9ae5240869fffb75a921d2d68a506d8cb0eec7e9fe9056ec65f91146669",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5dafb41ef8bd83824aed60bd2771cdac56d4123d3226ae8fff9ba75c412b334e"
+    },
+    {
+      "stem": "FreezeAnnotateReal",
+      "relPath": "vendor/shotcraft/demos/rhythm/speed-ramp-freeze/FreezeAnnotateReal.tsx",
+      "category": "rhythm",
+      "sourceSha256": "5ea9848eb760ed76123ab152d4e2b60bb3b1df9472c3b0ca12e6723fb64f35c7",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "edf613e80eac51fb213062fa9326cecf35ac64975bed2f48e06add1130ed3171"
+    },
+    {
+      "stem": "SpeedRampReal",
+      "relPath": "vendor/shotcraft/demos/rhythm/speed-ramp-freeze/SpeedRampReal.tsx",
+      "category": "rhythm",
+      "sourceSha256": "f3f9e54385f0920aad4071d6f85bf9c878946ddb7908894d5802ab2ecd5f11b8",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "7a96538e7667081c4791ad77f16b91b6a8e910cd29faca728b48e04c615c4e07"
+    },
+    {
+      "stem": "CardFootageCadence",
+      "relPath": "vendor/shotcraft/demos/rhythm/trailer-grammar-moves/CardFootageCadence.tsx",
+      "category": "rhythm",
+      "sourceSha256": "ef68729c0fc3152f4b1fda48c3bf7ef8757522c830c77069cef638d301ec8a9b",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "SmashCut",
+      "relPath": "vendor/shotcraft/demos/rhythm/trailer-grammar-moves/SmashCut.tsx",
+      "category": "rhythm",
+      "sourceSha256": "f4ceb69ef80212c21ad14fa9857d31bdb68970812764625da05be6dfecc889ee",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "b322496c4f5d9425aad58abddb5fe3bc929b53ecc30d1ea0135e832d5e4901cb"
+    },
+    {
+      "stem": "TrailerBumper",
+      "relPath": "vendor/shotcraft/demos/rhythm/trailer-grammar-moves/TrailerBumper.tsx",
+      "category": "rhythm",
+      "sourceSha256": "b91f352e150d02ee286e8ed1169496503d50fed911c34381fc84195757d9b31d",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "BottomPushStackWipe",
+      "relPath": "vendor/shotcraft/demos/transition/bottom-push-stack-wipe/BottomPushStackWipe.tsx",
+      "category": "transition",
+      "sourceSha256": "a4c70143ab37ac55a233cf73c5c00b1fd90730e842b2d48ae24410cca134c457",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c6501ab3f07f1fe905032218fa2157b2358d8fd2f349f77d61fa33658416b32"
+    },
+    {
+      "stem": "BubbleSwarmTakeover",
+      "relPath": "vendor/shotcraft/demos/transition/bubble-swarm-takeover/BubbleSwarmTakeover.tsx",
+      "category": "transition",
+      "sourceSha256": "c30ff2b341f8777f13040c850d78695e5aaa29f71642c8beda33a192721a1724",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "CardFlipReveal",
+      "relPath": "vendor/shotcraft/demos/transition/card-flip-reveal/CardFlipReveal.tsx",
+      "category": "transition",
+      "sourceSha256": "fcce7bee9de5a7e6ce1ac74d4a122c0b2147c1c2b3da4db0f5c92103d6e084b9",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "9a1c51d8770f448396f9abd43f9395cd2ff3608a0329a7ceab7bf4420a8975a8"
+    },
+    {
+      "stem": "CardFlockTumble",
+      "relPath": "vendor/shotcraft/demos/transition/card-flock-tumble/CardFlockTumble.tsx",
+      "category": "transition",
+      "sourceSha256": "d89cce89a15012180a3461ee6539ab974fc8f347e3ece9ee62270d1c166cd5c0",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "57c93b8b355256fb9625ef68c0a8feeca5c15fab1e5015f9f3221c18c9219a7a"
+    },
+    {
+      "stem": "CircleMatchIris",
+      "relPath": "vendor/shotcraft/demos/transition/circle-match-iris/CircleMatchIris.tsx",
+      "category": "transition",
+      "sourceSha256": "0c2afbb49d65aa15241396fb2343ba3cb046d0958cd80a9eac1925e4f93efd20",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "dd8c59d9122286977664558d799a2f99559de5a315182ed0764aff695c0082f6"
+    },
+    {
+      "stem": "ColorBlockStepWipe",
+      "relPath": "vendor/shotcraft/demos/transition/color-block-step-wipe/ColorBlockStepWipe.tsx",
+      "category": "transition",
+      "sourceSha256": "b20b9a7065356705e27f836e2ea89c9f474e23165a4a9d383b79d5a0fd838677",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6e8cd6f4d4a1b20cc7939d6a698a746f0b0776919198a0016dadb1132f9f9160"
+    },
+    {
+      "stem": "CubeNavigation",
+      "relPath": "vendor/shotcraft/demos/transition/cube-navigation/CubeNavigation.tsx",
+      "category": "transition",
+      "sourceSha256": "83cc2966e85698bb4c9837c896989993d3eb2ec1b32612712a69af746961d905",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "d8a47083af576d4b882a0495196940e6d70dd81c7b285e51e76f649a70fe8703"
+    },
+    {
+      "stem": "GradientTransition",
+      "relPath": "vendor/shotcraft/demos/transition/gradient-transition/GradientTransition.tsx",
+      "category": "transition",
+      "sourceSha256": "a0dfd2721778d9786b99be67b74da846725fadedcdac0a8a08b7ed3e2bb90cc3",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "cf696a7234c53a343a80f88ec1c89b11f5640257f6b7577e865f40b9826052e1"
+    },
+    {
+      "stem": "LineCarryTransition",
+      "relPath": "vendor/shotcraft/demos/transition/line-carry-transition/LineCarryTransition.tsx",
+      "category": "transition",
+      "sourceSha256": "e3cf0eafab68e3fced8705adedadcd685033af84595d3c738e92af782687ac95",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "92e82b74f176a60d2667a44f92efa61777d7d3c7f6134174041f8b11ee64b5fb"
+    },
+    {
+      "stem": "MosaicReframe",
+      "relPath": "vendor/shotcraft/demos/transition/mosaic-reframe/MosaicReframe.tsx",
+      "category": "transition",
+      "sourceSha256": "78487db1769be4203165835c823c663b676223ee8ad84f3da6e04a7740e89766",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c9a9f1db8a937ef273c45d710a874831dbc2c47fdde773e389ecb76132a816a"
+    },
+    {
+      "stem": "BarnDoorSplit",
+      "relPath": "vendor/shotcraft/demos/transition/page-turn-transitions/BarnDoorSplit.tsx",
+      "category": "transition",
+      "sourceSha256": "5d1d04f5685e9d270a68beea2c02b6ab90f208f4e3d7ded1722fe260608cfc14",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d99a7502c4680c70d9b86c7a01a2b4914d90f133ac67f2f5d0f5e06e61ffca67"
+    },
+    {
+      "stem": "CubeRotate",
+      "relPath": "vendor/shotcraft/demos/transition/page-turn-transitions/CubeRotate.tsx",
+      "category": "transition",
+      "sourceSha256": "5270e37dd065f5646254ea7c3607ec93e623636486815079b6a5e23157a91f1f",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8afa8d0e58743558eb197cc40ed7d56dd173fb2c30f5d5f795e00db7df45ae6c"
+    },
+    {
+      "stem": "PaperPlaneMessenger",
+      "relPath": "vendor/shotcraft/demos/transition/paper-plane-messenger/PaperPlaneMessenger.tsx",
+      "category": "transition",
+      "sourceSha256": "9355c2bd64750b2d2ca0e7789d61029d10b6554689ce7eb4ea90ab109cee1d37",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "990f31fbbb92a6120b2d644c2c821599bdc0905a23e4c9d8965386feb99c5a8e"
+    },
+    {
+      "stem": "InkBleedReveal",
+      "relPath": "vendor/shotcraft/demos/transition/print-texture-transitions/InkBleedReveal.tsx",
+      "category": "transition",
+      "sourceSha256": "3f951b09da1fb2a8e1e618661c90a5e944649fa4be49118b536da3a8f39840f8",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "744d126779dd1ad47277f785968685398f4aeb7369abc93384b6aab8869823cc"
+    },
+    {
+      "stem": "BlackCardTransition",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/BlackCardTransition.tsx",
+      "category": "transition",
+      "sourceSha256": "4e4698247bb6bdd489ff34b46db292da07e616e575681eb13624b4f21d883561",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "f13c5a455c1906052588b74ff561a15ba97712ef6e257d300cd8c21251a9ff71"
+    },
+    {
+      "stem": "DarkTunnelTransition",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/DarkTunnelTransition.tsx",
+      "category": "transition",
+      "sourceSha256": "526fd36c73b2aebbf01164900bc30e953bfa1361e76835d4efbfe47f7980ca67",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "f13c5a455c1906052588b74ff561a15ba97712ef6e257d300cd8c21251a9ff71"
+    },
+    {
+      "stem": "FocusHandoffTransition",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/FocusHandoffTransition.tsx",
+      "category": "transition",
+      "sourceSha256": "00662137985de0d86b86cb882544189e6cf69276e8d849f45c7b2c23a84b679f",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "f13c5a455c1906052588b74ff561a15ba97712ef6e257d300cd8c21251a9ff71"
+    },
+    {
+      "stem": "MaskWipeReal",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/MaskWipeReal.tsx",
+      "category": "transition",
+      "sourceSha256": "92eb6e2a34f4f075b286e03fa4ee000fda8369ff5f3b2bd3a02964e2efff3713",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "fa978e2354677f6b07b1e72d879e6e96026dc82513f7481bd418cace0c4d82db"
+    },
+    {
+      "stem": "PortalWipeV2",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/PortalWipeV2.tsx",
+      "category": "transition",
+      "sourceSha256": "037b4f5bdd9b5c3d73a11d2932acddc471127e7051c122aee0f6423b77f511c1",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "77fba48f14884b9ea3e050c8a23309484ba561eb16df312184b46efc4316ca13"
+    },
+    {
+      "stem": "WhipBrakeReal",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/WhipBrakeReal.tsx",
+      "category": "transition",
+      "sourceSha256": "87c84d66f0675d921ca4cfd55a9fd9c5a5ba9a7717870d4b44c4c391c81ad063",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "3ffba74e1f950e1ced7fafa1b5713b0d7d87482743f240c6ae137adc74cebec4"
+    },
+    {
+      "stem": "WhipPanReal",
+      "relPath": "vendor/shotcraft/demos/transition/shot-transitions/WhipPanReal.tsx",
+      "category": "transition",
+      "sourceSha256": "eda7132e8c2e142be87995b50a30e48c60c925872a9047c6bb8f54a8406be37f",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "f13c5a455c1906052588b74ff561a15ba97712ef6e257d300cd8c21251a9ff71"
+    },
+    {
+      "stem": "GlitchDisplace",
+      "relPath": "vendor/shotcraft/demos/transition/tear-streak-transitions/GlitchDisplace.tsx",
+      "category": "transition",
+      "sourceSha256": "4115ff91755da2c21f58962141dbbce3f6318a71d21b9cea8dc67be5f7cc93c6",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "InvisibleCut",
+      "relPath": "vendor/shotcraft/demos/transition/transition-hidden-cut/InvisibleCut.tsx",
+      "category": "transition",
+      "sourceSha256": "41e68ca391f37c1ca10288407283c38f71844ab7f796b36a37056d7c56f43ad5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8b2ce621120cc06fdae46860d382aa48c028d358805c9f386d7426830f574bf5"
+    },
+    {
+      "stem": "LightLeakBurn",
+      "relPath": "vendor/shotcraft/demos/transition/transition-hidden-cut/LightLeakBurn.tsx",
+      "category": "transition",
+      "sourceSha256": "31e4be432a84e13d6fa233ef3aff4a40646d67b949e16e9a5bea2a8f7b62b5fb",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8b2ce621120cc06fdae46860d382aa48c028d358805c9f386d7426830f574bf5"
+    },
+    {
+      "stem": "VersusSlam",
+      "relPath": "vendor/shotcraft/demos/transition/transition-hidden-cut/VersusSlam.tsx",
+      "category": "transition",
+      "sourceSha256": "ec0f28e508e4c3706a642798ed8516d90ef1b39c7350e1af15e0f5e9f4cb481a",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "81973ca9774ddabd2651e9791e0b74c16bc6a2e95ae11d7ba7e1b3828d60a0ec"
+    },
+    {
+      "stem": "LetterformZoom",
+      "relPath": "vendor/shotcraft/demos/transition/transition-travel/LetterformZoom.tsx",
+      "category": "transition",
+      "sourceSha256": "272b01d64d73252aab1b70b8f6214656d046704266ca06e5306edb66fc75da13",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "7419d5c1398de1cce10d612dfb83807f32d9a7c31b2de7ef195aadbe22d2a80c"
+    },
+    {
+      "stem": "SharedElementMorph",
+      "relPath": "vendor/shotcraft/demos/transition/transition-travel/SharedElementMorph.tsx",
+      "category": "transition",
+      "sourceSha256": "fe5d3a1071e71cce96470939bb6f4b4e7dc52e61058697ffa010c3e17e3521f3",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "0e4bdda096495b8c9cb7c0a5cfd5dde979b9718c6b3acfc07b9dd9817cc01cec"
+    },
+    {
+      "stem": "WhiteFlashLogoSimplifyCut",
+      "relPath": "vendor/shotcraft/demos/transition/white-flash-logo-simplify-cut/WhiteFlashLogoSimplifyCut.tsx",
+      "category": "transition",
+      "sourceSha256": "3799ba945628b14b28232b7be2a193ef0669faf47f3f62686a8cd4af58eb29d3",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "701f2eee806022f51568c599620e3dce6b9ddabfae73cfe0b1709ffb8a6a63ec"
+    },
+    {
+      "stem": "BlindsSlice",
+      "relPath": "vendor/shotcraft/demos/transition/wipe-transitions/BlindsSlice.tsx",
+      "category": "transition",
+      "sourceSha256": "9b650fc5e84c438a016f16f14afb2509f73ccf33eb3ec5b3d2d49cc9a637dd0e",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "a273a4a7c6d260cb2576bcc25d1485f20d90bb60d4a24d8c6b4ecf5de95794dd"
+    },
+    {
+      "stem": "ClockWipe",
+      "relPath": "vendor/shotcraft/demos/transition/wipe-transitions/ClockWipe.tsx",
+      "category": "transition",
+      "sourceSha256": "44a9acb719879eb491d20aa52119cda5d0517e9799d2d0c8ac996c6fd3689ad7",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d91a4e102319b93f41827eb7e8abf377e1c32b0023f7278a6231f36c50359137"
+    },
+    {
+      "stem": "BlurSlide",
+      "relPath": "vendor/shotcraft/demos/typography/blur-slide/BlurSlide.tsx",
+      "category": "typography",
+      "sourceSha256": "1ad15a7dd560d43fe4a6f40a823d69d6f87ac4f5fc31196f556b31342fd8932f",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c9a9f1db8a937ef273c45d710a874831dbc2c47fdde773e389ecb76132a816a"
+    },
+    {
+      "stem": "BraceExpand",
+      "relPath": "vendor/shotcraft/demos/typography/brace-expand/BraceExpand.tsx",
+      "category": "typography",
+      "sourceSha256": "ef6f5f379c7c785d9b6d9129095920b683a380b0e6eae14d12cb703dcc6c8cb8",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c9a9f1db8a937ef273c45d710a874831dbc2c47fdde773e389ecb76132a816a"
+    },
+    {
+      "stem": "BrandInkOpen",
+      "relPath": "vendor/shotcraft/demos/typography/brand-ink-open/BrandInkOpen.tsx",
+      "category": "typography",
+      "sourceSha256": "87896a0e2a0fdf78f07c49759031ed680318b951fb1ca75e2aab4dc503bc0937",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "71d828a7e529694e54d22267645bdb947b1343f986a8dcaba189f7ecc322e0e3"
+    },
+    {
+      "stem": "CelFlashStomp",
+      "relPath": "vendor/shotcraft/demos/typography/cel-flash-stomp/CelFlashStomp.tsx",
+      "category": "typography",
+      "sourceSha256": "f165ca8da06930e0211e34ad52c269023b3303f89dbb08495e5ebf092d7ed6a6",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "868ac7d6337bacf1253e6520113f9a09ff9c199adbfc159c84e6af7df5b2066b"
+    },
+    {
+      "stem": "CountdownArcScatter",
+      "relPath": "vendor/shotcraft/demos/typography/countdown-arc-scatter/CountdownArcScatter.tsx",
+      "category": "typography",
+      "sourceSha256": "ab1c55fff0b9122fa06d7ec87f3e21b3c1cbc716e50d8bab0f910ffb3cb7c571",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "cf19805fddbde22febe2b055dc6dc0255dab07c9d75c3a15dc99ae1742417ea1"
+    },
+    {
+      "stem": "FlyingWords",
+      "relPath": "vendor/shotcraft/demos/typography/flying-words/FlyingWords.tsx",
+      "category": "typography",
+      "sourceSha256": "d82f4a34b0b14538cf6404c1dcfa5468a185eb5fa2bd5000595365356387c0b3",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "5a797f2e2bc5ab6d674702ff86bc1d3aedaa2f6461113a63793bc04eba4e7d56"
+    },
+    {
+      "stem": "GlitchCycle",
+      "relPath": "vendor/shotcraft/demos/typography/glitch-cycle/GlitchCycle.tsx",
+      "category": "typography",
+      "sourceSha256": "ee7489eb08b840a1989aedc2aa10d3f008e95d256f336ae89cb287230528be1a",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "a04fbefcde14bdb5a582db5981e15b46afc4ec2adbeea6afd4fd806c28893dfe"
+    },
+    {
+      "stem": "GradientWordSweep",
+      "relPath": "vendor/shotcraft/demos/typography/gradient-word-sweep/GradientWordSweep.tsx",
+      "category": "typography",
+      "sourceSha256": "36f6c2deadea09748bc3894c9d8e1960dfce42996fed370f8e193cc0dacc6799",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5829fd93a912e909201339cc5bb15c2f93e24653e4b0d4127f96a830b6666fbf"
+    },
+    {
+      "stem": "LeadWordZoomAssemble",
+      "relPath": "vendor/shotcraft/demos/typography/lead-word-zoom-assemble/LeadWordZoomAssemble.tsx",
+      "category": "typography",
+      "sourceSha256": "6b6faf14bf6d00fbd81bf0a6085ea7ea979c9ff473d81c3bb6c0bf479ab3b3a5",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "1afcf5263a926b6c313e0dd776fd4bb370859c48bed47ed21a91267edd3b7e78"
+    },
+    {
+      "stem": "MarkerUnderlineTitle",
+      "relPath": "vendor/shotcraft/demos/typography/marker-underline-title/MarkerUnderlineTitle.tsx",
+      "category": "typography",
+      "sourceSha256": "5881cb0b5e38b53eec9dae5093b9dfdb4c69d5b6cf76cf587bc9b123d0e38477",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "da3d26668530b815f473ff3a3eebd9ea67d7e9ff659a4b89ee6382ca36b10fe6"
+    },
+    {
+      "stem": "OutlineWordFill",
+      "relPath": "vendor/shotcraft/demos/typography/outline-word-fill/OutlineWordFill.tsx",
+      "category": "typography",
+      "sourceSha256": "66f522bf6e6f1034f5386d516d20ff36fcc23fc0bf1e418f83d1fd432846c9bf",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "1d0851086ee2923bf0aa3dec1896166a9b12e2c94c16e1f42c67e3afb8868fc2"
+    },
+    {
+      "stem": "PaperTitleCard",
+      "relPath": "vendor/shotcraft/demos/typography/paper-title-card/PaperTitleCard.tsx",
+      "category": "typography",
+      "sourceSha256": "5ab4b473e631c2863d6033be22231a07afce2b29d08322d5ba821607c2642a16",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "f388e7dd8b2d019a0445e7d2fd3428f1973aa2257dd816874b66ef6a6c2b0810"
+    },
+    {
+      "stem": "PillChipSlotCycleHandled",
+      "relPath": "vendor/shotcraft/demos/typography/pill-chip-slot-cycle-handled/PillChipSlotCycleHandled.tsx",
+      "category": "typography",
+      "sourceSha256": "0daa028b6476a5d43cc0c8ccf5d45203b161d3f0b99d7dc24e01b4b37cad3bad",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "9f0ca7c1a939dc0311c107bcecdad11d494beb6761572117c6af9fb883ad8acb"
+    },
+    {
+      "stem": "PillSlotCycle",
+      "relPath": "vendor/shotcraft/demos/typography/pill-slot-cycle/PillSlotCycle.tsx",
+      "category": "typography",
+      "sourceSha256": "a8db19162d267d107904fd8e46573e9b74854bcbf871dd604fac56ff58b87f2f",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6e8cd6f4d4a1b20cc7939d6a698a746f0b0776919198a0016dadb1132f9f9160"
+    },
+    {
+      "stem": "Scramble",
+      "relPath": "vendor/shotcraft/demos/typography/scramble/Scramble.tsx",
+      "category": "typography",
+      "sourceSha256": "5ca76d50731f228fb46076706c9442acc03d9afaed903f6ca8cfff8c36787081",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "0bf8f0cb034a7f8a95a046a5c7f7a2c7dc5378aff3538e3541b4e4f549a6b231"
+    },
+    {
+      "stem": "SplitFlapFlip",
+      "relPath": "vendor/shotcraft/demos/typography/split-flap-title/SplitFlapFlip.tsx",
+      "category": "typography",
+      "sourceSha256": "bbd82fe1d80cffa5a79a1018ac160a240cca38fe242cfbc8c950ab7e3470fa05",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "247eb2d0968f6ec32c95cb5444c35feb25ff650bd6748b15128f23edf3164e1d"
+    },
+    {
+      "stem": "TextColumnConverge",
+      "relPath": "vendor/shotcraft/demos/typography/text-column-converge/TextColumnConverge.tsx",
+      "category": "typography",
+      "sourceSha256": "786fbf0226ab8e8e4c38f2635a4e9a3368adcf04c0fe00195f54a018486fdf23",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "4f2318f24fa5e22e0ad60e0db86ba17b2586be06396b9a88cb78bad98acae300"
+    },
+    {
+      "stem": "TitleDemoteToLabel",
+      "relPath": "vendor/shotcraft/demos/typography/title-demote-to-label/TitleDemoteToLabel.tsx",
+      "category": "typography",
+      "sourceSha256": "ffcfee81a30bfef2ad6b579710824e0ea6086dd5dc644a42f760987011ea0b97",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6e8cd6f4d4a1b20cc7939d6a698a746f0b0776919198a0016dadb1132f9f9160"
+    },
+    {
+      "stem": "LetterformDriftAssembly",
+      "relPath": "vendor/shotcraft/demos/typography/type-assembly-moves/LetterformDriftAssembly.tsx",
+      "category": "typography",
+      "sourceSha256": "dcf5a649fff38bb56b5147b8eb8b70240421ee7b6a82e193efe6b8843c829075",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "8fb24db17e1890698a0c18770485462b1771692b7910925371d2285ab607daf6"
+    },
+    {
+      "stem": "SplitTextStagger",
+      "relPath": "vendor/shotcraft/demos/typography/type-assembly-moves/SplitTextStagger.tsx",
+      "category": "typography",
+      "sourceSha256": "314fae39b2cd73d031ebfb58fc65d850c9cce01924e5c926155ccfc0f84b5bd5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "33f7743216e64b16da4519265a0577dca083eb2de4671a798ab9e9731c194cc5"
+    },
+    {
+      "stem": "TextOnPath",
+      "relPath": "vendor/shotcraft/demos/typography/type-assembly-moves/TextOnPath.tsx",
+      "category": "typography",
+      "sourceSha256": "98f06f0adb9cd5a479fe2a55ac16f1f589bfae707f29163454e7da71dbc8618b",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "223eb4c035cbf0d8528961676e79eac2b6fcc2c50d91cc9731c261116427675a"
+    },
+    {
+      "stem": "TrackingExpandReveal",
+      "relPath": "vendor/shotcraft/demos/typography/type-assembly-moves/TrackingExpandReveal.tsx",
+      "category": "typography",
+      "sourceSha256": "86880648f010b1b39a0500152d3ac0bfb10622f17c0dbf6dd243af64dbe11732",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "7737b200e40fc0c321ed97077a728188f7e4b2c6b9c02569e0ceea6c332032aa"
+    },
+    {
+      "stem": "LetterDropPhysics",
+      "relPath": "vendor/shotcraft/demos/typography/type-entrance-moves/LetterDropPhysics.tsx",
+      "category": "typography",
+      "sourceSha256": "1aefaaba267e4b7084b094c18c35a818da2ba91d4260412ed9ee0e8197e9b442",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "14b542e12da3ce2ce75eddc5e77242a89431ab9cff93a422f3cd60279bcd7154"
+    },
+    {
+      "stem": "ScrambleDecode",
+      "relPath": "vendor/shotcraft/demos/typography/type-entrance-moves/ScrambleDecode.tsx",
+      "category": "typography",
+      "sourceSha256": "73a045306c38a5fd2b08bf505bf0226a25c3bb520bb77d5e9158d9a2c49660eb",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "918369cd1895985ae2baed74007c2a990b0209ca520199a5920cd7e275c0cc69"
+    },
+    {
+      "stem": "FontWeightPump",
+      "relPath": "vendor/shotcraft/demos/typography/type-rhythm-sync/FontWeightPump.tsx",
+      "category": "typography",
+      "sourceSha256": "a79557ac62b13fce83f2477ba15dadebb641006acd1d20f1b2d941f465e7671c",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "2bf478f95e643ee0f3d8ea69863bb3976ca254584681c3683a047a379d14cfa9"
+    },
+    {
+      "stem": "KaraokeFillSync",
+      "relPath": "vendor/shotcraft/demos/typography/type-rhythm-sync/KaraokeFillSync.tsx",
+      "category": "typography",
+      "sourceSha256": "eddd5a37905bbc7be54066a349dec2c48ebc1e856b30b9f6de906b6c6a374579",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "13ab9b4241b9897460a5022f098797c931fb3d70faf66a5c9860e9f02e48fbc2"
+    },
+    {
+      "stem": "TerminalTypewriter",
+      "relPath": "vendor/shotcraft/demos/typography/typewriter-moves/TerminalTypewriter.tsx",
+      "category": "typography",
+      "sourceSha256": "e589839ebf66e85c8710ddaf16f7eca4b8d994d16851345038f6cadcf6456f72",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "0d41edafd6c531cfb4e48124679fb97c38eba474cf7250b33500186ea2d736a4"
+    },
+    {
+      "stem": "TypewriterErrorRetype",
+      "relPath": "vendor/shotcraft/demos/typography/typewriter-moves/TypewriterErrorRetype.tsx",
+      "category": "typography",
+      "sourceSha256": "5af87340386005641592173da47d049a53b965db7bb7c2bc8a9a0f77d3821560",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "4a9365ec5d2c3f71dec018c38e42fe0a589f4310cfba8fb96e6ae6b6dff93ef9"
+    },
+    {
+      "stem": "TypingCodeBlock",
+      "relPath": "vendor/shotcraft/demos/typography/typing-code-block/TypingCodeBlock.tsx",
+      "category": "typography",
+      "sourceSha256": "2dafbfe43455a645865ffed317f414fc1855342e98375a56da5a76ce61b10724",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "e30817581bf3ded2806df43d2d7cf836255c4f2c252210384112cf1ac02fe73a"
+    },
+    {
+      "stem": "VerticalWordRollBlurCycle",
+      "relPath": "vendor/shotcraft/demos/typography/vertical-word-roll-blur-cycle/VerticalWordRollBlurCycle.tsx",
+      "category": "typography",
+      "sourceSha256": "b5f5adb87fdd07730759926e765bc4ce81ee97e47cc4379bd98b4c7a5e14b634",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "95f794292c55279d2f94c4c70f77971ad28fcca526223bbb18f6be4372a1a7ae"
+    },
+    {
+      "stem": "WordRelayFilmstrip",
+      "relPath": "vendor/shotcraft/demos/typography/word-relay-filmstrip/WordRelayFilmstrip.tsx",
+      "category": "typography",
+      "sourceSha256": "683f51fb630b93d1dddc4918e8a9e3d694e509f420df1645936590ce8e551f5a",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "0b1e02bed7e5373ba73980b7ae5be8476864341b5f081a3ab73d133c70070648"
+    },
+    {
+      "stem": "WordRelayGeometry",
+      "relPath": "vendor/shotcraft/demos/typography/word-relay-geometry/WordRelayGeometry.tsx",
+      "category": "typography",
+      "sourceSha256": "02d2a038ab576b6743bf417572694e09833fed49319174c3005712e6fd0ffc7b",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "3c673e339e9d578ad35713491b1e15a01ca233541b828bd1b1201acc3ee6d7b1"
+    },
+    {
+      "stem": "AvatarBracketCarousel",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/avatar-bracket-carousel/AvatarBracketCarousel.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "b9f125b0f4f1f9ff6a41a05147a7111e85e89015e73e0223b843a87523715efc",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "d2ca5f30ab6f276356482b908ea0ca4ef23ec5f8d5413e0271391642f971e319"
+    },
+    {
+      "stem": "BezierSourceConvergeMerge",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/bezier-source-converge-merge/BezierSourceConvergeMerge.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "a58bdab4308a4f6d92282b969c494359547445b4f8ac92d3742798d31a6adf07",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "4ef62bcfd99043eaf40024ec71af69ac7cf3998399f7f2442b2e9e76d627b6d8"
+    },
+    {
+      "stem": "CardStack",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/card-stack/CardStack.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "52d1175ca2e1cbe3cc8cd9eb60d723dfef392b500ee3c22d8dc87b47ec8c4f2d",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c9a9f1db8a937ef273c45d710a874831dbc2c47fdde773e389ecb76132a816a"
+    },
+    {
+      "stem": "Carousel3D",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/carousel-3d/Carousel3D.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "1cd70294e4f695a576c92c2db27d697f2f5b28a7b63788a8f406965a83470006",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "ff7ce18830ec244d26f90dac00f64aa5265a71d76e606385950af58c5f726fed"
+    },
+    {
+      "stem": "ClonerDepthEcho",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/cloner-depth-echo/ClonerDepthEcho.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "de76c070fe29cff792e4b49602d4934fcc3ac55f8ec0786713311a26b407a3cb",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6cdbca630b9affc414d6ed03387ccdd752ed8545eecb5e014cd41c4344d57f31"
+    },
+    {
+      "stem": "DeckDealFlyin",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/deck-deal-flyin/DeckDealFlyin.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "4738e54d707a82847d1a5081af88876a872465eb3ead94f1c7682acf8e5a251a",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "629bda874744c6daee0406005843f17196e16c7aeadc05c69e647e50b86ba44c"
+    },
+    {
+      "stem": "DocParkLeftPillDeal",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/doc-park-left-pill-deal/DocParkLeftPillDeal.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "852b32b59cc3a894d789ba5e18029bc1e67b70757775488c6fb0b83ce4cb100a",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "b3d57e4f98847b05091183763528219fde034fde744df4d84c7d45ef38f2060a"
+    },
+    {
+      "stem": "DocumentTypewriterReveal",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/document-typewriter-reveal/DocumentTypewriterReveal.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "ba67561fb578558ce70504bd6f84e826220fdaacdf9329023d3fd33004843493",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "3edbfb2b9d350b63f2c9b60d6dba0e321feff333f0b34700de86f1f8e9ceb4a2"
+    },
+    {
+      "stem": "DrawSvgTrace",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/draw-svg-trace/DrawSvgTrace.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "654e26eef7357c64a828a6cbbd790331f9865e0e9c18768de15de46c281aacf5",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5065572bba3ec21d64d478930fc9fb531a8c0c697cf16d6b4a6d037265da4ff1"
+    },
+    {
+      "stem": "AxialStretch",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/element-body-moves/AxialStretch.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "90979985198b44c1fc620e2a8eaad86c09b2d013533d6528ef8892919c86c259",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "a1e9b12271c260f8533567c78b5fcaf5d452ef718b9777853f76d97d3c4f9a73"
+    },
+    {
+      "stem": "ContactShadowLift",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/element-body-moves/ContactShadowLift.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "f29a6d77b407b9c6ad8caa8fe9e5c12cfa2d51202d6ea8258cae5015a736843c",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "5177f302b9b9324b4168be0ea8f873d5fbdd1e81f2867000447ed547f132f549"
+    },
+    {
+      "stem": "FloatingGlossyLabelPills",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/floating-glossy-label-pills/FloatingGlossyLabelPills.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "4bb7d460ac6201e58b8df4a1f5c6feea06f1f860cd3605b926a5ae138681a0e1",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "33ba1a0742faa3857d1427d0b84976d33df83e36066896c6169b08008dd139dc"
+    },
+    {
+      "stem": "IntegrationHubMap",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/integration-hub-map/IntegrationHubMap.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "fcd9ed29f4f0ca41a05377f31459c2dba664784ea7f5c900abefabc2dc59f3c9",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "b9bfaaae826a70888bee43a4bb9e8a25cd72ab2eb7f1bf4acda3891f8a162f7a"
+    },
+    {
+      "stem": "ListReveal",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/list-reveal/ListReveal.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "ac1eb531a625376e355b1970e6a7774e726b7752914544f36ae7ce096f237792",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c9a9f1db8a937ef273c45d710a874831dbc2c47fdde773e389ecb76132a816a"
+    },
+    {
+      "stem": "ListStackPress",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/list-stack-press/ListStackPress.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "6649fa6321663c6b54c9ca326147917d89a2dfd61d582954b996c7dd83c878db",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6b939cce5a8008a5838375936c3c7bc71188c2cebc21d78518acbe347f27b145"
+    },
+    {
+      "stem": "MorphFromPrimitive",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/morph-from-primitive/MorphFromPrimitive.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "f18d82ce6675be5c0b097969285a973c122633f2844fd1c4a81cc1c6a97a0d5e",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "add3959b174dba955991c291332c4c7728432b54b6dc0d8ac367e33c03c9c15a"
+    },
+    {
+      "stem": "NeonFrameForerun",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/neon-frame-forerun/NeonFrameForerun.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "008a3b01017c88bb445e7faf916ad4857949c91e9603373edfdb92c23bb4b9a0",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "1ed53d8702d9623b522f8bb05961b97ed5a5d2726ec43ca1725d91f8de1406de"
+    },
+    {
+      "stem": "NeonFrameForerunOrbit",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/neon-frame-orbit-drop/NeonFrameForerunOrbit.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "5005f06992ef674174dc09979bde3314419dd4dead19cf3e4580b248cdca8521",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "32ff2b7eb744c5ecd5ccc39183198409dde9080e3bb5ce9e2d0578301f06ae95"
+    },
+    {
+      "stem": "PageWaterfallWall",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/page-waterfall-wall/PageWaterfallWall.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "b3e2de8674a22c0d1f523db4bf40443447e143b35b7d3ecd81ff3ea8db4f9f79",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "869a25c037e622347a860e76a26dedda770cf1ade78ac56b618a758ba734f0e8"
+    },
+    {
+      "stem": "MaskingTapeSlap",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/paper-craft-moves/MaskingTapeSlap.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "5d36af725cbc9268cc23b039208a7cd21b2237d6e73f7929e20beddb1a481340",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6ee56bc92a04ca980ac97494efd25d138fa08f46e1cbf36f154abe1fc4cc8c7d"
+    },
+    {
+      "stem": "PopupBookRise",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/paper-craft-moves/PopupBookRise.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "f1baa230ff76c80de5a60ed52e7c667b7f24acca0ac5971c7ed90a8da3cbbf11",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "d99275b40af49f6fe3bdde1e21c8421aeee82ecab71a11da5f676d391db39c8d"
+    },
+    {
+      "stem": "PlatformHingeRise",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/platform-hinge-rise/PlatformHingeRise.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "858dafe77b967512ad42f0a579ad6042944b5f9201198bd2e11139298e0f2557",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "fe5dca0ea8daa11afd5ed652c9cb091c94c2a931ac6c36e0e7542d215723352e"
+    },
+    {
+      "stem": "ProductCardProgressiveAssemble",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/product-card-progressive-assemble/ProductCardProgressiveAssemble.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "e0586d6b7869c5fee3828272be21cf68d4e93bc13d190732b46be365c77f998c",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "5f07f87d5efb940864e2ae91f113ff4066ad685d60ccb5de800b308277fedecf"
+    },
+    {
+      "stem": "RadialWave",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/radial-wave/RadialWave.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "e0c954b2c9d400f68933e7f58c1edd2120493271f46a768fe638b3c8cba6809c",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "6c9a9f1db8a937ef273c45d710a874831dbc2c47fdde773e389ecb76132a816a"
+    },
+    {
+      "stem": "ResearchCardStackScroll",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/research-card-stack-scroll/ResearchCardStackScroll.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "a9747d38a761cb499d9b7c1c41eecbc151fae9bf767edc0818b11a57a92d7983",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "3d0cb7a570e615fad9006a39fc222ca6db97b04effd5136a5e36cc3f046be0d8"
+    },
+    {
+      "stem": "RowEmbed",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/row-embed/RowEmbed.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "e1fc03102ca9164a3d6fc81133996f10fc1e075820d7800f7554745a68b37b37",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "9f13be7723226941f325908cfe977daef296d7473251eef074ef6fe9957bd07c"
+    },
+    {
+      "stem": "RunwayGroundSkim",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/runway-ground-skim/RunwayGroundSkim.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "e2197acf61a4fbfd29faa912ef7354a1d13c8f2662256aa9757ab7c1f1415a8d",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "bb4c10e5449229f98026c0032b7fe5ef12461f0113b2182726a09f80cf90cb49"
+    },
+    {
+      "stem": "SkeletonReveal",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/skeleton-reveal/SkeletonReveal.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "a2338fd7daf9988805794b69ed1c75f2a035dae1336a7cca65ee3eb3534d5c47",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "aa2ba5efa13e17ea258a09b537d1a624da27d5f1da83d6652bf0691e27e3ceba"
+    },
+    {
+      "stem": "SvgShapeMorph",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/svg-shape-morph/SvgShapeMorph.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "9e6bfaca697bd36837b3c31163d607863942570daaa0b5abda0c0c5f131172ed",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "d3f1eb7744eafe7b79b2f8a150e7d5c2066d54d5de020147383ebffe4f6fe4f1"
+    },
+    {
+      "stem": "ValueStaggerGradient",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/value-stagger-gradient/ValueStaggerGradient.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "bff99f80839ed7e323cc38c85f61bbf4ce0e609e75a9e89645718e3e1ab053f7",
+      "durationSource": "export",
+      "status": "pass",
+      "renderedFrame0Sha256": "c12a03bc977f0778ec094a563917e13a62178024a3c7947a4e838197125b9bb1"
+    },
+    {
+      "stem": "BentoLightUp",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/wall-reveal-moves/BentoLightUp.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "eccb4c2211af30cb26b391ea734c326599958906411e9a3c019acfeceb87fd69",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "35db43a03379e7f3ade3d4236e90979c2217d0711d3ee5231002a7aed0aabe69"
+    },
+    {
+      "stem": "GridWaveFlip",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/wall-reveal-moves/GridWaveFlip.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "c39a5cabdca00167d3354667442b4de477b76a36576815abc483609f1198f481",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "00b28771ce9006e47da3de397f30a4e2e68d9a1ded704ecceb6b39457d30dbfb"
+    },
+    {
+      "stem": "WireframeDrawOn",
+      "relPath": "vendor/shotcraft/demos/ui-entrance/wall-reveal-moves/WireframeDrawOn.tsx",
+      "category": "ui-entrance",
+      "sourceSha256": "18d2fc4192a67dbfdcfca390d753eb52f6bcb50be316b71480e54ed32208558f",
+      "durationSource": "fallback",
+      "status": "pass",
+      "renderedFrame0Sha256": "6e8cd6f4d4a1b20cc7939d6a698a746f0b0776919198a0016dadb1132f9f9160"
+    }
+  ]
+}

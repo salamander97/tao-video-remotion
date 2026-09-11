@@ -243,8 +243,10 @@ export async function generateTopicVoices(
   // Save manifest metadata
   const manifestData = {
     topic: topicKey,
-    voice: process.env.EDGE_TTS_VOICE || "vi-VN-HoaiMyNeural",
-    rate: process.env.EDGE_TTS_RATE || "+10%",
+    // Ưu tiên override per-scene (scenes[0].voice/rate) nếu có, để manifest
+    // phản ánh đúng giọng/tốc độ thực tế đã dùng, không chỉ đọc default .env.
+    voice: scenes[0]?.voice || process.env.EDGE_TTS_VOICE || "vi-VN-HoaiMyNeural",
+    rate: scenes[0]?.rate || process.env.EDGE_TTS_RATE || "+10%",
     totalScenes: scenes.length,
     totalDurationFrames,
     totalDurationSec: Math.round((totalDurationFrames / 30) * 10) / 10,

@@ -1,0 +1,75 @@
+{
+  "topic": "DiBo10PhutSauAn",
+  "voice": "vi-VN-HoaiMyNeural",
+  "rate": "+15%",
+  "totalScenes": 8,
+  "totalDurationFrames": 1714,
+  "totalDurationSec": 57.1,
+  "scenes": [
+    {
+      "id": "scene1_hook",
+      "text": "Sau bữa tối, chỉ mười phút đi bộ có thể làm đường huyết thay đổi rõ rệt. Vì sao?",
+      "audioPath": "audio/DiBo10PhutSauAn/scene1_hook.mp3",
+      "sizeBytes": 32976,
+      "estimatedDurationSec": 5.5,
+      "durationInFrames": 175
+    },
+    {
+      "id": "scene2_eat",
+      "text": "Sau khi ăn, carbohydrate thành glucose. Đường huyết tăng, còn insulin giúp đưa glucose vào tế bào.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene2_eat.mp3",
+      "sizeBytes": 44496,
+      "estimatedDurationSec": 7.42,
+      "durationInFrames": 233
+    },
+    {
+      "id": "scene3_walk",
+      "text": "Khi đi bộ, cơ bắp co lại và sử dụng thêm glucose làm nhiên liệu, giúp giảm đỉnh sau ăn.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene3_walk.mp3",
+      "sizeBytes": 31968,
+      "estimatedDurationSec": 5.33,
+      "durationInFrames": 170
+    },
+    {
+      "id": "scene4_study",
+      "text": "Năm 2016, thử nghiệm crossover trên 41 người tiểu đường type 2 đã so sánh hai cách đi bộ.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene4_study.mp3",
+      "sizeBytes": 36288,
+      "estimatedDurationSec": 6.05,
+      "durationInFrames": 192
+    },
+    {
+      "id": "scene5_stat",
+      "text": "Mười phút sau mỗi bữa giúp đường huyết sau ăn thấp hơn khoảng mười hai phần trăm. Riêng bữa tối, chênh lệch là hai mươi hai phần trăm.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene5_stat.mp3",
+      "sizeBytes": 43632,
+      "estimatedDurationSec": 7.27,
+      "durationInFrames": 229
+    },
+    {
+      "id": "scene6_compare",
+      "text": "Phân tích bảy thử nghiệm năm 2022 cũng cho thấy đi bộ nhẹ cải thiện glucose và insulin tốt hơn tiếp tục ngồi, và tốt hơn chỉ đứng.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene6_compare.mp3",
+      "sizeBytes": 46080,
+      "estimatedDurationSec": 7.68,
+      "durationInFrames": 241
+    },
+    {
+      "id": "scene7_routine",
+      "text": "Hãy thử đi bộ thoải mái mười phút sau bữa tối. Nếu dùng insulin hoặc dễ hạ đường huyết, hãy hỏi bác sĩ trước.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene7_routine.mp3",
+      "sizeBytes": 41328,
+      "estimatedDurationSec": 6.89,
+      "durationInFrames": 217
+    },
+    {
+      "id": "scene8_outro",
+      "text": "Đi bộ không thay thế thuốc hay điều trị. Lưu video để thử tối nay. Thông tin tham khảo, không thay thế chỉ định bác sĩ.",
+      "audioPath": "audio/DiBo10PhutSauAn/scene8_outro.mp3",
+      "sizeBytes": 49248,
+      "estimatedDurationSec": 8.21,
+      "durationInFrames": 257
+    }
+  ],
+  "generatedAt": "2026-09-10T06:07:24.371Z"
+}

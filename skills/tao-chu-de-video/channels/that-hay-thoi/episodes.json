@@ -129,7 +129,74 @@
       "voice": "vi-VN-HoaiMyNeural (+15%)",
       "status": "scripted",
       "createdAt": "2026-09-03"
+    },
+    {
+      "episodeId": "ep-003",
+      "topic": "Đi bộ 10 phút sau ăn: đường huyết thay đổi thế nào?",
+      "titles": [
+        "Đi Bộ 10 Phút Sau Ăn — Đường Huyết Thay Đổi Thế Nào?",
+        "Mẹo Nhỏ Sau Bữa Ăn Bác Sĩ Hay Khuyên",
+        "10 Phút Đi Bộ Sau Ăn Tối — Khoa Học Nói Gì?"
+      ],
+      "hook5s": "Sau bữa tối, chỉ mười phút đi bộ có thể làm đường huyết thay đổi rõ rệt. Vì sao?",
+      "keyFacts": [
+        {
+          "fact": "Cơ chế: ăn -> carbohydrate thành glucose, đường huyết tăng, insulin đưa glucose vào tế bào; đi bộ làm cơ bắp co lại, dùng thêm glucose làm nhiên liệu, giảm đỉnh đường huyết sau ăn",
+          "source": "Sinh lý học chuẩn (chuyển hoá carbohydrate-glucose-insulin, hấp thu glucose qua co cơ không phụ thuộc insulin)",
+          "crossCheck": "Kiến thức sinh lý nền tảng, không cần trích dẫn riêng"
+        },
+        {
+          "fact": "RCT crossover 2016, 41 người tiểu đường type 2: đi bộ 10 phút sau mỗi bữa giúp postprandial iAUC ratio 0.88 (~12% thấp hơn) so với đi bộ 1 lần/ngày; riêng bữa tối ratio 0.78 (~22% thấp hơn)",
+          "source": "PubMed 27747394",
+          "crossCheck": "Trích số liệu trực tiếp từ nghiên cứu gốc"
+        },
+        {
+          "fact": "Systematic review/meta-analysis 2022, 7 thử nghiệm crossover cấp tính: đi bộ nhẹ cải thiện glucose/insulin tốt hơn tiếp tục ngồi và tốt hơn chỉ đứng",
+          "source": "PMC9325803",
+          "crossCheck": "Trích kết luận tổng hợp từ review"
+        },
+        {
+          "fact": "Khuyến nghị thực hành: đi bộ thoải mái 10 phút sau bữa tối; người dùng insulin hoặc dễ hạ đường huyết nên hỏi bác sĩ trước",
+          "source": "CDC — Physical Activity",
+          "crossCheck": "Trích nguyên tắc an toàn từ CDC"
+        }
+      ],
+      "outline": [
+        { "scene": 1, "beat": "Hook", "content": "Sau bữa tối, chỉ mười phút đi bộ có thể làm đường huyết thay đổi rõ rệt. Vì sao?", "visual": "Headline kinetic + camera punch nhẹ" },
+        { "scene": 2, "beat": "Cơ chế ăn", "content": "Sau khi ăn, carbohydrate thành glucose. Đường huyết tăng, còn insulin giúp đưa glucose vào tế bào.", "visual": "Diagram 3 trạng thái: carb -> glucose -> insulin/tế bào" },
+        { "scene": 3, "beat": "Cơ chế đi bộ", "content": "Khi đi bộ, cơ bắp co lại và sử dụng thêm glucose làm nhiên liệu, giúp giảm đỉnh sau ăn.", "visual": "Cơ bắp co + mini chart đỉnh thấp hơn" },
+        { "scene": 4, "beat": "Bằng chứng 2016", "content": "Năm 2016, thử nghiệm crossover trên 41 người tiểu đường type 2 đã so sánh hai cách đi bộ.", "visual": "3-step card: 2016 -> 41 người -> so sánh 2 cách đi bộ" },
+        { "scene": 5, "beat": "Số liệu", "content": "Mười phút sau mỗi bữa giúp đường huyết sau ăn thấp hơn khoảng mười hai phần trăm. Riêng bữa tối, chênh lệch là hai mươi hai phần trăm.", "visual": "DigitRoll 12% rồi 22%, có nguồn" },
+        { "scene": 6, "beat": "Bằng chứng 2022", "content": "Phân tích bảy thử nghiệm năm 2022 cũng cho thấy đi bộ nhẹ cải thiện glucose và insulin tốt hơn tiếp tục ngồi, và tốt hơn chỉ đứng.", "visual": "3 cột định tính: ngồi/đứng/đi bộ nhẹ, có disclosure 'không phải độ lớn hiệu ứng'" },
+        { "scene": 7, "beat": "Áp dụng", "content": "Hãy thử đi bộ thoải mái mười phút sau bữa tối. Nếu dùng insulin hoặc dễ hạ đường huyết, hãy hỏi bác sĩ trước.", "visual": "3-step routine + cảnh báo insulin màu tách biệt" },
+        { "scene": 8, "beat": "Outro + disclaimer", "content": "Đi bộ không thay thế thuốc hay điều trị. Lưu video để thử tối nay. Thông tin tham khảo, không thay thế chỉ định bác sĩ.", "visual": "Headline settle + CTA + disclaimer + brand" }
+      ],
+      "length": "NGẮN 50–60s (8 cảnh)",
+      "chosenLength": "NGAN",
+      "contentClass": "A-kiến thức chính xác",
+      "imageKeywords": [],
+      "visualStyle": "clinical-clarity",
+      "channelName": "Thật Hay Thôi?",
+      "voice": "vi-VN-HoaiMyNeural (+15%)",
+      "status": "done",
+      "mp4": "/Volumes/SSD_1TB/Video Remotion/DiBo10PhutSauAn.mp4",
+      "renderedAt": "2026-09-10",
+      "durationSec": 58.2,
+      "materials": "100% SVG/diagram tự vẽ + data-viz (clinical-clarity), audio BGM/SFX tự tổng hợp bằng ffmpeg (sine/noise, không dùng nguồn thứ ba) — không dùng ảnh y tế stock",
+      "motionSystem": "template/src/motion/ — camera 2.5D, easing, FlashCut/WipeCut, sound cue ducking; shot card: hook-kinetic-punch, diagram-mechanism-state (x2), timeline-process-3step (x2), data-stat-counter, comparison-split-baseline, outro-cta-settle",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/27747394/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9325803/",
+        "https://www.cdc.gov/diabetes/living-with/physical-activity.html"
+      ],
+      "qa": {
+        "contactSheet": "template/out/qa/contact-sheet-DiBo10PhutSauAn.png",
+        "thumbnail": "template/out/DiBo10PhutSauAn-thumbnail.png",
+        "ffprobe": "h264 1080x1920 30fps, aac audio, duration 58.17s (video) / 58.22s (audio)",
+        "loudness": "mean_volume -22.0 dB, max_volume -5.5 dB (không clipping)"
+      },
+      "createdAt": "2026-09-10"
     }
   ],
-  "lastUpdated": "2026-09-03"
+  "lastUpdated": "2026-09-10"
 }

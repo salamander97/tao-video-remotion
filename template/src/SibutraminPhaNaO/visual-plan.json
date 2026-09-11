@@ -1,0 +1,171 @@
+{
+  "topic": "SibutraminPhaNaO",
+  "visualStyle": "clinical-clarity",
+  "domain": "health",
+  "scenes": [
+    {
+      "scene": 1,
+      "id": "scene1_hook",
+      "sceneType": "hook",
+      "primaryVisualType": "kineticType",
+      "visualIntent": "Hook gây sốc — tiêu đề lớn + não SVG + cảnh báo đỏ",
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "brain-pulse"},
+        {"frame": 40, "action": "title-reveal"},
+        {"frame": 100, "action": "warning-flash"},
+        {"frame": 170, "action": "age-21-punch"}
+      ],
+      "motionPreset": "energetic"
+    },
+    {
+      "scene": 2,
+      "id": "scene2_what",
+      "sceneType": "mechanism",
+      "primaryVisualType": "svgDiagram",
+      "visualIntent": "Cơ chế SNRI — SVG não + synapse + neurotransmitter",
+      "assetRequired": false,
+      "visualCoverage": 0.88,
+      "visualBeats": [
+        {"frame": 0, "action": "brain-outline"},
+        {"frame": 50, "action": "synapse-zoom"},
+        {"frame": 130, "action": "serotonin-block"},
+        {"frame": 220, "action": "hypothalamus-label"},
+        {"frame": 280, "action": "fda-1997-stamp"}
+      ],
+      "motionPreset": "precise"
+    },
+    {
+      "scene": 3,
+      "id": "scene3_scout",
+      "sceneType": "metric",
+      "primaryVisualType": "dataViz",
+      "visualIntent": "SCOUT trial — number reveal 10742 → 16% → bar chart",
+      "assetRequired": false,
+      "visualCoverage": 0.9,
+      "visualBeats": [
+        {"frame": 0, "action": "number-10742-reveal"},
+        {"frame": 60, "action": "percent-16-grow"},
+        {"frame": 130, "action": "bar-chart-mace"},
+        {"frame": 200, "action": "nejm-stamp"}
+      ],
+      "motionPreset": "energetic"
+    },
+    {
+      "scene": 4,
+      "id": "scene4_ban",
+      "sceneType": "timeline",
+      "primaryVisualType": "timeline",
+      "visualIntent": "Timeline cấm — FDA 2010 → VN 2011 → stamp CẤM",
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "timeline-line-draw"},
+        {"frame": 60, "action": "fda-oct-2010"},
+        {"frame": 150, "action": "vn-apr-2011"},
+        {"frame": 250, "action": "ban-stamp-slam"},
+        {"frame": 320, "action": "law-reference"}
+      ],
+      "motionPreset": "precise"
+    },
+    {
+      "scene": 5,
+      "id": "scene5_still",
+      "sceneType": "real-world-impact",
+      "primaryVisualType": "uiDemo",
+      "visualIntent": "TikTok UI mock — sản phẩm giảm cân trôi nổi + red flag",
+      "assetRequired": false,
+      "visualCoverage": 0.82,
+      "visualBeats": [
+        {"frame": 0, "action": "tiktok-feed-scroll"},
+        {"frame": 60, "action": "product-card-highlight"},
+        {"frame": 140, "action": "claim-zoom"},
+        {"frame": 220, "action": "red-flag-overlay"}
+      ],
+      "motionPreset": "energetic"
+    },
+    {
+      "scene": 6,
+      "id": "scene6_case",
+      "sceneType": "real-world-impact",
+      "primaryVisualType": "svgDiagram",
+      "visualIntent": "Ca bệnh 21 tuổi — brain SVG + vùng đồi thị damage",
+      "assetRequired": false,
+      "visualCoverage": 0.88,
+      "visualBeats": [
+        {"frame": 0, "action": "brain-frontal"},
+        {"frame": 60, "action": "thalamus-locate"},
+        {"frame": 140, "action": "damage-pulse"},
+        {"frame": 220, "action": "hospital-stamp"},
+        {"frame": 280, "action": "severity-label"}
+      ],
+      "motionPreset": "calm"
+    },
+    {
+      "scene": 7,
+      "id": "scene7_mechanism",
+      "sceneType": "mechanism",
+      "primaryVisualType": "svgDiagram",
+      "visualIntent": "Cơ chế phá não — mạch máu co thắt + thiếu oxy",
+      "assetRequired": false,
+      "visualCoverage": 0.9,
+      "visualBeats": [
+        {"frame": 0, "action": "vessel-normal"},
+        {"frame": 50, "action": "vasoconstriction"},
+        {"frame": 120, "action": "o2-depletion"},
+        {"frame": 190, "action": "neuron-damage"},
+        {"frame": 230, "action": "permanent-label"}
+      ],
+      "motionPreset": "precise"
+    },
+    {
+      "scene": 8,
+      "id": "scene8_signs",
+      "sceneType": "comparison",
+      "primaryVisualType": "svgDiagram",
+      "visualIntent": "4 triệu chứng — body silhouette + icon pulse",
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "body-silhouette"},
+        {"frame": 40, "action": "heart-racing"},
+        {"frame": 90, "action": "dizziness"},
+        {"frame": 140, "action": "insomnia"},
+        {"frame": 190, "action": "dry-mouth"}
+      ],
+      "motionPreset": "energetic"
+    },
+    {
+      "scene": 9,
+      "id": "scene9_protect",
+      "sceneType": "mechanism",
+      "primaryVisualType": "svgDiagram",
+      "visualIntent": "Bảo vệ — shield + checklist animation",
+      "assetRequired": false,
+      "visualCoverage": 0.85,
+      "visualBeats": [
+        {"frame": 0, "action": "shield-appear"},
+        {"frame": 50, "action": "check-1-registration"},
+        {"frame": 110, "action": "check-2-no-online"},
+        {"frame": 170, "action": "check-3-consult"}
+      ],
+      "motionPreset": "calm"
+    },
+    {
+      "scene": 10,
+      "id": "scene10_outro",
+      "sceneType": "outro",
+      "primaryVisualType": "kineticType",
+      "visualIntent": "Outro CTA + disclaimer y tế",
+      "assetRequired": false,
+      "visualCoverage": 0.8,
+      "visualBeats": [
+        {"frame": 0, "action": "share-cta"},
+        {"frame": 70, "action": "disclaimer"},
+        {"frame": 160, "action": "fade-out"}
+      ],
+      "motionPreset": "calm"
+    }
+  ]
+}

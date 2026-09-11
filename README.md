@@ -179,6 +179,20 @@ node ../scripts/validate-visual-plan.mjs src/<TopicName>/visual-plan.json \
 
 Gate kiểm tra file/hash/metadata đã review, beat đầu–giữa–đuôi và bố cục; không chứng minh nội dung ảnh đúng hoặc motion đẹp. Plan cũ vẫn chạy kiểm tra mặc định, cần bổ sung metadata để dùng `--ready`. Chi tiết: [tìm asset](skills/tao-video-remotion/references/asset-sourcing.md), [preset editorial](skills/tao-video-remotion/references/editorial-news.md). Công cụ search của agent thực hiện tìm nguồn; script `fetch-images.ts` cũ là ví dụ theo topic, không phải dịch vụ tìm ảnh tổng quát.
 
+## Hệ thống chuyển động (motion system)
+
+Từ 2026-09-10, `template/src/motion/` cung cấp thư viện chuyển động dùng chung, tích hợp có chọn lọc từ repo tham khảo `video-shotcraft` (Apache-2.0) — chi tiết quyết định ADOPT/ADAPT/DEFER/REJECT ở `docs/shotcraft-integration-audit.md` và kiến trúc ở `docs/shotcraft-integration-plan.md`.
+
+- **Motion primitives**: `rand.ts` (PRNG xác định), `motion.ts` (velocity/lag/settle), `shake.ts`, `easing.ts`, `stagger.ts`, `settle.ts`.
+- **Camera 2.5D dọc**: `camera2p5d.tsx` — push-in/parallax cho ảnh/tư liệu lớn, tránh mờ chữ khi phóng to.
+- **Transition**: `transitions/FlashCut.tsx`, `transitions/WipeCut.tsx`.
+- **Sound cue + ducking**: `audio/soundCues.ts` (TTS luôn ưu tiên, BGM tự lùi âm khi giọng đọc phát), `audio/beatGrid.ts` (căn SFX/transition phụ theo BPM nhạc nền, không thay TTS làm nguồn thời lượng).
+- **Vertical shot registry**: `motion/shots/registry.ts` (17 card) + tài liệu tra cứu `skills/tao-video-remotion/references/vertical-shot-library.md`.
+- **Visual-plan mở rộng (v3, backward-compatible)**: `scripts/validate-visual-plan.mjs` chấp nhận thêm các field tùy chọn `shotCard`, `motionVariant`, `cameraMove`, `transitionIn`/`transitionOut`, `sfxCues`, `holdFrames`, `energy`, `visualHierarchy`, `safeZoneStrategy` — plan cũ (schemaVersion 1/2) không có các field này vẫn chạy y như trước.
+- **Test**: `cd template && npm run test:motion` (helper motion, dùng `node --test`, không thêm devDependency).
+- **Composition kiểm chứng**: `MotionSystemShowcase` (`template/src/MotionSystemShowcase/`) — minh hoạ hook typography, camera 2.5D, data/diagram, montage, 2 transition, hold/rest, BGM/SFX ducking; xem `npx remotion studio` rồi mở composition này.
+- **License bên thứ ba**: xem `THIRD_PARTY_NOTICES.md` và `licenses/video-shotcraft/LICENSE-APACHE-2.0.txt`.
+
 ## License và ghi công
 
 - Tạo và duy trì bởi [Trung Hiếu](https://github.com/salamander97).

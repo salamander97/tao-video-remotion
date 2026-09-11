@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-09-11T09:11:35.378Z",
+  "command": "npx remotion render src/index.ts AiflPromoDemo /Users/apple/Projects/tao-video-suite/.qa-tmp/aifl-audio-segment.mp4 --frames=0-250 --log=error",
+  "frameRange": "0-250",
+  "fps": 30,
+  "tempFile": {
+    "path": ".qa-tmp/aifl-audio-segment.mp4",
+    "sha256": "2217fb380b30402a167bd7afc977303dd91d946352bb83d5a7e6053f0dd534ac",
+    "sizeBytes": 3704457,
+    "deletedAfterReport": true
+  },
+  "audioStream": {
+    "codecName": "aac",
+    "channels": 2,
+    "sampleRate": "48000",
+    "durationSec": 8.426667
+  },
+  "loudness": {
+    "meanVolumeDb": -28.5,
+    "maxVolumeDb": -6,
+    "noClipping": true
+  },
+  "sfxCuesInRange": [
+    {
+      "from": 12,
+      "src": "transition-soft.mp3",
+      "volume": 0.4
+    },
+    {
+      "from": 78,
+      "src": "whoosh-fast.mp3",
+      "volume": 0.45
+    },
+    {
+      "from": 127,
+      "src": "air-whoosh-powerful.mp3",
+      "volume": 0.5
+    },
+    {
+      "from": 141,
+      "src": "shimmer-sparkle-sweep.mp3",
+      "volume": 0.35
+    },
+    {
+      "from": 204,
+      "src": "transition-snap.mp3",
+      "volume": 0.5
+    },
+    {
+      "from": 220,
+      "src": "swoosh-quick.mp3",
+      "volume": 0.4
+    }
+  ],
+  "assetProvenance": {
+    "allApproved": true,
+    "issues": []
+  },
+  "pass": true
+}

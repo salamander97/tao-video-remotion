@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-09-11T09:21:16.773Z",
+  "implementation": "capture-template.mjs runCapture() — called directly, not reimplemented",
+  "fixture": "vendor/shotcraft/scripts-templates/fixture/index.html (synthetic, local-only, no real product data)",
+  "serverBoundTo": "127.0.0.1:4173 (no external network)",
+  "outputFiles": {
+    "card1.png": {
+      "sha256": "bf18885c56b5ac6892aae5fb9cb728a2c0aed28510ee591673aee9271a8965d7",
+      "sizeBytes": 13409
+    },
+    "card2.png": {
+      "sha256": "92222ff5c0d2d380f7c859a136bbfc910e31ed5c1e174f6356e26c8eddfe2e89",
+      "sizeBytes": 13364
+    },
+    "float-search.png": {
+      "sha256": "43190c67b6718ea00c6927cd29d0eb8ec7be789f27375a8ab16c7bab8e1fc83d",
+      "sizeBytes": 33259
+    },
+    "home-full.png": {
+      "sha256": "f920659dc25032d82ba133bd85102d3ca71824f7a234a8085b509d00f20f0bee",
+      "sizeBytes": 73593
+    },
+    "live-layout.json": {
+      "sha256": "4f920b768674ae3998d38e48be461493f16f9ec340dfcb99e523eb5ae083698f",
+      "sizeBytes": 578
+    },
+    "nav.png": {
+      "sha256": "5877df5e554991d313ac6c27a3eb9ede27b5e27b9cbd0dd3c4767904b061bd37",
+      "sizeBytes": 10827
+    }
+  },
+  "layout": {
+    "pageW": 1920,
+    "home": {
+      "pageH": 1080,
+      "boxes": {
+        "sections": [
+          {
+            "x": 8,
+            "y": 79.875,
+            "w": 1904,
+            "h": 28
+          }
+        ]
+      },
+      "cutouts": [
+        {
+          "file": "nav.png",
+          "x": 8,
+          "y": 21.4375,
+          "w": 1904,
+          "h": 37
+        },
+        {
+          "file": "card1.png",
+          "x": 8,
+          "y": 127.78125,
+          "w": 1904,
+          "h": 58.71875
+        },
+        {
+          "file": "card2.png",
+          "x": 8,
+          "y": 205.21875,
+          "w": 1904,
+          "h": 58.71875
+        },
+        {
+          "file": "float-search.png",
+          "x": 8,
+          "y": 79.875,
+          "w": 1904,
+          "h": 221.0625
+        }
+      ]
+    }
+  },
+  "issues": [],
+  "pass": true
+}

@@ -21,3 +21,7 @@ template/public/images/*
 
 # Cache
 *.bak
+
+# Python (from jianying-export subprocess invocations)
+__pycache__/
+*.pyc

@@ -20,8 +20,11 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@react-three/fiber": "9.6.1",
     "@remotion/cli": "4.0.520",
+    "@remotion/motion-blur": "4.0.520",
     "@remotion/tailwind-v4": "4.0.520",
+    "@remotion/three": "4.0.520",
     "@remotion/zod-types": "4.0.520",
     "dotenv": "^17.4.2",
     "edge-tts-universal": "^1.4.0",
@@ -29,11 +32,13 @@
     "react-dom": "19.2.3",
     "remotion": "4.0.520",
     "tailwindcss": "4.0.0",
+    "three": "0.185.1",
     "zod": "4.4.3"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.520",
     "@types/react": "19.2.7",
+    "@types/three": "0.185.0",
     "@types/web": "0.0.166",
     "eslint": "9.39.5",
     "prettier": "3.6.0",
@@ -45,7 +50,13 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "tts": "tsx scripts/generate-tts.ts"
+    "tts": "tsx scripts/generate-tts.ts",
+    "test:motion": "tsx --test src/motion/__tests__/*.test.ts",
+    "test:lib": "tsx --test src/lib/__tests__/*.test.ts",
+    "test:aifl": "tsx --test src/AiflPromoDemo/__tests__/*.test.ts",
+    "test": "npm run test:motion && npm run test:lib && npm run test:aifl",
+    "smoke-render-demos": "node scripts/smoke-render-demos.mjs",
+    "verify-aifl-audio": "tsx scripts/verify-aifl-audio-render.mjs"
   },
   "sideEffects": [
     "*.css"

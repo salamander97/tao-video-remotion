@@ -1,0 +1,16 @@
+{
+  "name": "shotcraft-capture-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Isolated package for capture-template.mjs (product/SaaS/UI screenshot-capture pipeline template) — NOT a dependency of template/ or workbench/, kept separate since puppeteer+Chromium is heavy and this script is meant to be copied into a user's OWN product project, not run against tao-video-suite itself.",
+  "scripts": {
+    "smoke": "node smoke-test.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "25.10.0"
+  },
+  "allowScripts": {
+    "puppeteer@25.10.0": true
+  }
+}
